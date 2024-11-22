@@ -1,0 +1,184 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Archivo+Black&family=Geist:wght@100..900&family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "PT Sans";
+}
+
+
+header {
+    height: 60px;
+    background-color: rgb(46, 46, 46);
+}
+
+footer {
+    height: 100px;
+    background-color: rgb(46, 46, 46);
+
+}
+
+.all {
+    width: 100%;
+    display: flex;
+    height: 100vh;
+}
+
+/* cabecario */
+.topicos {
+    width: 30%;
+    height: auto;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+    box-shadow: 0px 0px 1px black;
+    z-index: 1;
+
+
+}
+
+.escrita_topicos {
+    width: 100%;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: left;
+    flex-direction: column;
+    color: rgb(0, 0, 0);
+    box-shadow: 0px 0px 1px black;
+    z-index: 1;
+}
+
+.escrita_topicos img {
+    width: 20px;
+    height: 20px;
+}
+
+.topicos .escrita_topicos h1 {
+    margin-left: 15px;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.topicos .escrita_topicos p {
+    font-size: 13px;
+    margin-left: 10px;
+    color: rgb(51, 51, 51);
+}
+
+/* Elementos */
+.elementos {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+    z-index: 0;
+}
+
+.caixa_cor {
+    width: 10px;
+    height: 100%;
+    background-color: #4FAD64;
+}
+
+.caixa_elemento {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 70px;
+    background-color: #fff;
+    cursor: pointer;
+    transition: 0.3s;
+    font-size: 17px;
+    border: 0px;
+}
+
+.caixa_elemento button {
+    padding-left: 10px;
+}
+
+.caixa_elemento:hover {
+    background-color: #eeeeee;
+}
+
+.caixa_elemento img {
+    width: 20px;
+    height: 20px;
+    margin-right: 20px;
+}
+
+/* Caixas menores */
+
+.caixa_elemento_sub {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.caixa_elemento_sub img {
+    width: 20px;
+    height: 20px;
+}
+
+.caixa_elemento_sub button {
+    padding-left: 10px;
+}
+
+.subitems {
+    width: 95%;
+    display: none;
+}
+
+.subitems.active {
+    display: block;
+}
+
+/* Conteudo */
+.conteudos {
+    width: 70%;
+    height: auto;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+    background: #fff;
+}
+
+.conteudo {
+    width: 90%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 30px;
+
+}
+
+.conteudo p {
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    margin: 10px;
+    width: 90%;
+    height: auto;
+    text-align: center;
+}
+
+.conteudo img {
+    width: 400px;
+    border-radius: 20px;
+    border:  1px solid rgb(168, 168, 168);
+    margin: 20px;
+}
+
+.conteudo iframe {
+    width: 700px;
+    height: 400px;
+}

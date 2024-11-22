@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/disciplinas.css">
+</head>
+
+<body>
+
+    <header></header>
+    <div class="disciplinas_about">
+        <div class="container_about">
+            <div class="escrever_about">
+                <h1>AQUI <span>"VC"</span> PESQUISA SEU CURSO!</h1>
+                <p>Nossa plataforma oferece diversos cursos para você!</p>
+                <a href="#disciplinas">Descer</a>
+            </div>
+            <img src="../img/about.png" alt="">
+        </div>
+    </div>
+
+    <div id="disciplinas">
+        <div class="container_disciplinas">
+            <h1>Cursos</h1>
+            <div class="linha"></div>
+
+            <div class="cabecario_disciplinas">
+
+                <div class="filtro_categorias">
+                    <button data-categoria="todas">Todas</button>
+                    <button data-categoria="back-end">Back-End</button>
+                    <button data-categoria="front-end">Front-End</button>
+                </div>
+
+                <div class="pesquisar">
+                    <input type="text" id="pesquisarInput" placeholder="Pesquise aqui!">
+                </div>
+
+            </div>
+
+            <div class="cards"></div>
+
+        </div>
+    </div>
+
+
+
+    <script src="filtrar.js"></script>
+</body>
+
+</html>
