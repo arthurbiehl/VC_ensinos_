@@ -11,15 +11,15 @@ const disciplinas = [
         titulo: "Curso grátis de JAVA",
         descricao: "Aprenda a programar em Java!",
         link: "../Pagina_disciplina/Java_modulo1/java1.html",
-        image: "",
+        image: "../img/java1.png",
         dificuldade: "[Fácil]",
         categoria: "back-end"
     },
     {
         titulo: "Computacao Grafica",
-        descricao: "Fca supens desenhos",
+        descricao: "Faça seus supers desenhos!!",
         link: "../Pagina_disciplina/Computacao_modulo1/computacao1.html",
-        image: "",
+        image: "../img/computacao1.png",
         dificuldade: "[Fácil]",
         categoria: "front-end"
     },
