@@ -15,6 +15,14 @@ const disciplinas = [
         dificuldade: "[Fácil]",
         categoria: "back-end"
     },
+    {
+        titulo: "Computacao Grafica",
+        descricao: "Fca supens desenhos",
+        link: "../Pagina_disciplina/Computacao_modulo1/computacao1.html",
+        image: "",
+        dificuldade: "[Fácil]",
+        categoria: "front-end"
+    },
 ];
 
 const cardContainer = document.querySelector(".cards");
