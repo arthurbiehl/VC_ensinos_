@@ -26,8 +26,18 @@ const caixas = [
     },
 ];
 
+const cursoNome = [
+
+    {
+        nome_curso: "Java 1",
+    }
+
+
+];
+
 const elementos = document.querySelector(".elementos");
 const container = document.querySelector(".conteudo");
+const headerNome = document.querySelector(".links_header_curso")
 
 const verCaixas = () => {
     elementos.innerHTML = "";
@@ -73,6 +83,21 @@ const verCaixas = () => {
         });
     });
 };
+
+
+const verNome = () =>{
+    headerNome.innerHTML = "";
+    cursoNome.forEach((a) => {
+        headerNome.innerHTML += 
+        `
+        <h2> ${a.nome_curso}</h2>
+        `
+        
+    })
+}
+
+verNome()
+
 
 const mostrarConteudo = (index, subIndex) => {
     const item = caixas[index].subitens[subIndex];
