@@ -23,30 +23,7 @@ const disciplinas = [
         dificuldade: "[Fácil]",
         categoria: "front-end"
     },
-    {
-        titulo: "Computacao Grafica",
-        descricao: "Fca supens desenhos",
-        link: "../Pagina_disciplina/Computacao_modulo1/computacao1.html",
-        image: "",
-        dificuldade: "[Fácil]",
-        categoria: "front-end"
-    },
-    {
-        titulo: "Computacao Grafica",
-        descricao: "Fca supens desenhos",
-        link: "../Pagina_disciplina/Computacao_modulo1/computacao1.html",
-        image: "",
-        dificuldade: "[Fácil]",
-        categoria: "front-end"
-    },
-    {
-        titulo: "Computacao Grafica",
-        descricao: "Fca supens desenhos",
-        link: "../Pagina_disciplina/Computacao_modulo1/computacao1.html",
-        image: "",
-        dificuldade: "[Fácil]",
-        categoria: "front-end"
-    },
+
 ];
 
 const cardContainer = document.querySelector(".cards");
@@ -63,13 +40,27 @@ const verDisciplinas = (disciplinas) => {
     }
     disciplinas.forEach(e => {
         cardContainer.innerHTML += `
+
         <div class="card">
-            <img src="${e.image}" alt="Imagem da disciplina">
-            <h2>${e.titulo}</h2> 
-            <p>${e.descricao}</p>
-            <h2>${e.dificuldade}</h2>
+            <div class="container_card">
+                <div class="escrita_card">
+                    <h1>${e.titulo}</h1>
+                    <p>${e.descricao}</p>
+                    <div class="dificuldade_card">
+                        <img src="../img/difficult.png" alt="">
+                        <h2>${e.dificuldade}</h2>
+                    </div>
+
+                </div>
+                <div class="foto_card">
+                    <img src="${e.image}" alt="">
+                </div>
+            
+            </div>
             <a href="${e.link}">Veja mais</a>
-        </div>`;
+        
+        </div>
+        `;
     });
 };
 
