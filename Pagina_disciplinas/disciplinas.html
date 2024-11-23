@@ -13,12 +13,8 @@
 
     <header>
         <div class="container_header_disciplinas">
-            <div class="links_disciplinas">
-                <img src="" alt="">
-                <a href="#">Inicio</a>
-                <a href="#">Cursos</a>
-                <a href="#">Quem somos?</a>
-            </div>
+
+            <img src="../img/banco1.png" alt="">
 
             <div class="pesquisar">
                 <input type="text" id="pesquisarInput" placeholder="">
@@ -27,7 +23,6 @@
                     <img src="../img/search.png" alt="">
                 </div>
             </div>
-
         </div>
     </header>
 
@@ -35,28 +30,35 @@
     <div id="disciplinas">
         <div class="container_disciplinas">
 
-            <div class="escrita_disciplinas">
-                <h1>Aqui estao nossos CURSOS</h1>
-                <div class="linha"></div>
+            <div class="conteudo_disciplinas">
+                <div class="escrita_disciplinas">
+                    <h1>Aqui estao nossos CURSOS</h1>
+                </div>
+    
+                <div class="cabecario_disciplinas">
+                    <div class="filtro_categorias">
+                        <button data-categoria="todas">Todas</button>
+                        <button data-categoria="back-end">Back-End</button>
+                        <button data-categoria="front-end">Front-End</button>
+                    </div>
+                </div>
             </div>
 
             <div class="linha_grande"></div>
 
-            <div class="cabecario_disciplinas">
-
-                <div class="filtro_categorias">
-                    <button data-categoria="todas">Todas</button>
-                    <button data-categoria="back-end">Back-End</button>
-                    <button data-categoria="front-end">Front-End</button>
-                </div>
+        </div>
 
 
-            </div> 
+    </div>
 
-            <div class="cards"></div>
+    <!-- Cards -->
+
+    <div class="cards_all">
+        <div class="cards">
 
         </div>
     </div>
+
 
     <script src="filtrar.js"></script>
 </body>
