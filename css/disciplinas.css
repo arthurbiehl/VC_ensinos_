@@ -8,20 +8,24 @@
 }
 /* Header */
 
+span {
+    color: #070707;
+}
+
 header {
     width: 100%;
     height: 60px;
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #044CF2;
+    background-color: #0F3BBF;
 }
 
 .container_header_disciplinas {
-    width: 1300px;
+    width: 1200px;
     height: auto;
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
 }
 
@@ -43,9 +47,6 @@ header {
     width: 90px;
     height: 60px;
 }
-
-
-
 
 /* disciplinas */
 
@@ -232,7 +233,7 @@ header {
     margin-left: 15px;
     margin-bottom: 5px;
     font-size: 20px;
-    color: rgb(37, 37, 37);
+    color: #070707;
 }
 
 .escrita_card p {
