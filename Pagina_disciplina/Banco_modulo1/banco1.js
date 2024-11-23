@@ -98,7 +98,6 @@ const verNome = () =>{
 
 verNome()
 
-
 const mostrarConteudo = (index, subIndex) => {
     const item = caixas[index].subitens[subIndex];
 
@@ -121,5 +120,24 @@ const mostrarConteudo = (index, subIndex) => {
     }
 };
 
-// Inicializa a interface ao carregar
+// Inicializa a interface
 window.addEventListener("load", verCaixas);
+
+
+// quadrado branco
+
+const overlay = document.getElementById("caixa_branca");
+const shareButton = document.querySelector(".header_compartilhe");
+const linkInput = document.getElementById("linkInput");
+const closeButton = document.getElementById("closeButton");
+
+shareButton.addEventListener("click", () => {
+    linkInput.value = window.location.href;
+    overlay.style.display = "flex";
+});
+
+closeButton.addEventListener("click", () => {
+    overlay.style.display = "none";
+});
+
+

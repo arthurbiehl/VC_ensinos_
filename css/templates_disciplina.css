@@ -240,3 +240,72 @@ span {
     width: 700px;
     height: 400px;
 }
+
+/* Quadrado branco */
+
+.caixa_branca {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5); /* Fundo semi-transparente */
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+.popup {
+    width: 400px;
+    height: 150px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    background: white;
+    padding: 10px;
+    text-align: center;
+    color: black;
+    font-size: 19px;
+    font-weight: 900;
+}
+
+.popup p {
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.escrita_popup {
+    width: 400px;
+    height: 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#linkInput {
+    width: 380px;
+    padding: 8px;
+    margin-top: 10px;
+    border-radius: 3px;
+    border: 1px solid rgb(129, 129, 129);
+    text-align: center;
+}
+
+#closeButton {
+    border: none;
+    background-color: white;
+    color: white;
+    cursor: pointer;
+}
+
+#closeButton img {
+    width: 20px;
+}
+
+
+#closeButton:hover {
+    background-color: #0056b3;
+}
+
