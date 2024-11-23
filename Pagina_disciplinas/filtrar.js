@@ -30,15 +30,17 @@ const cardContainer = document.querySelector(".cards");
 const pesquisarInput = document.querySelector("#pesquisarInput");
 const filtroCategorias = document.querySelector(".filtro_categorias");
 
-let categoriaAtual = "todas"; // Categoria padrão
+let categoriaAtual = "todas";
 
 const verDisciplinas = (disciplinas) => {
     cardContainer.innerHTML = "";
     if (disciplinas.length === 0) {
         cardContainer.innerHTML = 
         `
-
-        <p>Nenhuma disciplina encontrada.</p>
+        .<div class="naoEncontrado">
+            <img src="../img/naoEncontrado.png" alt="">
+            <p>Nenhuma disciplina encontrada.</p>
+        </div>
 
         `;
         return;
