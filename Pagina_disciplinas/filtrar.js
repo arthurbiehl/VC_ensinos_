@@ -35,7 +35,12 @@ let categoriaAtual = "todas"; // Categoria padrão
 const verDisciplinas = (disciplinas) => {
     cardContainer.innerHTML = "";
     if (disciplinas.length === 0) {
-        cardContainer.innerHTML = `<p>Nenhuma disciplina encontrada.</p>`;
+        cardContainer.innerHTML = 
+        `
+
+        <p>Nenhuma disciplina encontrada.</p>
+
+        `;
         return;
     }
     disciplinas.forEach(e => {
