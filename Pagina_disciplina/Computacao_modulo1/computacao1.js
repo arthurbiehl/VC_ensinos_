@@ -2,26 +2,26 @@ const caixas = [
     {
         nome: "Introdução",
         subitens: [
-            { nome: "Como funciona?", conteudo: "..." },
-            { nome: "o que é?", conteudo: "asdasd" }
+            { nome: "Como funciona?", titulo: "...", conteudo: "..." },
+            { nome: "o que é?", titulo: "...", conteudo: "..." }
         ]
     },
     { 
         nome: "Video",
         subitens: [
-            { nome: "Conceitos Básicos",conteudo:"Video explicativo", iframe: "https://www.youtube.com/embed/q3VlhfsrRjc?si=cNzIOZU4_Hvmt85y"}
+            { nome: "Conceitos Básicos", titulo: "Conteudo em video", conteudo:"Video explicativo", iframe: "https://www.youtube.com/embed/q3VlhfsrRjc?si=cNzIOZU4_Hvmt85y"}
         ]
     },
     {
         nome: "Apostila",
         subitens: [
-            { nome: "Apostila completa", conteudo: "...", dowload: ""},
+            { nome: "Apostila completa", titulo: "", conteudo: "...", dowload: ""},
         ]
     },
     {
         nome: "Desafio",
         subitens: [
-            { nome: "Desadio final do modulo", conteudo: "..." },
+            { nome: "Desadio final do modulo", titulo: "", conteudo: "..." },
         ]
     },
 ];
@@ -29,7 +29,7 @@ const caixas = [
 const cursoNome = [
 
     {
-        nome_curso: "Computacao 1",
+        nome_curso: "Computação 1",
     }
 
 
@@ -104,17 +104,24 @@ const mostrarConteudo = (index, subIndex) => {
     if (!item.iframe) {
         container.innerHTML = `
         <div class="conteudo">
-            <h1>${item.nome}</h1>
-            <p>${item.conteudo}</p>
-            <a href="${item.dowload}" download>
+            <div class="container_conteudo">
+                <h1>${item.titulo}</h1>
+                <p>${item.conteudo}</p>
+                <a href="${item.dowload}" download>
+            </div>
+
         </div>
         `;
     } else {
         container.innerHTML = `
         <div class="conteudo">
-            <h1>${item.nome}</h1>
-            <p>${item.conteudo}</p>
-            <iframe src="${item.iframe}" frameborder="0"></iframe>
+            <div class="container_conteudo">
+                <h1>${item.titulo}</h1>
+                <p>${item.conteudo}</p>
+                <div class="conteudo_video">
+                    <iframe src="${item.iframe}" frameborder="0"></iframe>
+                </div>
+            </div>
         </div>
         `;
     }

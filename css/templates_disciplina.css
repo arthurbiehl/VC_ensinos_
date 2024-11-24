@@ -220,15 +220,6 @@ span {
 
 }
 
-.conteudo p {
-    word-wrap: break-word;
-    overflow-wrap: break-word;
-    margin: 10px;
-    width: 90%;
-    height: auto;
-    text-align: center;
-}
-
 .conteudo img {
     width: 400px;
     border-radius: 20px;
@@ -236,10 +227,45 @@ span {
     margin: 20px;
 }
 
-.conteudo iframe {
-    width: 700px;
-    height: 400px;
+.container_conteudo {
+    width: 900px;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: left;
+    text-align: left;
 }
+
+.container_conteudo h1 {
+    font-size: 35px;
+    font-weight: 500;
+    margin: 10px;
+}
+
+.container_conteudo p {
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    margin: 10px;
+    width: 90%;
+    height: auto;
+    text-align: left;
+}
+
+.conteudo_video {
+    width: 900px;
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.conteudo_video iframe{
+    width: 800px;
+    height: 400px;
+    margin: 10px;
+}
+
 
 /* Quadrado branco */
 
