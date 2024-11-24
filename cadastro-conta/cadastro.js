@@ -54,12 +54,14 @@ loginForm.addEventListener("submit", function (e) {
 
         // Leva para pagina inicial
         setTimeout(() => {
-            window.location.href = "../index.html";
+            window.location.href = "../Pagina_inicial/index.html";
         }, 1000);
     } else {
         errorMessage.textContent = "Usuário ou senha incorretos!";
         errorMessage.style.color = "red";
     }
 });
+
+
 
 

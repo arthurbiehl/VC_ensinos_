@@ -23,7 +23,6 @@ const disciplinas = [
         dificuldade: "[Fácil]",
         categoria: "front-end"
     },
-
 ];
 
 const cardContainer = document.querySelector(".cards");
@@ -37,17 +36,16 @@ const verDisciplinas = (disciplinas) => {
     if (disciplinas.length === 0) {
         cardContainer.innerHTML = 
         `
-        .<div class="naoEncontrado">
+        <div class="naoEncontrado">
             <img src="../img/naoEncontrado.png" alt="">
             <p>Nenhuma disciplina encontrada.</p>
         </div>
-
         `;
         return;
     }
+
     disciplinas.forEach(e => {
         cardContainer.innerHTML += `
-
         <div class="card">
             <div class="container_card">
                 <div class="escrita_card">
@@ -57,18 +55,35 @@ const verDisciplinas = (disciplinas) => {
                         <img src="../img/difficult.png" alt="">
                         <h2>${e.dificuldade}</h2>
                     </div>
-
                 </div>
                 <div class="foto_card">
                     <img src="${e.image}" alt="">
                 </div>
-            
             </div>
-            <a href="${e.link}">Veja mais</a>
-        
+            <a href="#" class="btn-ver-mais" data-link="${e.link}">Veja mais</a>
         </div>
         `;
     });
+
+    // Adiciona evento de clique aos botões "Veja mais"
+    const links = document.querySelectorAll(".btn-ver-mais");
+    links.forEach(link => {
+        link.addEventListener("click", (e) => {
+            e.preventDefault();
+            verificarAcesso(link.dataset.link);
+        });
+    });
+};
+
+const verificarAcesso = (link) => {
+    const loggedInUser = localStorage.getItem("loggedInUser");
+    if (!loggedInUser) {
+        // Caso o usuário não esteja logado
+        alert("Você precisa estar logado para acessar este curso!");
+    } else {
+        // Caso o usuário esteja logado, permite o acesso ao curso
+        window.location.href = link;
+    }
 };
 
 const filtrarDisciplinas = () => {
