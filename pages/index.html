@@ -1,77 +1,46 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../css/index.css">
-    <title>Document</title>
-    <style>
-        body {
-          margin: 0;
-          font-family: Arial, sans-serif;
-        }
-    
-        /* Estilos para o Header */
-        header {
-          background-color: #007bff;
-          color: white;
-          padding: 15px 20px;
-          display: flex;
-          justify-content: space-between;
-          align-items: center;
-        }
-    
-        /* Título do site */
-        .logo {
-          font-size: 20px;
-          font-weight: bold;
-        }
-    
-        /* Botões */
-        .btn {
-          background-color: white;
-          color: #007bff;
-          padding: 10px 15px;
-          border: none;
-          border-radius: 5px;
-          text-decoration: none;
-          font-size: 14px;
-          font-weight: bold;
-          cursor: pointer;
-          transition: background-color 0.3s ease;
-        }
-    
-        .btn:hover {
-          background-color: #0056b3;
-          color: white;
-        }
-      </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../css/index.css">
+  <link rel="stylesheet" href="../css/disciplinas.css">
+  <title>Document</title>
 </head>
+
 <body>
 
-    <header>
-        <div class="logo">Meu Site</div>
-        <div id="auth-buttons">
-          <!-- Os botões serão inseridos dinamicamente -->
-        </div>
-      </header>
+  <header>
+    <div class="container_header_index">
+      <div class="escrita_header_index">
+        <img src="" alt="">
+        <a href="">Inicio</a>
+        <a href="">Cursos</a>
+        <a href="">Quem somos?</a>
+      </div>
+      <div id="cadastro"> </div>
 
-
-    <div class="disciplinas_about">
-        <div class="container_about">
-            <div class="escrever_about">
-                <h1>AQUI <span>"VC"</span> PESQUISA SEU CURSO!</h1>
-                <p>Nossa plataforma oferece diversos cursos para você!</p>
-                <a href="#disciplinas">Descer</a>
-            </div>
-            <img src="../img/about.png" alt="">
-        </div>
-        <div id="cursos">
-            <a href="../pages/disciplinas.html">Veja mais cursos!</a>
-        </div>
     </div>
+  </header>
 
-    <script src="../js/index.js"></script>
+
+  <div class="disciplinas_about">
+    <div class="container_about">
+      <div class="escrever_about">
+        <h1>AQUI <span>"VC"</span> PESQUISA SEU CURSO!</h1>
+        <p>Nossa plataforma oferece diversos cursos para você!</p>
+        <a href="#disciplinas">Descer</a>
+      </div>
+      <img src="../img/about.png" alt="">
+    </div>
+    <div id="cursos">
+      <a href="../pages/disciplinas.html">Veja mais cursos!</a>
+    </div>
+  </div>
+
+  <script src="../js/index.js"></script>
 
 </body>
+
 </html>

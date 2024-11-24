@@ -11,6 +11,38 @@ span {
     color: rgb(58, 58, 207);
     font-size: 60px;
 }
+
+/* Header index */
+
+.container_header_index {
+    width: 1200px;
+    height: 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.escrita_header_index {
+    width: auto;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.escrita_header_index a {
+    font-size: 16px;
+    text-decoration: none;
+    margin: 10px;
+    color: white;
+}
+
+.escrita_header_index img {
+    width: 100px;
+    margin: 10px;
+    height: 60px;
+}
+
 /* Iniciar */
 
 .disciplinas_about {

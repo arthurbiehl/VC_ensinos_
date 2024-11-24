@@ -5,7 +5,7 @@ const disciplinas = [
         link: "../Pagina_disciplina/Banco_modulo1/banco1.html",
         image: "../img/banco1.png",
         dificuldade: "[Fácil]",
-        categoria: "back-end"
+        categoria: "back-end",
     },
     {
         titulo: "Curso grátis de JAVA",

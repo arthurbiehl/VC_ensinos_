@@ -1,5 +1,5 @@
 
-const authButtons = document.getElementById("auth-buttons");
+const authButtons = document.getElementById("cadastro");
 const loggedInUser = localStorage.getItem("loggedInUser");
 
 
@@ -18,7 +18,7 @@ function renderButtons() {
     } else {
         authButtons.innerHTML = 
         `
-        <a href="cadastro-conta/cadastro.html" class="btn">Cadastre-se</a>
+        <a href="../pages/cadastro.html" class="btn">Cadastre-se</a>
         `;
     }
 }
