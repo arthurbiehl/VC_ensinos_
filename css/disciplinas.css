@@ -125,6 +125,11 @@ header {
     color: white;
     border: none;
     font-weight: bold;
+    transition: 0.5s;
+}
+
+.filtro_categorias button:hover {
+    background-color: #0152f3;
 }
 
 /* cabecario pesquisa */
@@ -211,6 +216,7 @@ header {
     flex-direction: column;
     margin: 10px;
     border: 1px solid rgb(202, 202, 202);
+    transition: 0.5s;
 }
 
 .card a{
@@ -224,6 +230,11 @@ header {
     color: white;
     font-weight: bold;
     background-color: #4FAD64;
+    transition: 0.5s;
+}
+
+.card a:hover {
+    background-color: #1da33a;
 }
 
 .container_card {
