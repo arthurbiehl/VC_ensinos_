@@ -30,7 +30,7 @@ header {
 }
 
 .links_disciplinas {
-    width: 400px;
+    width: auto;
     height: auto;
     display: flex;
     justify-content: space-evenly;
@@ -39,13 +39,16 @@ header {
 
 .links_disciplinas a {
     font-size: 16px;
+    margin: 5px;
+    font-weight: 500;
     text-decoration: none;
     color: white;
 }
 
 .container_header_disciplinas img {
-    width: 90px;
-    height: 60px;
+    width: 80px;
+    height: 40px;
+    margin: 10px;
 }
 
 #cadastro {
@@ -60,7 +63,7 @@ header {
     width: 80px;
     height: 30px;
     padding: 6px;
-    font-size: 14px;
+    font-size: 13px;
     background-color: white;
     text-decoration: none;
     display: flex;
@@ -76,7 +79,7 @@ header {
     width: 80px;
     height: 30px;
     padding: 6px;
-    font-size: 14px;
+    font-size: 13px;
     background-color: white;
     text-decoration: none;
     display: flex;
@@ -175,7 +178,7 @@ header {
 /* cabecario pesquisa */
 
 .pesquisar {
-    width: 600px;
+    width: 700px;
     height: auto;
     display: flex;
     justify-content: center;
@@ -183,21 +186,19 @@ header {
 }
 
 #pesquisarInput {
-    width: 600px;
+    width: 700px;
     height: 40px;
-    border-top-left-radius: 10px;
-    border-bottom-left-radius: 10px;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
     border: none;
-    box-shadow: 0px 0px 1.5px rgb(39, 39, 39);
 }
 
 .pesquisarInput_lado {
     width: 45px;
     height: 40px;
     background-color: white;
-    border-top-right-radius: 10px;
-    border-bottom-right-radius: 10px;
-    box-shadow: 0px 0px 1.5px rgb(39, 39, 39);
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
     display: flex;
     justify-content: center;
     align-items: center;
