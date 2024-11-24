@@ -121,7 +121,6 @@ header {
     width: 100px;
     height: 35px;
     margin: 3px;
-    border-radius: 2px;
     background-color: #014BDB;
     color: white;
     border: none;
@@ -138,26 +137,21 @@ header {
     align-items: center;
 }
 
-.pesquisar img {
-    width: 35px;
-    height: 35px;
-}
-
 #pesquisarInput {
     width: 500px;
-    height: 40px;
-    border-top-left-radius: 5px;
-    border-bottom-left-radius: 5px;
+    height: 50px;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
     border: none;
     box-shadow: 0px 0px 1.5px rgb(39, 39, 39);
 }
 
 .pesquisarInput_lado {
-    width: 40px;
-    height: 40px;
-    background-color: #ffffff;
-    border-top-right-radius: 5px;
-    border-bottom-right-radius: 5px;
+    width: 45px;
+    height: 50px;
+    background-color: #0f46eb;
+    border-top-right-radius: 1px;
+    border-bottom-right-radius: 1px;
     display: flex;
     justify-content: center;
     align-items: center;
