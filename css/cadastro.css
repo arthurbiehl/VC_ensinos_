@@ -1,0 +1,156 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Archivo+Black&family=Geist:wght@100..900&family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Archivo+Black&family=Geist:wght@100..900&family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "PT Sans";
+}
+.cadastro {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container_cadastro {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.conteudo_cadastro {
+    width: 60%;
+    height: 100vh;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: blue  ;
+}
+
+.conteudo_login-cadastro {
+    width: 40%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column; 
+}
+
+.dhiovana {
+    width: 400px;
+    height: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.dhiovana img {
+    width: 150px;
+}
+
+/* CADASTRO */
+
+#register-form {
+    width: 300px;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.inputDiv{
+    width: 300px;
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.inputDiv input {
+    width: 300px;
+    height: 30px;
+    margin-left: 10px;
+    border: none;
+    box-shadow: 0px 0px 1px black;
+}
+
+.inputDiv h2 {
+    font-size: 14px;
+    margin-left: 10px;
+    margin-top: 20px;
+    color: rgb(105, 105, 105);
+}
+
+.registrar_button {
+    width: 100px;
+    height: 35px;
+    margin: 10px;
+    border: none;
+    background-color: #007bff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 13px;
+    color: white;
+    border-radius: 3px;
+}
+
+#toggle-login {
+    width: 150px;
+    border: none;
+    margin: 5px;
+    color: rgb(53, 53, 53);
+    background-color: white;
+}
+
+
+
+/* lOGIN */
+
+.login-form {
+    width: 400px;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.login_button {
+    width: 100px;
+    height: 35px;
+    margin: 10px;
+    border: none;
+    background-color: #007bff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 13px;
+    color: white;
+    border-radius: 3px;
+}
+
+.buttonDiv {
+    width: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+#toggle-register {
+    width: 150px;
+    border: none;
+    margin: 5px;
+    color: rgb(53, 53, 53);
+    background-color: white;
+}
