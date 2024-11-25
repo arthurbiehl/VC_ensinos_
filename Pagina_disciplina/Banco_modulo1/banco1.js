@@ -3,7 +3,9 @@ const caixas = [
         nome: "Introdução",
         subitens: [
             { nome: "Como funciona?", titulo: "...", conteudo: "..." },
+            { nome: "o que é?", titulo: "...", conteudo: "..." },
             { nome: "o que é?", titulo: "...", conteudo: "..." }
+
         ]
     },
     { 

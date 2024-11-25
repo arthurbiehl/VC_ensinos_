@@ -18,7 +18,7 @@ header {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #007bff;
+    background-color:  #721d7e;
 }
 
 .container_header_disciplinas {
@@ -38,16 +38,16 @@ header {
 }
 
 .links_disciplinas a {
-    font-size: 16px;
-    margin: 5px;
+    font-size: 14px;
+    margin: 10px;
     font-weight: 500;
     text-decoration: none;
     color: white;
 }
 
 .container_header_disciplinas img {
-    width: 80px;
-    height: 40px;
+    width: 100px;
+    height: 55px;
     margin: 10px;
 }
 
@@ -60,10 +60,10 @@ header {
 }
 
 #cadastro a {
-    width: 80px;
+    width: 70px;
     height: 30px;
-    padding: 6px;
-    font-size: 13px;
+    padding: 4px;
+    font-size: 14px;
     background-color: white;
     text-decoration: none;
     display: flex;
@@ -71,14 +71,13 @@ header {
     align-items: center;
     border: none;
     border-radius: 3px;
-    color: #007bff;
+    color:   #721d7e;
     font-weight: 800;
 }
 
 #cadastro button {
-    width: 80px;
-    height: 30px;
-    padding: 6px;
+    width: 70px;
+    height: 35px;
     font-size: 13px;
     background-color: white;
     text-decoration: none;
@@ -86,8 +85,8 @@ header {
     justify-content: center;
     align-items: center;
     border: none;
-    border-radius: 3px;
-    color: #007bff;
+    border-radius: 2px;
+    color: #721d7e;
     font-weight: 800;
 }
 
@@ -164,7 +163,7 @@ header {
     width: 100px;
     height: 35px;
     margin: 3px;
-    background-color: #014BDB;
+    background-color: #8d1c9c;
     color: white;
     border: none;
     font-weight: bold;
@@ -172,24 +171,32 @@ header {
 }
 
 .filtro_categorias button:hover {
-    background-color: #0152f3;
+    background-color: #9a16d8;
 }
 
 /* cabecario pesquisa */
 
 .pesquisar {
-    width: 700px;
+    width: 600px;
     height: auto;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.barra_pesquisa {
+    width: 450px;
+    height: 40px;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
 #pesquisarInput {
-    width: 700px;
+    width: 400px;
     height: 40px;
-    border-top-right-radius: 20px;
-    border-bottom-right-radius: 20px;
+    border-top-left-radius: 2px;
+    border-bottom-left-radius: 2px;
     border: none;
 }
 
@@ -197,11 +204,11 @@ header {
     width: 45px;
     height: 40px;
     background-color: white;
-    border-top-left-radius: 20px;
-    border-bottom-left-radius: 20px;
     display: flex;
     justify-content: center;
     align-items: center;
+    border-top-right-radius: 2px;
+    border-bottom-right-radius: 2px;
 }
 
 .pesquisarInput_lado img {
