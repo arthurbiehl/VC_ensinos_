@@ -46,8 +46,8 @@ loginForm.addEventListener("submit", function (e) {
     const storedPassword = localStorage.getItem(username);
 
     if (storedPassword === password) {
-        errorMessage.textContent = "Login bem-sucedido!";
-        errorMessage.style.color = "green";
+        errorMessage.textContent = "Login Feito!";
+        errorMessage.style.color = "#007D32";
 
         // Servidor local - aqui salva
         localStorage.setItem("loggedInUser", username);
@@ -57,8 +57,8 @@ loginForm.addEventListener("submit", function (e) {
             window.location.href = "../pages/index.html";
         }, 1000);
     } else {
-        errorMessage.textContent = "Usuário ou senha incorretos!";
-        errorMessage.style.color = "red";
+        errorMessage.textContent = "Usúario ou senha incorretos";
+        errorMessage.style.color = "#FF0000";
     }
 });
 
