@@ -41,8 +41,9 @@ const carregarFavoritosPainel = () => {
     favoritosPainel.forEach(fav => {
         favoritosContainer.innerHTML += `
             <div class="favorito_card">
-                <h3>${fav.titulo}</h3>
+                <h2>${fav.titulo}</h2>
                 <p>${fav.descricao}</p>
+                <img src="${fav.image}"></img>
                 <a href="${fav.link}" target="_blank">Acessar Curso</a>
             </div>
         `;
@@ -50,5 +51,22 @@ const carregarFavoritosPainel = () => {
 };
 
 window.addEventListener("load", carregarFavoritosPainel);
+
+// ver se esta logado ou nao para aparecer
+
+window.addEventListener("load", () => {
+    const loggedInUser = localStorage.getItem("loggedInUser");
+    
+    if (!loggedInUser) {
+        // Redireciona para a página de login caso não esteja logado
+        alert("Você precisa estar logado para acessar o painel!");
+        window.location.href = "../pages/cadastro.html";
+    } else {
+        // Carrega os dados do painel (favoritos, etc.)
+        carregarFavoritosPainel();
+    }
+});
+
+
 
 

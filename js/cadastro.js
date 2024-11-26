@@ -17,6 +17,7 @@ toggleRegister.addEventListener("click", () => {
     errorMessage.textContent = "";
 });
 
+
 // registrar
 registerForm.addEventListener("submit", function (e) {
     e.preventDefault();

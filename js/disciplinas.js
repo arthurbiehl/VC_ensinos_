@@ -45,8 +45,8 @@ let categoriaAtual = "todas";
 const verDisciplinas = (disciplinas) => {
     cardContainer.innerHTML = "";
     if (disciplinas.length === 0) {
-        cardContainer.innerHTML = 
-        `
+        cardContainer.innerHTML =
+            `
         <div class="naoEncontrado">
             <img src="../img/naoEncontrado.png" alt="">
             <p>Nenhuma disciplina encontrada.</p>
@@ -71,8 +71,12 @@ const verDisciplinas = (disciplinas) => {
                         <img src="${e.image}" alt="">
                     </div>
                 </div>
-                <button class="btn-favoritar" data-titulo="${e.titulo}">Favoritar</button>
-                <a href="#" class="btn-ver-mais" data-link="${e.link}">Veja mais</a>
+                <div class="links_card">
+                    <button class="btn-favoritar" data-titulo="${e.titulo}"><img src="../img/curtir.png" alt=""></button>
+                    <a href="#" class="btn-ver-mais" data-link="${e.link}">Veja mais</a>
+                
+                </div>
+
             </div>
         `;
     });
@@ -150,6 +154,19 @@ document.addEventListener("click", (e) => {
         }
 
         salvarUsuarioFavoritos(favoritos);
+    }
+});
+
+// painel aparecer
+
+window.addEventListener("load", () => {
+    const loggedInUser = localStorage.getItem("loggedInUser");
+    const painelButton = document.getElementById("painel-btn");
+
+    if (loggedInUser) {
+        painelButton.style.display = "inline-block"; // Exibe o botão se logado
+    } else {
+        painelButton.style.display = "none"; // Esconde o botão se não logado
     }
 });
 
