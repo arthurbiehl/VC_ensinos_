@@ -9,7 +9,7 @@
 /* Header */
 
 span {
-    color: #070707;
+    color: #721d7e;
 }
 
 header {
@@ -163,15 +163,16 @@ header {
     width: 100px;
     height: 35px;
     margin: 3px;
-    background-color: #8d1c9c;
-    color: white;
+    background-color: rgb(218, 218, 218);
+    color: rgb(31, 31, 31);
     border: none;
+    box-shadow: 0px 0px 1px black;
     font-weight: bold;
     transition: 0.5s;
 }
 
 .filtro_categorias button:hover {
-    background-color: #9a16d8;
+    background-color: rgb(211, 211, 211);
 }
 
 /* cabecario pesquisa */
@@ -265,8 +266,13 @@ header {
     align-items: center;
     flex-direction: column;
     margin: 10px;
-    border: 1px solid rgb(202, 202, 202);
     transition: 0.5s;
+    border: 1px solid rgb(134, 134, 134);
+    transition: 0.5s;
+}
+
+.card:hover {
+    border: 1px solid #721d7e;
 }
 
 .card a{
@@ -279,12 +285,12 @@ header {
     font-size: 18px;
     color: white;
     font-weight: bold;
-    background-color: #721d7e;
+    background-color: rgb(128, 128, 128);
     transition: 0.5s;
 }
 
 .card a:hover {
-    background-color: #9931a7;
+    background-color: #1B3DA6;
 }
 
 .container_card {
