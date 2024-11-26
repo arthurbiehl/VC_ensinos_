@@ -28,6 +28,17 @@ const disciplinas = [
 const cardContainer = document.querySelector(".cards");
 const pesquisarInput = document.querySelector("#pesquisarInput");
 const filtroCategorias = document.querySelector(".filtro_categorias");
+const painelButton = document.getElementById("painelButton");
+
+painelButton.addEventListener("click", () => {
+    const loggedInUser = localStorage.getItem("loggedInUser");
+    if (!loggedInUser) {
+        alert("Você precisa estar logado para acessar o Painel de Usuário!");
+        window.location.href = "../pages/cadastro.html";
+    } else {
+        window.location.href = "../pages/painel_usuario.html";
+    }
+});
 
 let categoriaAtual = "todas";
 
@@ -46,22 +57,23 @@ const verDisciplinas = (disciplinas) => {
 
     disciplinas.forEach(e => {
         cardContainer.innerHTML += `
-        <div class="card">
-            <div class="container_card">
-                <div class="escrita_card">
-                    <h1>${e.titulo}</h1>
-                    <p>${e.descricao}</p>
-                    <div class="dificuldade_card">
-                        <img src="../img/difficult.png" alt="">
-                        <h2>${e.dificuldade}</h2>
+            <div class="card" data-id="${e.titulo}">
+                <div class="container_card">
+                    <div class="escrita_card">
+                        <h1>${e.titulo}</h1>
+                        <p>${e.descricao}</p>
+                        <div class="dificuldade_card">
+                            <img src="../img/difficult.png" alt="">
+                            <h2>${e.dificuldade}</h2>
+                        </div>
+                    </div>
+                    <div class="foto_card">
+                        <img src="${e.image}" alt="">
                     </div>
                 </div>
-                <div class="foto_card">
-                    <img src="${e.image}" alt="">
-                </div>
+                <button class="btn-favoritar" data-titulo="${e.titulo}">Favoritar</button>
+                <a href="#" class="btn-ver-mais" data-link="${e.link}">Veja mais</a>
             </div>
-            <a href="#" class="btn-ver-mais" data-link="${e.link}">Veja mais</a>
-        </div>
         `;
     });
 
@@ -106,3 +118,42 @@ filtroCategorias.addEventListener("click", (e) => {
 });
 
 window.addEventListener("load", filtrarDisciplinas);
+
+// funcao de favoritar os cursos
+
+const getUsuarioFavoritos = () => {
+    const loggedInUser = localStorage.getItem("loggedInUser");
+    if (!loggedInUser) return [];
+    return JSON.parse(localStorage.getItem(`favoritos_${loggedInUser}`)) || [];
+};
+
+const salvarUsuarioFavoritos = (favoritos) => {
+    const loggedInUser = localStorage.getItem("loggedInUser");
+    if (loggedInUser) {
+        localStorage.setItem(`favoritos_${loggedInUser}`, JSON.stringify(favoritos));
+    }
+};
+
+let favoritos = getUsuarioFavoritos();
+
+document.addEventListener("click", (e) => {
+    if (e.target.classList.contains("btn-favoritar")) {
+        const titulo = e.target.dataset.titulo;
+        const disciplina = disciplinas.find(d => d.titulo === titulo);
+
+        if (favoritos.some(f => f.titulo === titulo)) {
+            favoritos = favoritos.filter(f => f.titulo !== titulo);
+            alert(`${titulo} foi removido dos favoritos.`);
+        } else {
+            favoritos.push(disciplina);
+            alert(`${titulo} foi adicionado aos favoritos!`);
+        }
+
+        salvarUsuarioFavoritos(favoritos);
+    }
+});
+
+
+
+
+

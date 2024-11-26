@@ -358,3 +358,18 @@ header {
     justify-content: center;
     align-items: center;
 }
+
+.btn-favoritar {
+    background-color: #FFD700;
+    border: none;
+    padding: 8px 12px;
+    font-size: 14px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+    transition: background-color 0.3s;
+}
+
+.btn-favoritar:hover {
+    background-color: #FFC107;
+}
