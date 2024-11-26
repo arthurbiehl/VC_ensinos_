@@ -61,23 +61,38 @@ header {
 
 #cadastro a {
     width: 70px;
-    height: 30px;
+    height: 25px;
     padding: 4px;
-    font-size: 12px;
+    font-size: 13px;
     background-color: white;
     text-decoration: none;
     display: flex;
     justify-content: center;
     align-items: center;
     border: none;
-    border-radius: 3px;
+    border-radius: 2px;
     color:   #721d7e;
     font-weight: 900;
 }
 
 #cadastro button {
     width: 70px;
-    height: 35px;
+    height: 33px;
+    font-size: 13px;
+    background-color: white;
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    border-radius: 2px;
+    color: #721d7e;
+    font-weight: 800;
+}
+
+#painelButton {
+    width: 70px;
+    height: 33px;
     font-size: 13px;
     background-color: white;
     text-decoration: none;
@@ -172,13 +187,13 @@ header {
 }
 
 .filtro_categorias button:hover {
-    background-color: rgb(211, 211, 211);
+    background-color: rgb(187, 187, 187);
 }
 
 /* cabecario pesquisa */
 
 .pesquisar {
-    width: 600px;
+    width: 630px;
     height: auto;
     display: flex;
     justify-content: space-around;
@@ -260,7 +275,7 @@ header {
 
 .card{
     width: 400px;
-    height:250px;
+    height: 290px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -275,24 +290,6 @@ header {
     border: 1px solid #721d7e;
 }
 
-.card a{
-    width: 100%;
-    height: 40px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-decoration: none;
-    font-size: 18px;
-    color: white;
-    font-weight: bold;
-    background-color: rgb(128, 128, 128);
-    transition: 0.5s;
-}
-
-.card a:hover {
-    background-color: #1B3DA6;
-}
-
 .container_card {
     width: 400px;
     height: auto;
@@ -303,11 +300,12 @@ header {
 
 .escrita_card {
     width: 250px;
-    height: auto;
+    height: 200px;
     display: flex;
     justify-content: center;
     align-items: left;
     flex-direction: column;
+
 
 }
 
@@ -359,17 +357,47 @@ header {
     align-items: center;
 }
 
+.links_card {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 .btn-favoritar {
-    background-color: #FFD700;
+    width: 60px;
+    height: 40px;
     border: none;
-    padding: 8px 12px;
-    font-size: 14px;
-    border-radius: 5px;
-    cursor: pointer;
-    margin-top: 10px;
-    transition: background-color 0.3s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #2a262b;
+    transition: 0.5s;
+}
+
+.btn-favoritar img {
+    width: 25px;
 }
 
 .btn-favoritar:hover {
-    background-color: #FFC107;
+    background-color: #ad47bb;
+}
+
+.links_card a{
+    width: 100%;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    font-size: 18px;
+    color: white;
+    font-weight: bold;
+    background-color: rgb(128, 128, 128);
+    transition: 0.5s;
+}
+
+.links_card a:hover {
+    background-color: #1B3DA6;
 }
