@@ -1,24 +1,20 @@
+@import url('https://fonts.googleapis.com/css2?family=Archivo+Black&family=Geist:wght@100..900&family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Archivo+Black&family=Geist:wght@100..900&family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
-@import url('https://fonts.googleapis.com/css2?family=Archivo+Black&family=Geist:wght@100..900&family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Archivo+Black&family=Geist:wght@100..900&family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 * {
     margin: 0;
     padding: 0;
     font-family: "PT Sans";
 }
+
 /* Header */
-
-span {
-    color: #721d7e;
-}
-
 header {
     width: 100%;
-    height: 60px;
+    height: 70px;
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color:  #721d7e;
+    background-color: #141414;
 }
 
 .container_header_disciplinas {
@@ -64,14 +60,14 @@ header {
     height: 25px;
     padding: 4px;
     font-size: 13px;
-    background-color: white;
+    background-color: #8136e3;
     text-decoration: none;
     display: flex;
     justify-content: center;
     align-items: center;
     border: none;
     border-radius: 2px;
-    color:   #721d7e;
+    color: white;
     font-weight: 900;
 }
 
@@ -79,14 +75,14 @@ header {
     width: 70px;
     height: 33px;
     font-size: 13px;
-    background-color: white;
+    background-color: #8136e3;
     text-decoration: none;
     display: flex;
     justify-content: center;
     align-items: center;
     border: none;
     border-radius: 2px;
-    color: #721d7e;
+    color: white;
     font-weight: 800;
 }
 
@@ -94,14 +90,14 @@ header {
     width: 70px;
     height: 33px;
     font-size: 13px;
-    background-color: white;
+    background-color: #8136e3;
     text-decoration: none;
     display: flex;
     justify-content: center;
     align-items: center;
     border: none;
     border-radius: 2px;
-    color: #721d7e;
+    color: white;
     font-weight: 800;
 }
 
@@ -115,13 +111,14 @@ header {
 
 /* disciplinas */
 
-#disciplinas{
+#disciplinas {
     width: 100%;
     height: 250px;
     display: flex;
     justify-content: space-between;
     align-items: center;
     flex-direction: column;
+    background-color: #1c1c1c;
 }
 
 .linha_grande {
@@ -151,7 +148,7 @@ header {
 
 .escrita_disciplinas {
     width: 100%;
-    height: 60px;  
+    height: 60px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -160,8 +157,13 @@ header {
 }
 
 .escrita_disciplinas h1 {
-    font-size: 35px;
-    color: rgb(39, 39, 39);
+    font-size: 30px;
+    color: #8136e3;
+}
+
+.escrita_disciplinas p {
+    color: rgb(207, 207, 207);
+    font-size: 14px;
 }
 
 /* disciplinas-categorias*/
@@ -183,14 +185,14 @@ header {
 }
 
 .filtro_categorias button {
-    width: 100px;
-    height: 35px;
+    width: 90px;
+    height: 30px;
     margin: 3px;
-    background-color: rgb(218, 218, 218);
-    color: rgb(0, 0, 0);
+    background-color: #8136e3;
+    color: white;
     border: none;
     box-shadow: 0px 0px 1px black;
-    font-weight: bold;
+    font-weight: 600;
     transition: 0.5s;
 }
 
@@ -219,21 +221,22 @@ header {
 #pesquisarInput {
     width: 400px;
     height: 30px;
-    border-top-left-radius: 2px;
-    border-bottom-left-radius: 2px;
+    border-top-right-radius: 2px;
+    border-bottom-right-radius: 2px;
     border: none;
     padding: 5px;
+    background-color: #1c1c1c;
 }
 
 .pesquisarInput_lado {
     width: 45px;
     height: 40px;
-    background-color: white;
+    background-color: #1c1c1c;
     display: flex;
     justify-content: center;
     align-items: center;
-    border-top-right-radius: 2px;
-    border-bottom-right-radius: 2px;
+    border-top-left-radius: 2px;
+    border-bottom-left-radius: 2px;
 }
 
 .pesquisarInput_lado img {
@@ -270,6 +273,7 @@ header {
     display: flex;
     justify-content: center;
     align-items: center;
+    background-color: #1c1c1c;
 }
 
 .cards {
@@ -277,21 +281,24 @@ header {
     height: 100%;
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: flex-start;
     flex-wrap: wrap;
 }
 
-.card{
-    width: 400px;
-    height: 290px;
+.card {
+    width: 300px;
+    height: 170px;
     display: flex;
-    justify-content: space-between;
+    justify-content: left;
     align-items: center;
     flex-direction: column;
+    padding: 20px;
     margin: 10px;
-    transition: 0.5s;
-    border: 1px solid rgb(134, 134, 134);
-    transition: 0.5s;
+    border: 1px solid rgb(49, 49, 49);
+    border-radius: 10px;
+    background-color: #141414;
+    position: relative;
+    overflow: hidden;
 }
 
 .card:hover {
@@ -299,30 +306,26 @@ header {
 }
 
 .container_card {
-    width: 400px;
-    height: auto;
+    width: 100%;
+    height: 160px;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: flex-start;
+    flex-direction: column;
 }
 
 .escrita_card {
     width: 250px;
-    height: 200px;
+    height: 0;
     display: flex;
     justify-content: center;
     align-items: left;
     flex-direction: column;
-
-
 }
 
 .escrita_card h1 {
-    margin-top: 15px;
-    margin-left: 15px;
-    margin-bottom: 5px;
-    font-size: 20px;
-    color: #070707;
+    font-size: 15px;
+    color: rgb(221, 221, 221);
 }
 
 .escrita_card p {
@@ -335,10 +338,6 @@ header {
     overflow-wrap: break-word;
 }
 
-.container_card img{
-    width: 100px;
-}
-
 .container_card h2 {
     margin-left: 5px;
     font-size: 20px;
@@ -346,23 +345,53 @@ header {
     color: rgb(43, 43, 43);
 }
 
-.dificuldade_card{
-    margin-left: 10px;
-    display: flex;
-    align-items: center;
-}
-
-.dificuldade_card img {
-    width: 20px;
+.duracao_card {
+    width: 60px;
     height: 20px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin-bottom: 10px;
 }
 
-.foto_card {
-    width: 150px;
-    height: 200px;
+.duracao_card h2 {
+    font-size: 13px;
+}
+
+.duracao_card img {
+    width: 11px;
+}
+
+.dificuldade_card {
+    width: 100px;
+    height: 20px;
+    margin-top: 20px;
     display: flex;
     justify-content: center;
     align-items: center;
+    border-radius: 10px;
+    border: 1px solid rgb(122, 122, 122);
+}
+
+.dificuldade_card h2 {
+    font-size: 13px;
+    color: rgb(158, 158, 158);
+}
+
+.dificuldade_card img {
+    width: 13px;
+}
+
+.foto_card {
+    width: 100%;
+    height: 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.foto_card img {
+    width: 50px;
 }
 
 .links_card {
@@ -380,7 +409,7 @@ header {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #1B3DA6;;
+    background-color: #141414;
     transition: 0.5s;
 }
 
@@ -392,7 +421,7 @@ header {
     background-color: #1544d1;
 }
 
-.links_card a{
+.links_card a {
     width: 100%;
     height: 40px;
     display: flex;
@@ -408,4 +437,66 @@ header {
 
 .links_card a:hover {
     background-color: #1744ca;
+}
+
+.descricao {
+    position: absolute;
+    width: 300px;
+    height: 170px;
+    display: flex;
+    justify-content: space-between;
+    align-items: left;
+    opacity: 0;
+    pointer-events: none;
+    background-color: #141414;
+    flex-direction: column;
+    box-sizing: border-box;
+    transition: opacity 0.3s ease;
+    visibility: hidden;
+}
+
+.descricao h2 {
+    font-size: 15px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    color: rgb(221, 221, 221);
+}
+
+.descricao p {
+    font-size: 12px;
+    color: rgb(161, 161, 161);
+}
+
+.card:hover .descricao {
+    opacity: 1;
+    pointer-events: all;
+    visibility: visible;
+}
+
+.links-hover {
+
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.links-hover a, .links-hover button {
+    text-decoration: none;
+    width: 100%;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 13px;
+    background-color: #5a23a3;
+    color: white;
+}
+
+.links-hover a:hover,
+.links-hover button:hover {
+    background-color: #1544d1;
 }

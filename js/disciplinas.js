@@ -4,16 +4,42 @@ const disciplinas = [
         descricao: "Aprenda a utilizar um banco de dados, com todas as suas funções e lógicas!",
         link: "../Pagina_disciplina/Banco_modulo1/banco1.html",
         image: "../img/banco1.png",
-        dificuldade: "[Fácil]",
+        dificuldade: "Fácil",
         categoria: "back-end",
+        duracao: "20h"
     },
     {
         titulo: "Curso grátis de JAVA",
         descricao: "Aprenda a programar em Java!",
         link: "../Pagina_disciplina/Java_modulo1/java1.html",
         image: "../img/java1.png",
-        dificuldade: "[Fácil]",
+        dificuldade: "Fácil",
         categoria: "back-end"
+    },
+    {
+        titulo: "Ilustrator",
+        descricao: "Faça seus supers desenhos!!",
+        link: "../Pagina_disciplina/illustrator/illustrator.html",
+        image: "../img/illustrator.png",
+        dificuldade: "Fácil",
+        categoria: "front-end",
+    },
+    {
+        titulo: "Ilustrator",
+        descricao: "Faça seus supers desenhos!!",
+        link: "../Pagina_disciplina/illustrator/illustrator.html",
+        image: "../img/illustrator.png",
+        dificuldade: "[Fácil]",
+        categoria: "front-end",
+
+    },
+    {
+        titulo: "Ilustrator",
+        descricao: "Faça seus supers desenhos!!",
+        link: "../Pagina_disciplina/illustrator/illustrator.html",
+        image: "../img/illustrator.png",
+        dificuldade: "[Fácil]",
+        categoria: "front-end",
     },
     {
         titulo: "Ilustrator",
@@ -57,27 +83,45 @@ const verDisciplinas = (disciplinas) => {
 
     disciplinas.forEach(e => {
         cardContainer.innerHTML += `
-            <div class="card" data-id="${e.titulo}">
-                <div class="container_card">
-                    <div class="escrita_card">
-                        <h1>${e.titulo}</h1>
-                        <p>${e.descricao}</p>
-                        <div class="dificuldade_card">
-                            <img src="../img/difficult.png" alt="">
-                            <h2>${e.dificuldade}</h2>
-                        </div>
-                    </div>
-                    <div class="foto_card">
-                        <img src="${e.image}" alt="">
-                    </div>
-                </div>
-                <div class="links_card">
-                    <button class="btn-favoritar" data-titulo="${e.titulo}"><img src="../img/curtir.png" alt=""></button>
-                    <a href="#" class="btn-ver-mais" data-link="${e.link}">Veja mais</a>
-                
-                </div>
-
+    <div class="card" data-id="${e.titulo}">
+        <div class="container_card">
+            <div class="foto_card">
+                <img src="${e.image}" alt="">
+                <button class="btn-favoritar" data-titulo="${e.titulo}">
+                    <img src="../img/curtir.png" alt="">
+                </button>
             </div>
+            <div class="duracao_card">
+                <img src="../img/duracao.png" alt="">
+                <h2>${e.duracao}</h2>
+            </div>
+            <div class="escrita_card">
+                <h1>${e.titulo}</h1>
+            </div>
+            <div class="dificuldade_card">
+                <img src="../img/difficult.png" alt="">
+                <h2>${e.dificuldade}</h2>
+            </div>
+        </div>
+
+        
+
+        <div class="descricao">
+            <div class="foto_card">
+                <img src="${e.image}" alt="">
+                <button class="btn-favoritar" data-titulo="${e.titulo}">
+                <img src="../img/curtir.png" alt="">
+            </button>
+            </div>
+            <h2>${e.titulo}</h2>
+            <p>${e.descricao}</p>
+            <div class="links-hover">
+                <a href="#" class="btn-ver-mais" data-link="${e.link}">Veja mais</a>
+            </div>
+        </div>
+    </div>
+
+
         `;
     });
 
