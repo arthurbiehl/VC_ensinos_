@@ -296,7 +296,7 @@ header {
     margin: 10px;
     border: 1px solid rgb(49, 49, 49);
     border-radius: 10px;
-    background-color: #141414;
+    background-color: #202020;
     position: relative;
     overflow: hidden;
 }
@@ -324,7 +324,7 @@ header {
 }
 
 .escrita_card h1 {
-    font-size: 15px;
+    font-size: 17px;
     color: rgb(221, 221, 221);
 }
 
@@ -356,6 +356,7 @@ header {
 
 .duracao_card h2 {
     font-size: 13px;
+    color: rgb(109, 109, 109);
 }
 
 .duracao_card img {
@@ -403,13 +404,13 @@ header {
 }
 
 .btn-favoritar {
-    width: 60px;
+    width: 50px;
     height: 40px;
     border: none;
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #141414;
+    background-color: #202020;
     transition: 0.5s;
 }
 
@@ -418,7 +419,8 @@ header {
 }
 
 .btn-favoritar:hover {
-    background-color: #1544d1;
+    border-radius: 360px;
+    background-color: rgba(255, 255, 32, 0.507);
 }
 
 .links_card a {
@@ -448,7 +450,7 @@ header {
     align-items: left;
     opacity: 0;
     pointer-events: none;
-    background-color: #141414;
+    background-color: #202020;
     flex-direction: column;
     box-sizing: border-box;
     transition: opacity 0.3s ease;

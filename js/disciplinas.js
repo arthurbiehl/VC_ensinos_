@@ -87,9 +87,6 @@ const verDisciplinas = (disciplinas) => {
         <div class="container_card">
             <div class="foto_card">
                 <img src="${e.image}" alt="">
-                <button class="btn-favoritar" data-titulo="${e.titulo}">
-                    <img src="../img/curtir.png" alt="">
-                </button>
             </div>
             <div class="duracao_card">
                 <img src="../img/duracao.png" alt="">
