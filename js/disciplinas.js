@@ -16,12 +16,12 @@ const disciplinas = [
         categoria: "back-end"
     },
     {
-        titulo: "Computacao Grafica",
+        titulo: "Ilustrator",
         descricao: "Faça seus supers desenhos!!",
-        link: "../Pagina_disciplina/Computacao_modulo1/computacao1.html",
-        image: "../img/computacao1.png",
+        link: "../Pagina_disciplina/illustrator/illustrator.html",
+        image: "../img/illustrator.png",
         dificuldade: "[Fácil]",
-        categoria: "front-end"
+        categoria: "front-end",
     },
 ];
 

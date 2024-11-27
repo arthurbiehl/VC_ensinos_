@@ -29,7 +29,7 @@ const caixas = [
 const cursoNome = [
 
     {
-        nome_curso: "Computação 1",
+        nome_curso: "Illustrator",
     }
 
 
