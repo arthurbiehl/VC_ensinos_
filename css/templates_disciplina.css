@@ -14,7 +14,7 @@ header {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color:  #481658;
+    background-color:  #141414;
 }
 
 span {
@@ -41,10 +41,11 @@ span {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color:  #481658;
-    border: 1px solid white;
+    background-color:  #141414;
+    border: 1px solid #8136e3;
     color: white;
     font-weight: 900;
+    font-size: 13px;
 }
 
 .header_compartilhe img {
@@ -65,12 +66,12 @@ span {
 }
 
 .escrita_header_curso img {
-    width: 90px;
+    width: 60px;
     height: 50px;
 }
 
 .links_header_curso h2 {
-    font-size: 18px;
+    font-size: 13px;
     color: white;
     font-weight: 500;
 }
@@ -81,6 +82,7 @@ span {
     width: 100%;
     display: flex;
     height: 100vh;
+    
 }
 
 /* cabecario */
@@ -92,9 +94,6 @@ span {
     align-items: center;
     flex-direction: column;
     box-shadow: 0px 0px 1px black;
-    z-index: 1;
-
-
 }
 
 .escrita_topicos {
@@ -107,6 +106,7 @@ span {
     color: rgb(0, 0, 0);
     box-shadow: 0px 0px 1px black;
     z-index: 1;
+    background-color: #4c1e5c;;
 }
 
 .escrita_topicos img {
@@ -118,6 +118,7 @@ span {
     margin-left: 15px;
     font-size: 20px;
     font-weight: bold;
+    color: white;
 }
 
 .topicos .escrita_topicos p {
@@ -207,7 +208,7 @@ span {
     justify-content: flex-start;
     align-items: center;
     flex-direction: column;
-    background: #fff;
+    background-color: #1c1c1c;
 }
 
 .conteudo {
@@ -228,6 +229,17 @@ span {
     margin: 20px;
 }
 
+.conteudo h1 {
+    font-size: 30px;
+    color: rgb(238, 238, 238);
+    font-weight: bold;
+}
+
+.conteudo p {
+    font-size: 15px;
+    color: rgb(172, 172, 172);
+}
+
 .container_conteudo {
     width: 900px;
     height: auto;
@@ -242,6 +254,7 @@ span {
     font-size: 35px;
     font-weight: 500;
     margin: 10px;
+    color: white;
 }
 
 .container_conteudo p {
@@ -251,6 +264,7 @@ span {
     width: 90%;
     height: auto;
     text-align: left;
+    color: rgb(170, 170, 170);
 }
 
 .conteudo_video {
