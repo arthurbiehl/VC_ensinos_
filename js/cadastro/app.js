@@ -24,13 +24,18 @@ loginForm.addEventListener("submit", (e) => {
   const password = document.getElementById("password").value;
 
   signInWithEmailAndPassword(auth, email, password)
-    .then((userCredential) => {
-      // Login bem-sucedido
-      console.log("Usuário logado:", userCredential.user);
-      // Redirecionar para a página principal ou dashboard
-      window.location.href = "dashboard.html";
-    })
-    .catch((error) => {
-      console.error("Erro ao fazer login:", error.message);
-    });
+  .then((userCredential) => {
+    // Login bem-sucedido
+    console.log("Usuário logado:", userCredential.user);
+
+    // Salvar o e-mail do usuário ou ID no localStorage
+    localStorage.setItem("loggedInUser", userCredential.user.email); // ou userCredential.user.uid
+
+    // Redirecionar para a página principal ou dashboard
+    window.location.href = "../pages/index.html";
+  })
+  .catch((error) => {
+    console.error("Erro ao fazer login:", error.message);
+  });
+
 });

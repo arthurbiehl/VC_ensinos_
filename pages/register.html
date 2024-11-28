@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Cadastro</title>
+  <script type="module" src="https://www.gstatic.com/firebasejs/11.0.2/firebase-app.js"></script>
+  <script type="module" src="https://www.gstatic.com/firebasejs/11.0.2/firebase-auth.js"></script>
+ 
+</head>
+<body>
+  <div class="login-container">
+    <h2>Cadastro</h2>
+    <form id="register-form">
+      <label for="email">Email:</label>
+      <input type="email" id="email" required>
+      <label for="password">Senha:</label>
+      <input type="password" id="password" required>
+      <button type="submit">Cadastrar</button>
+    </form>
+    <p>Já tem uma conta? <a href="../pages/login.html">Login</a></p>
+  </div>
+
+  <script type="module" src="../js/cadastro/register.js"></script>
+</body>
+</html>

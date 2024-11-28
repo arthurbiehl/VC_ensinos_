@@ -23,14 +23,16 @@
                     <input type="text" id="pesquisarInput" placeholder=" Escreva aqui sua busca..!">
                 </div>
                 <div class="acoes_disciplinas">
-                    <div id="cadastro"></div>
-                    <button id="painelButton">Painel</button>
+                    <!-- Botões de cadastro, painel e logout -->
+                    <button id="cadastre-se" style="display: none;">Cadastre-se</button>
+                    <button id="painelButton" style="display: none;">Painel</button>
+                    <button id="logout-button" style="display: none;">Logout</button>
                 </div>
             </div>
         </div>
     </header>
 
-    <!-- Conteudo -->
+    <!-- Conteúdo -->
     <div id="disciplinas">
         <div class="container_disciplinas">
 
@@ -53,19 +55,21 @@
             <div class="linha_grande"></div>
 
         </div>
-
-
     </div>
 
     <!-- Cards -->
-
     <div class="cards_all">
         <div class="cards"></div>
     </div>
+    <div id="popup" class="popup">
+        <p id="popup-message"></p>
+        <button id="popup-close">Fechar</button>
+    </div>
 
-
-    <script src="../js/disciplinas.js"></script>
+    <!-- Firebase e Scripts -->
+    <script type="module" src="../js/cadastro/dashboard.js"></script>
     <script src="../js/index.js"></script>
+    <script src="../js/disciplinas.js"></script>
 
 </body>
 

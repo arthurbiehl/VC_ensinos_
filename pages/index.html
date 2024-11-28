@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 
 <head>
   <meta charset="UTF-8">
@@ -16,16 +16,15 @@
     <div class="container_header_disciplinas">
       <div class="links_disciplinas">
         <a href="../pages/index.html"><img src="../img/logoLongaBranca.png" alt=""></a>
-        <a href="../pages/disciplinas.html">Explorar</a>
-        <a href="">Quem somos?</a>
       </div>
       <div class="acoes_disciplinas">
-        <div id="cadastro"></div>
-        <button id="painelButton">Painel</button>
+        <!-- Botões de cadastro, painel e logout -->
+        <button id="cadastre-se" style="display: none;">Cadastre-se</button>
+        <button id="painelButton" style="display: none;">Painel</button>
+        <button id="logout-button" style="display: none;">Logout</button>
       </div>
     </div>
   </header>
-
 
   <div class="disciplinas_about">
     <div class="container_about">
@@ -41,7 +40,8 @@
     </div>
   </div>
 
-  <script src="../js/index.js"></script>
+  <!-- Certifique-se de que o script está sendo carregado após o conteúdo da página -->
+  <script type="module" src="../js/cadastro/dashboard.js"></script>
 
 </body>
 
