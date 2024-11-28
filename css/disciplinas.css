@@ -86,7 +86,7 @@ header {
     font-weight: 800;
 }
 
-#painelButton {
+#painelButton, #logout-button, #cadastre-se {
     width: 70px;
     height: 33px;
     font-size: 13px;
@@ -100,6 +100,8 @@ header {
     color: white;
     font-weight: 800;
 }
+
+
 
 .acoes_disciplinas {
     width: 150px;
@@ -226,6 +228,7 @@ header {
     border: none;
     padding: 5px;
     background-color: #1c1c1c;
+    color: white;
 }
 
 .pesquisarInput_lado {

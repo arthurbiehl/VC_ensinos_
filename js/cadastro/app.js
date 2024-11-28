@@ -16,26 +16,27 @@ const firebaseConfig = {
 const app = initializeApp(firebaseConfig);
 const auth = getAuth(app);
 
-// Função de login
 const loginForm = document.getElementById("login-form");
 loginForm.addEventListener("submit", (e) => {
   e.preventDefault();
+  
   const email = document.getElementById("email").value;
   const password = document.getElementById("password").value;
 
+  const auth = getAuth();
   signInWithEmailAndPassword(auth, email, password)
   .then((userCredential) => {
-    // Login bem-sucedido
     console.log("Usuário logado:", userCredential.user);
-
-    // Salvar o e-mail do usuário ou ID no localStorage
-    localStorage.setItem("loggedInUser", userCredential.user.email); // ou userCredential.user.uid
-
-    // Redirecionar para a página principal ou dashboard
+    
+    // Salva o email do usuário no localStorage ou use o UID
+    localStorage.setItem("loggedInUser", userCredential.user.email);
+    
+    // Redireciona para a página principal
     window.location.href = "../pages/index.html";
   })
   .catch((error) => {
     console.error("Erro ao fazer login:", error.message);
+    alert("Erro ao tentar fazer login. Verifique seu email e senha.");
   });
-
 });
+
