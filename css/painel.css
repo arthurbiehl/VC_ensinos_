@@ -29,7 +29,7 @@ span {
   flex-direction: column;
 }
 
-.bem_vindo {
+.user-panel {
   width: 900px;
   height: 60px;
   background-color: #141414;
@@ -40,13 +40,13 @@ span {
   border-radius: 10px;
 }
 
-.bem_vindo h1 {
+.user-panel h1 {
   font-size: 17px;
   color: white;
   margin-left: 20px;
 }
 
-.bem_vindo img {
+.user-panel img {
   width: 45px;
   margin-left: 10px;
 }

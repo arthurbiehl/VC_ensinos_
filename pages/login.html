@@ -4,6 +4,18 @@
   <title>Login</title>
   <script type="module" src="https://www.gstatic.com/firebasejs/11.0.2/firebase-app.js"></script>
   <script type="module" src="https://www.gstatic.com/firebasejs/11.0.2/firebase-auth.js"></script>
+  <style>
+    .message {
+      font-size: 16px;
+      margin-top: 10px;
+    }
+    .error {
+      color: red;
+    }
+    .success {
+      color: green;
+    }
+  </style>
 </head>
 <body>
   <div class="login-container">
@@ -16,7 +28,12 @@
       <button type="submit">Login</button>
     </form>
     <p>Não tem uma conta? <a href="register.html">Cadastre-se</a></p>
+
+    <!-- Mensagens de erro e sucesso -->
+    <div id="error-message" class="message error"></div>
+    <div id="success-message" class="message success"></div>
   </div>
+  
   <script type="module" src="../js/cadastro/app.js"></script>
 </body>
 </html>

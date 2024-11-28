@@ -1,3 +1,49 @@
+// Importar os módulos necessários
+import { initializeApp } from "https://www.gstatic.com/firebasejs/11.0.2/firebase-app.js";
+import { getAuth, onAuthStateChanged, signOut } from "https://www.gstatic.com/firebasejs/11.0.2/firebase-auth.js";
+
+// Configuração do Firebase
+const firebaseConfig = {
+    apiKey: "AIzaSyDn4IoMfe7U97yVnHvMlP7xDmDzxFDpUlg",
+    authDomain: "vcensinos.firebaseapp.com",
+    projectId: "vcensinos",
+    storageBucket: "vcensinos.firebasestorage.app",
+    messagingSenderId: "1083943850886",
+    appId: "1:1083943850886:web:a56dd998f5652924695207"
+};
+
+// Inicializar o Firebase
+const app = initializeApp(firebaseConfig);
+const auth = getAuth(app);
+
+// Verificar o estado de autenticação do usuário
+let usuarioLogado = null;
+
+onAuthStateChanged(auth, (user) => {
+    if (user) {
+        console.log("Usuário logado:", user.email);
+        usuarioLogado = user; // Armazenar o usuário logado
+    } else {
+        usuarioLogado = null; // Nenhum usuário logado
+    }
+});
+
+// Função de logout
+const logoutButton = document.getElementById("logout-btn");
+if (logoutButton) {
+    logoutButton.addEventListener("click", () => {
+        signOut(auth)
+            .then(() => {
+                console.log("Usuário deslogado");
+                window.location.href = "../pages/login.html";
+            })
+            .catch((error) => {
+                console.error("Erro ao deslogar:", error.message);
+            });
+    });
+}
+
+// Definir as disciplinas
 const disciplinas = [
     {
         titulo: "Curso grátis de Banco de Dados",
@@ -23,56 +69,17 @@ const disciplinas = [
         image: "../img/illustrator.png",
         dificuldade: "Fácil",
         categoria: "front-end",
-    },
-    {
-        titulo: "Ilustrator",
-        descricao: "Faça seus supers desenhos!!",
-        link: "../Pagina_disciplina/illustrator/illustrator.html",
-        image: "../img/illustrator.png",
-        dificuldade: "[Fácil]",
-        categoria: "front-end",
-
-    },
-    {
-        titulo: "Ilustrator",
-        descricao: "Faça seus supers desenhos!!",
-        link: "../Pagina_disciplina/illustrator/illustrator.html",
-        image: "../img/illustrator.png",
-        dificuldade: "[Fácil]",
-        categoria: "front-end",
-    },
-    {
-        titulo: "Ilustrator",
-        descricao: "Faça seus supers desenhos!!",
-        link: "../Pagina_disciplina/illustrator/illustrator.html",
-        image: "../img/illustrator.png",
-        dificuldade: "[Fácil]",
-        categoria: "front-end",
-    },
+    }
 ];
 
 const cardContainer = document.querySelector(".cards");
-const pesquisarInput = document.querySelector("#pesquisarInput");
-const filtroCategorias = document.querySelector(".filtro_categorias");
-const painelButton = document.getElementById("painelButton");
 
-painelButton.addEventListener("click", () => {
-    const loggedInUser = localStorage.getItem("loggedInUser");
-    if (!loggedInUser) {
-        alert("Você precisa estar logado para acessar o Painel de Usuário!");
-        window.location.href = "../pages/cadastro.html";
-    } else {
-        window.location.href = "../pages/painel_usuario.html";
-    }
-});
-
-let categoriaAtual = "todas";
-
+// Função para exibir as disciplinas
 const verDisciplinas = (disciplinas) => {
     cardContainer.innerHTML = "";
+
     if (disciplinas.length === 0) {
-        cardContainer.innerHTML =
-            `
+        cardContainer.innerHTML = `
         <div class="naoEncontrado">
             <img src="../img/naoEncontrado.png" alt="">
             <p>Nenhuma disciplina encontrada.</p>
@@ -83,135 +90,85 @@ const verDisciplinas = (disciplinas) => {
 
     disciplinas.forEach(e => {
         cardContainer.innerHTML += `
-    <div class="card" data-id="${e.titulo}">
-        <div class="container_card">
-            <div class="foto_card">
-                <img src="${e.image}" alt="">
+        <div class="card" data-id="${e.titulo}">
+            <div class="container_card">
+                <div class="foto_card">
+                    <img src="${e.image}" alt="">
+                </div>
+                <div class="duracao_card">
+                    <img src="../img/duracao.png" alt="">
+                    <h2>${e.duracao}</h2>
+                </div>
+                <div class="escrita_card">
+                    <h1>${e.titulo}</h1>
+                </div>
+                <div class="dificuldade_card">
+                    <img src="../img/difficult.png" alt="">
+                    <h2>${e.dificuldade}</h2>
+                </div>
             </div>
-            <div class="duracao_card">
-                <img src="../img/duracao.png" alt="">
-                <h2>${e.duracao}</h2>
-            </div>
-            <div class="escrita_card">
-                <h1>${e.titulo}</h1>
-            </div>
-            <div class="dificuldade_card">
-                <img src="../img/difficult.png" alt="">
-                <h2>${e.dificuldade}</h2>
-            </div>
-        </div>
-
-        
-
-        <div class="descricao">
-            <div class="foto_card">
-                <img src="${e.image}" alt="">
-                <button class="btn-favoritar" data-titulo="${e.titulo}">
-                <img src="../img/curtir.png" alt="">
-            </button>
-            </div>
-            <h2>${e.titulo}</h2>
-            <p>${e.descricao}</p>
-            <div class="links-hover">
-                <a href="#" class="btn-ver-mais" data-link="${e.link}">Veja mais</a>
+            <div class="descricao">
+                <div class="foto_card">
+                    <img src="${e.image}" alt="">
+                    <button class="btn-favoritar" data-titulo="${e.titulo}">
+                        <img src="../img/curtir.png" alt="">
+                    </button>
+                </div>
+                <h2>${e.titulo}</h2>
+                <p>${e.descricao}</p>
+                <div class="links-hover">
+                    <a href="#" class="btn-ver-mais" data-curso="${e.titulo}">Veja mais</a>
+                </div>
             </div>
         </div>
-    </div>
-
-
         `;
     });
 
-    // Adiciona evento de clique aos botões "Veja mais"
-    const links = document.querySelectorAll(".btn-ver-mais");
-    links.forEach(link => {
-        link.addEventListener("click", (e) => {
-            e.preventDefault();
-            verificarAcesso(link.dataset.link);
+    // Adicionar evento de clique no botão "Veja mais"
+    const verMaisBtns = document.querySelectorAll(".btn-ver-mais");
+
+    verMaisBtns.forEach(btn => {
+        btn.addEventListener("click", (e) => {
+            e.preventDefault(); // Impede a navegação padrão
+
+            if (usuarioLogado) {
+                const cursoId = e.target.getAttribute("data-curso");
+                console.log(`Acessando o curso de ${cursoId}`);
+
+                // Redirecionar para a página do curso
+                const curso = disciplinas.find(d => d.titulo === cursoId);
+                if (curso) {
+                    window.location.href = curso.link; // Redireciona para o link do curso
+                }
+            } else {
+                // Se não estiver logado, redireciona para a página de login
+                window.location.href = "../pages/login.html";
+            }
         });
     });
 };
 
-const verificarAcesso = (link) => {
-    const loggedInUser = localStorage.getItem("loggedInUser");
-    if (!loggedInUser) {
-        // Caso o usuário não esteja logado
-        alert("Você precisa estar logado para acessar este curso!");
-    } else {
-        // Caso o usuário esteja logado, permite o acesso ao curso
-        window.location.href = link;
-    }
-};
+// Exibir as disciplinas
+verDisciplinas(disciplinas);
 
-const filtrarDisciplinas = () => {
-    const termoBusca = pesquisarInput.value.toLowerCase();
-    const disciplinasFiltradas = disciplinas.filter(disciplina => {
-        const condicaoBusca = disciplina.titulo.toLowerCase().includes(termoBusca);
-        const condicaoCategoria = categoriaAtual === "todas" || disciplina.categoria === categoriaAtual;
-        return condicaoBusca && condicaoCategoria;
-    });
-    verDisciplinas(disciplinasFiltradas);
-};
-
-pesquisarInput.addEventListener("keyup", filtrarDisciplinas);
-
+// Filtragem por categoria
+const filtroCategorias = document.querySelector(".filtro_categorias");
 filtroCategorias.addEventListener("click", (e) => {
     if (e.target.tagName === "BUTTON") {
-        categoriaAtual = e.target.dataset.categoria;
-        filtrarDisciplinas();
+        const categoriaAtual = e.target.dataset.categoria;
+        const disciplinasFiltradas = categoriaAtual === "todas" ?
+            disciplinas :
+            disciplinas.filter(disciplina => disciplina.categoria === categoriaAtual);
+        verDisciplinas(disciplinasFiltradas);
     }
 });
 
-window.addEventListener("load", filtrarDisciplinas);
-
-// funcao de favoritar os cursos
-
-const getUsuarioFavoritos = () => {
-    const loggedInUser = localStorage.getItem("loggedInUser");
-    if (!loggedInUser) return [];
-    return JSON.parse(localStorage.getItem(`favoritos_${loggedInUser}`)) || [];
-};
-
-const salvarUsuarioFavoritos = (favoritos) => {
-    const loggedInUser = localStorage.getItem("loggedInUser");
-    if (loggedInUser) {
-        localStorage.setItem(`favoritos_${loggedInUser}`, JSON.stringify(favoritos));
-    }
-};
-
-let favoritos = getUsuarioFavoritos();
-
-document.addEventListener("click", (e) => {
-    if (e.target.classList.contains("btn-favoritar")) {
-        const titulo = e.target.dataset.titulo;
-        const disciplina = disciplinas.find(d => d.titulo === titulo);
-
-        if (favoritos.some(f => f.titulo === titulo)) {
-            favoritos = favoritos.filter(f => f.titulo !== titulo);
-            alert(`${titulo} foi removido dos favoritos.`);
-        } else {
-            favoritos.push(disciplina);
-            alert(`${titulo} foi adicionado aos favoritos!`);
-        }
-
-        salvarUsuarioFavoritos(favoritos);
-    }
+// Barra de pesquisa
+const pesquisarInput = document.querySelector("#pesquisarInput");
+pesquisarInput.addEventListener("keyup", () => {
+    const termoBusca = pesquisarInput.value.toLowerCase();
+    const disciplinasFiltradas = disciplinas.filter(disciplina => {
+        return disciplina.titulo.toLowerCase().includes(termoBusca);
+    });
+    verDisciplinas(disciplinasFiltradas);
 });
-
-// painel aparecer
-
-window.addEventListener("load", () => {
-    const loggedInUser = localStorage.getItem("loggedInUser");
-    const painelButton = document.getElementById("painel-btn");
-
-    if (loggedInUser) {
-        painelButton.style.display = "inline-block"; // Exibe o botão se logado
-    } else {
-        painelButton.style.display = "none"; // Esconde o botão se não logado
-    }
-});
-
-
-
-
-
