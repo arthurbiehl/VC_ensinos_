@@ -124,7 +124,7 @@ header {
 }
 
 .linha_grande {
-    width: 1200px;
+    width: 1100px;
     height: 1px;
     background-color: rgb(143, 143, 143);
     border-radius: 10px;
@@ -141,7 +141,7 @@ header {
 }
 
 .conteudo_disciplinas {
-    width: 1200px;
+    width: 1100px;
     height: 80px;
     display: flex;
     justify-content: space-between;
@@ -366,6 +366,13 @@ header {
     width: 11px;
 }
 
+.item_dificuldade {
+    width: 300px;
+    height: 20px;
+    display: flex;
+    justify-content: left;
+}
+
 .dificuldade_card {
     width: 100px;
     height: 20px;
@@ -375,6 +382,7 @@ header {
     align-items: center;
     border-radius: 10px;
     border: 1px solid rgb(122, 122, 122);
+    margin: 5px;
 }
 
 .dificuldade_card h2 {
@@ -479,7 +487,6 @@ header {
 }
 
 .links-hover {
-
     width: 100%;
     display: flex;
     justify-content: center;

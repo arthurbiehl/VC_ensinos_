@@ -28,6 +28,8 @@ onAuthStateChanged(auth, (user) => {
     }
 });
 
+
+
 // Função de logout
 const logoutButton = document.getElementById("logout-btn");
 if (logoutButton) {
@@ -102,10 +104,17 @@ const verDisciplinas = (disciplinas) => {
                 <div class="escrita_card">
                     <h1>${e.titulo}</h1>
                 </div>
-                <div class="dificuldade_card">
-                    <img src="../img/difficult.png" alt="">
-                    <h2>${e.dificuldade}</h2>
+                <div class="item_dificuldade">
+                    <div class="dificuldade_card">
+                        <img src="../img/difficult.png" alt="">
+                        <h2>${e.dificuldade}</h2>
+                    </div>
+                    <div class="dificuldade_card">
+                        <img src="../img/categoria.png" alt="">
+                        <h2>${e.categoria}</h2>
+                    </div>
                 </div>
+
             </div>
             <div class="descricao">
                 <div class="foto_card">
@@ -172,3 +181,7 @@ pesquisarInput.addEventListener("keyup", () => {
     });
     verDisciplinas(disciplinasFiltradas);
 });
+
+
+
+

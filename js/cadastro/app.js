@@ -59,6 +59,6 @@ loginForm.addEventListener("submit", (e) => {
       } else {
         errorMessage.textContent = "Erro ao tentar fazer login. Tente novamente.";
       }
-      errorMessage.style.color = "red"; // Mensagem de erro em vermelho
+      errorMessage.style.color = "#be0909"; // Mensagem de erro em vermelho
     });
 });
