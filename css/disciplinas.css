@@ -47,7 +47,7 @@ header {
 }
 
 #cadastro {
-    width: auto;
+    width: 400px;
     height: 60px;
     display: flex;
     justify-content: center;
@@ -55,7 +55,7 @@ header {
 }
 
 #cadastro a {
-    width: 70px;
+    width: auto;
     height: 25px;
     padding: 4px;
     font-size: 13px;
@@ -71,7 +71,7 @@ header {
 }
 
 #cadastro button {
-    width: 70px;
+    width: 100px;
     height: 33px;
     font-size: 13px;
     background-color: #8136e3;
@@ -103,7 +103,7 @@ header {
 
 
 .acoes_disciplinas {
-    width: 150px;
+    width: 200px;
     height: 50px;
     display: flex;
     justify-content: space-between;
