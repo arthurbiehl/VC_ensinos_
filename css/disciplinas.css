@@ -430,6 +430,7 @@ header {
 
 .btn-favoritar img {
     width: 25px;
+    height: 25px;
 }
 
 .btn-favoritar:hover {
