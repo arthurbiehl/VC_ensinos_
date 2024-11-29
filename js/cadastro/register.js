@@ -36,7 +36,7 @@ registerForm.addEventListener("submit", (e) => {
       }).then(() => {
         console.log("Nome de usuário atualizado:", nome);
         // Redirecionar para a página de login
-        window.location.href = "index.html";
+        window.location.href = "../pages/login.html";
       }).catch((error) => {
         console.error("Erro ao atualizar o nome de usuário:", error.message);
       });

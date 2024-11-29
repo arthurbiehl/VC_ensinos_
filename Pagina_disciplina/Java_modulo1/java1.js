@@ -3,7 +3,9 @@ const caixas = [
         nome: "Introdução",
         subitens: [
             { nome: "Como funciona?", titulo: "...", conteudo: "..." },
+            { nome: "o que é?", titulo: "...", conteudo: "..." },
             { nome: "o que é?", titulo: "...", conteudo: "..." }
+
         ]
     },
     { 
@@ -146,5 +148,26 @@ shareButton.addEventListener("click", () => {
 closeButton.addEventListener("click", () => {
     overlay.style.display = "none";
 });
+
+// Selecionar elementos
+// Selecionar elementos
+const toggleButton = document.getElementById("toggleTopicos");
+const topicosDiv = document.querySelector(".topicos");
+const toggleIcon = document.getElementById("toggleIcon");
+
+// Alternar visibilidade lateral
+toggleButton.addEventListener("click", () => {
+    topicosDiv.classList.toggle("minimized"); // Adiciona/remove a classe 'minimized'
+
+    // Alterna entre os ícones de menos/mais
+    if (topicosDiv.classList.contains("minimized")) {
+        toggleIcon.src = "../../img/maisIcon.png"; // Ícone para estado minimizado
+    } else {
+        toggleIcon.src = "../../img/menosIcon.png"; // Ícone para estado ampliado
+    }
+});
+
+
+
 
 
