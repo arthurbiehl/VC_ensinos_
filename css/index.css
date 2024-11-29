@@ -1,6 +1,5 @@
-
-
 @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=PT+Mono&family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Rethink+Sans:ital,wght@0,400..800;1,400..800&display=swap');
+
 * {
     margin: 0;
     padding: 0;
@@ -17,7 +16,7 @@
     background-color: #1c1c1c;
 }
 
-.linha  {
+.linha {
     width: 100%;
     height: 1px;
     background-color: rgb(88, 88, 88);
@@ -56,7 +55,7 @@
 .caixa_dilema {
     width: 330px;
     height: 300px;
-    background-color:  #8136e3;
+    background-color: #8136e3;
     margin: 30px;
     box-shadow: 10px 10px 0px #4c1494;
     display: flex;
@@ -65,7 +64,7 @@
     flex-direction: column;
 }
 
-.caixa_dilema h2{
+.caixa_dilema h2 {
     color: white;
     font-size: 30px;
 }
@@ -78,7 +77,7 @@
 
 .cursos_exibir {
     width: 100%;
-    height: 500px;
+    height: 400px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -89,7 +88,7 @@
     height: 100%;
     display: flex;
     justify-content: flex-start;
-    align-items:left;
+    align-items: left;
     flex-direction: column;
 }
 
@@ -130,3 +129,76 @@
     flex-wrap: wrap;
 }
 
+/* Quem somos e chame nos */
+
+
+.quem_somos {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.tit {
+    width: 100%;
+    margin-top: 50px;
+    height: 40px;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    text-decoration: underline 2px #8136e3;
+}
+
+.tit h1 {
+    color: rgb(221, 221, 221);
+}
+
+.container {
+    display: flex;
+    width: 1100px;
+    height: 400px;
+    margin-bottom: 50px;
+    justify-content: center;
+    align-items: center;
+    gap: 100px;
+}
+
+.texto {
+    width: 600px;
+    height: 350px;
+    text-align: justify;
+}
+
+h2 {
+    font-size: 17pt;
+    color: #8136e3;
+}
+
+p {
+    font-size: 13px;
+    color: rgb(219, 219, 219);
+}
+
+.container img {
+    width: 400px;
+    height: 350px;
+}
+
+.resp {
+    color: rgb(199, 199, 199);
+}
+
+.icone {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    color: #9349f5;
+
+}
+
+.icone img {
+    margin-right: 5px;
+    width: 25px;
+    height: 25px;
+}

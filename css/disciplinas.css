@@ -70,25 +70,10 @@ header {
     font-weight: 900;
 }
 
-#cadastro button {
-    width: 100px;
-    height: 33px;
-    font-size: 13px;
-    background-color: #8136e3;
-    text-decoration: none;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border: none;
-    border-radius: 2px;
-    color: white;
-    font-weight: 800;
-}
-
 #painelButton, #logout-button, #cadastre-se {
-    width: 70px;
+    width: 75px;
     height: 33px;
-    font-size: 13px;
+    font-size: 12px;
     background-color: #8136e3;
     text-decoration: none;
     display: flex;
@@ -97,13 +82,13 @@ header {
     border: none;
     border-radius: 2px;
     color: white;
-    font-weight: 800;
+    font-weight: 500;
 }
 
 
 
 .acoes_disciplinas {
-    width: 200px;
+    width: 160px;
     height: 50px;
     display: flex;
     justify-content: space-between;
