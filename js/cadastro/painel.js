@@ -1,11 +1,9 @@
-// Obtém o e-mail do usuário logado
-const email = localStorage.getItem("loggedInUser");
-const userEmailElement = document.getElementById("user-email");
 
-if (email) {
-  userEmailElement.textContent = `${email}`;
+const userName = localStorage.getItem("loggedInUserName");
+const userNameElement = document.getElementById("user-name");
+
+if (userName) {
+  userNameElement.textContent = `${userName}`;
 } else {
-  userEmailElement.textContent = "Nenhum usuário logado.";
+  userNameElement.textContent = "Nenhum usuário logado.";
 }
-
-

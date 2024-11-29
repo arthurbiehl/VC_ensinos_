@@ -16,10 +16,10 @@ const firebaseConfig = {
 const app = initializeApp(firebaseConfig);
 const auth = getAuth(app);
 
-// Obter os elementos do formulário de login e mensagens de erro
+// Obter os elementos do formulário de login e mensagens
 const loginForm = document.getElementById("login-form");
-const errorMessage = document.getElementById("error-message"); // Elemento para mostrar a mensagem de erro
-const successMessage = document.getElementById("success-message"); // Elemento para mostrar a mensagem de sucesso
+const errorMessage = document.getElementById("error-message"); // Para mensagens de erro
+const successMessage = document.getElementById("success-message"); // Para mensagens de sucesso
 
 loginForm.addEventListener("submit", (e) => {
   e.preventDefault();
@@ -31,18 +31,22 @@ loginForm.addEventListener("submit", (e) => {
   errorMessage.textContent = "";
   successMessage.textContent = "";
 
-  const auth = getAuth();
   signInWithEmailAndPassword(auth, email, password)
     .then((userCredential) => {
-      console.log("Usuário logado:", userCredential.user);
+      const user = userCredential.user;
+
+      // Recupera o nome do usuário (displayName)
+      const userName = user.displayName || "Usuário"; // Caso não tenha um displayName configurado
       
-      // Exibe mensagem de sucesso
-      successMessage.textContent = "Login bem-sucedido! Redirecionando...";
+      console.log("Usuário logado:", userName);
+
+      // Exibe mensagem de sucesso com o nome do usuário
+      successMessage.textContent = `Bem-vindo, ${userName}! Redirecionando...`;
       successMessage.style.color = "green"; // Mensagem de sucesso em verde
 
-      // Salva o email do usuário no localStorage
-      localStorage.setItem("loggedInUser", userCredential.user.email);
-      
+      // Salva o nome do usuário no localStorage (opcional)
+      localStorage.setItem("loggedInUserName", userName);
+
       // Redireciona para a página principal após 2 segundos
       setTimeout(() => {
         window.location.href = "../pages/index.html";
