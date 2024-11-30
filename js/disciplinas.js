@@ -51,7 +51,7 @@ const disciplinas = [
         titulo: "Curso grátis de Banco de Dados",
         descricao: "Aprenda a utilizar um banco de dados, com todas as suas funções e lógicas!",
         link: "../Pagina_disciplina/Banco_modulo1/banco1.html",
-        image: "../img/banco1.png",
+        image: "../img/emblemas_cards/banco.png",
         dificuldade: "Fácil",
         categoria: "back-end",
         duracao: "20h"
@@ -63,6 +63,14 @@ const disciplinas = [
         image: "../img/java1.png",
         dificuldade: "Fácil",
         categoria: "back-end"
+    },
+    {
+        titulo: "Ilustrator",
+        descricao: "Faça seus supers desenhos!!",
+        link: "../Pagina_disciplina/illustrator/illustrator.html",
+        image: "../img/illustrator.png",
+        dificuldade: "Fácil",
+        categoria: "front-end",
     },
     {
         titulo: "Ilustrator",
