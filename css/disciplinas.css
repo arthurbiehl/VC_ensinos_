@@ -33,7 +33,7 @@ header {
 }
 
 .links_disciplinas {
-    width: 350px;
+    width: 400px;
     height: auto;
     display: flex;
     justify-content: space-between;
