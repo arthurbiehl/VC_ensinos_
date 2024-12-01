@@ -80,8 +80,8 @@
 }
 
 .caixa_dilema {
-    width: 330px;
-    height: 300px;
+    width: 250px;
+    height: 280px;
     background-color: #8136e3;
     margin: 30px;
     box-shadow: 10px 10px 0px #4c1494;
@@ -159,7 +159,7 @@
 /* Quem somos e chame nos */
 
 
-.quem_somos {
+#quem_somos {
     width: 100%;
     height: auto;
     display: flex;
@@ -168,7 +168,7 @@
 }
 
 .tit {
-    width: 1100px;
+    width: 1000px;
     margin-top: 50px;
     height: 40px;
     display: flex;
@@ -179,11 +179,12 @@
 
 .tit h1 {
     color: rgb(221, 221, 221);
+    font-size: 25px;
 }
 
 .container {
     display: flex;
-    width: 1100px;
+    width: 1000px;
     height: 400px;
     justify-content: center;
     align-items: center;
@@ -197,7 +198,7 @@
 }
 
 h2 {
-    font-size: 17pt;
+    font-size: 17px;
     color: #8136e3;
 }
 
@@ -244,7 +245,7 @@ footer {
 }
 
 .container_footer {
-    width: 1400px;
+    width: 1000px;
     height: 100%;
     display: flex;
     justify-content: center;
@@ -344,7 +345,7 @@ footer {
 }
 
 .container_politicas {
-    width: 1400px;
+    width: 1000px;
     height: 100%;
     display: flex;
     justify-content: right;
