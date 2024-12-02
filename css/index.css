@@ -358,3 +358,86 @@ footer {
     text-decoration: none;
     font-weight: bold;
 }
+ @media (max-width: 900px){
+    .container_foto{
+        width: 800px;
+        height: auto;
+    }
+    .foto_index{
+        height: auto;
+    }
+    .tit{
+        width: 800px;
+    
+    }
+    .container{
+        width: 800px;
+        gap: 40px;
+    }
+    .container_exibir{
+        width: 780px;
+    }
+    .caixa_dilema{
+        width: 220px;
+        height: 280px;
+    }
+}
+@media (max-width: 450px){
+    .container_dilema{
+        display: flex;
+        flex-direction: column;
+        height: auto;
+    }
+    .caixa_dilema{     
+        width: 100%;
+        height: 250px;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+    .dilema{
+        width: 390px;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+    .container_exibir{
+        width: 370px;
+    }
+    #quem_somos{
+        flex-direction: column;
+        height: 700px;
+    }
+    .container{
+        flex-direction: column;
+        gap: 50px;
+    }
+    .tit{
+        margin-bottom: 65px;
+        width: 380px;
+        height: 100px;
+    }
+    .texto{
+        width: 370px;
+        
+    }
+    iframe{
+        width: 370px;
+        height: 370px;
+    }
+    #xiru{
+        width: 370px;
+    }
+
+    .container_exibir a {
+        width: 100%;
+        height: 100%;
+    }
+    .cursos_exibir {
+        width: 100%;
+        height: 800px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+}

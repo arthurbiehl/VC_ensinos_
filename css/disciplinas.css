@@ -1,12 +1,12 @@
-
 @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=PT+Mono&family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Rethink+Sans:ital,wght@0,400..800;1,400..800&display=swap');
+
 * {
     margin: 0;
     padding: 0;
     font-family: "Rethink Sans";
 }
 
-.linha_reta{
+.linha_reta {
     width: 1px;
     height: 100px;
     background-color: rgb(133, 133, 133);
@@ -78,7 +78,9 @@ header {
     font-weight: 900;
 }
 
-#painelButton, #logout-button, #cadastre-se {
+#painelButton,
+#logout-button,
+#cadastre-se {
     width: 75px;
     height: 33px;
     font-size: 12px;
@@ -491,7 +493,8 @@ header {
 
 }
 
-.links-hover a, .links-hover button {
+.links-hover a,
+.links-hover button {
     text-decoration: none;
     width: 100%;
     height: 30px;
@@ -508,4 +511,167 @@ header {
 .links-hover a:hover,
 .links-hover button:hover {
     background-color: #7230c7;
+}
+
+/* Responsivo */
+
+@media(max-width: 1000px) {
+    header {
+        width: 100%;
+        height: auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .container_header_disciplinas {
+        width: 700px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .pesquisar {
+        width: 500px;
+    }
+
+    .links_disciplinas img {
+        width: 50px;
+        height: 50px;
+    }
+
+    #cadastre-se, #painelButton, #logout-button {
+        width: 60px;
+    }
+
+    #pesquisarInput {
+        width: 200px;
+    }
+
+    #disciplinas {
+        width: 100%;
+    }
+
+    .container_disciplinas {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .conteudo_disciplinas {
+        width: 100%;
+        height: 200px;
+    }
+
+    .escrita_disciplinas {
+        padding: 10px;
+    }
+
+    .cabecario_disciplinas {
+        width: 100%;
+    }
+
+    .filtro_categorias button {
+        width: 80px;
+        font-size: 13px;
+    }
+
+    .linha_grande {
+        width: 100%;
+    }
+
+}
+
+@media (max-width: 420px) {
+
+    .linha_grande {
+        width: 100%;
+    }
+
+    header {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .links_disciplinas img {
+        width: 100px;
+    }
+
+    .container_header_disciplinas {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #disciplinas {
+        width: 100%;
+    }
+
+    .container_disciplinas {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .conteudo_disciplinas {
+        width: 100%;
+        height: 200px;
+        flex-direction: column;
+
+    }
+
+    .escrita_disciplinas {
+        width: 100px;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+        text-align: center;
+    }
+
+    .escrita_disciplinas p {
+        width: 200px;
+    }
+
+    .cabecario_disciplinas {
+        width: 100%;
+    }
+
+    .filtro_categorias button {
+        width: 80px;
+        font-size: 13px;
+    }
+
+    .pesquisar {
+        width: 100%;
+        flex-direction: column;
+    }
+
+    #pesquisarInput {
+        width: 250px;
+    }
+
+    .links_disciplinas {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .acoes_disciplinas {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #cadastre-se, #painelButton, #logout-button {
+        width: 70px;
+        height: 30px;
+        font-size: 11px;
+    }
 }
