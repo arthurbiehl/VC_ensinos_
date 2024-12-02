@@ -2,74 +2,73 @@ const caixas = [
     {
         nome: "Introdução",
         subitens: [
-            { nome: "Como funciona?", titulo: "...", conteudo: "..." },
-            { nome: "o que é?", titulo: "...", conteudo: "..." },
-            { nome: "o que é?", titulo: "...", conteudo: "..." }
-
+            { nome: "Como funciona?", titulo: "Como Funciona", conteudo: "Descrição sobre como funciona." },
+            { nome: "O que é?", titulo: "O que é?", conteudo: "Explicação do que é." }
         ]
     },
-    { 
+    {
         nome: "Video",
         subitens: [
-            { nome: "Conceitos Básicos", titulo: "Conteudo em video", conteudo:"Video explicativo", iframe: "https://www.youtube.com/embed/q3VlhfsrRjc?si=cNzIOZU4_Hvmt85y"}
+            {
+                nome: "Conceitos Básicos",
+                titulo: "Conteúdo em Vídeo",
+                conteudo: "Veja o vídeo explicativo:",
+                iframe: "https://www.youtube.com/embed/q3VlhfsrRjc?si=cNzIOZU4_Hvmt85y"
+            }
         ]
     },
     {
         nome: "Apostila",
         subitens: [
-            { nome: "Apostila completa", titulo: "", conteudo: "...", dowload: ""},
+            {
+                nome: "Apostila Completa",
+                titulo: "Apostila para Download",
+                conteudo: "Clique no botão para baixar a apostila.",
+                dowload: "apostila.pdf"
+            }
         ]
     },
     {
         nome: "Desafio",
         subitens: [
-            { nome: "Desadio final do modulo", titulo: "", conteudo: "..." },
+            {
+                nome: "Desafio Final",
+                titulo: "Resolva o Desafio",
+                conteudo: "Complete o formulário abaixo para finalizar o desafio:",
+                iframe: "https://docs.google.com/forms/d/e/1FAIpQLSfEXAMPLE12345/viewform"
+            }
         ]
     },
 ];
 
 const cursoNome = [
-
-    {
-        nome_curso: "Illustration",
-    }
-
-
+    { nome_curso: "Illustrator" }
 ];
 
 const elementos = document.querySelector(".elementos");
 const container = document.querySelector(".conteudo");
-const headerNome = document.querySelector(".links_header_curso")
+const headerNome = document.querySelector(".links_header_curso");
 
 const verCaixas = () => {
-    elementos.innerHTML = "";
-    caixas.forEach((e, index) => {
-        elementos.innerHTML += 
-        `
+    elementos.innerHTML = caixas.map((e, index) => `
         <div class="caixa_elemento">
             <div class="caixa_cor"></div>
             <button class="caixa_elemento" data-index="${index}">
                 ${e.nome}
                 <img src="../../img/maisIcon.png" alt="">
-
-
             </button>
         </div>
         <div class="subitems" id="subitems-${index}">
-            ${e.subitens.map((sub, subIndex) => 
-                `
+            ${e.subitens.map((sub, subIndex) => `
                 <div class="caixa_elemento_sub">
                     <img src="../../img/seta.png" alt="">
-                    <button class="caixa_elemento" 
-                        data-index="${index}" 
-                        data-subindex="${subIndex}">
+                    <button class="caixa_elemento" data-index="${index}" data-subindex="${subIndex}">
                         ${sub.nome}
                     </button>
                 </div>
-                `).join('')}
+            `).join('')}
         </div>
-        `;
-    });
+    `).join('');
 
     document.querySelectorAll(".caixa_elemento").forEach(button => {
         button.addEventListener("click", function () {
@@ -86,55 +85,39 @@ const verCaixas = () => {
     });
 };
 
-
-const verNome = () =>{
-    headerNome.innerHTML = "";
-    cursoNome.forEach((a) => {
-        headerNome.innerHTML += 
-        `
-        <h2> ${a.nome_curso}</h2>
-        `
-        
-    })
-}
-
-verNome()
+const verNome = () => {
+    headerNome.innerHTML = cursoNome.map(curso => `<h2>${curso.nome_curso}</h2>`).join('');
+};
 
 const mostrarConteudo = (index, subIndex) => {
     const item = caixas[index].subitens[subIndex];
 
-    if (!item.iframe) {
-        container.innerHTML = `
+    container.innerHTML = `
         <div class="conteudo">
             <div class="container_conteudo">
                 <h1>${item.titulo}</h1>
                 <p>${item.conteudo}</p>
-                <a href="${item.dowload}" download>
-            </div>
-
-        </div>
-        `;
-    } else {
-        container.innerHTML = `
-        <div class="conteudo">
-            <div class="container_conteudo">
-                <h1>${item.titulo}</h1>
-                <p>${item.conteudo}</p>
-                <div class="conteudo_video">
-                    <iframe src="${item.iframe}" frameborder="0"></iframe>
-                </div>
+                ${item.iframe ? `
+                    <div class="conteudo_video">
+                        <iframe src="${item.iframe}" frameborder="0" width="100%" height="600px" allowfullscreen></iframe>
+                    </div>
+                ` : ''}
+                ${item.dowload ? `
+                    <a href="${item.dowload}" download class="botao_download">Baixar Apostila</a>
+                ` : ''}
             </div>
         </div>
-        `;
-    }
+    `;
 };
 
+
 // Inicializa a interface
-window.addEventListener("load", verCaixas);
+window.addEventListener("load", () => {
+    verCaixas();
+    verNome();
+});
 
-
-// quadrado branco
-
+// Overlay Compartilhamento
 const overlay = document.getElementById("caixa_branca");
 const shareButton = document.querySelector(".header_compartilhe");
 const linkInput = document.getElementById("linkInput");
@@ -149,25 +132,12 @@ closeButton.addEventListener("click", () => {
     overlay.style.display = "none";
 });
 
-// Selecionar elementos
-// Selecionar elementos
+// Alternar tópicos laterais
 const toggleButton = document.getElementById("toggleTopicos");
 const topicosDiv = document.querySelector(".topicos");
 const toggleIcon = document.getElementById("toggleIcon");
 
-// Alternar visibilidade lateral
 toggleButton.addEventListener("click", () => {
-    topicosDiv.classList.toggle("minimized"); // Adiciona/remove a classe 'minimized'
-
-    // Alterna entre os ícones de menos/mais
-    if (topicosDiv.classList.contains("minimized")) {
-        toggleIcon.src = "../../img/maisIcon.png"; // Ícone para estado minimizado
-    } else {
-        toggleIcon.src = "../../img/menosIcon.png"; // Ícone para estado ampliado
-    }
+    topicosDiv.classList.toggle("minimized");
+    toggleIcon.src = topicosDiv.classList.contains("minimized") ? "../../img/maisIcon.png" : "../../img/menosIcon.png";
 });
-
-
-
-
-

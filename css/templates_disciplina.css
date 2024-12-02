@@ -375,3 +375,18 @@ span {
 #closeButton:hover {
     background-color: #0056b3;
 }
+
+.botao_download {
+    margin: 10px;
+    text-decoration: none;
+    width: 400px;
+    display: flex;
+    font-size: 14px;
+    color: white;
+    font-weight: bold;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    background-color: #4c1e5c;
+
+}

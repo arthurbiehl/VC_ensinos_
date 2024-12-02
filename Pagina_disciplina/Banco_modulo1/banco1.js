@@ -6,22 +6,37 @@ const caixas = [
             { nome: "O que é?", titulo: "O que é?", conteudo: "Explicação do que é." }
         ]
     },
-    { 
+    {
         nome: "Video",
         subitens: [
-            { nome: "Conceitos Básicos", titulo: "Conteúdo em Vídeo", conteudo: "Veja o vídeo explicativo:", iframe: "https://www.youtube.com/embed/q3VlhfsrRjc?si=cNzIOZU4_Hvmt85y"}
+            {
+                nome: "Conceitos Básicos",
+                titulo: "Conteúdo em Vídeo",
+                conteudo: "Veja o vídeo explicativo:",
+                iframe: "https://www.youtube.com/embed/q3VlhfsrRjc?si=cNzIOZU4_Hvmt85y"
+            }
         ]
     },
     {
         nome: "Apostila",
         subitens: [
-            { nome: "Apostila Completa", titulo: "Apostila para Download", conteudo: "Clique no botão para baixar a apostila.", dowload: "apostila.pdf" }
+            {
+                nome: "Apostila Completa",
+                titulo: "Apostila para Download",
+                conteudo: "Clique no botão para baixar a apostila.",
+                dowload: "apostila.pdf"
+            }
         ]
     },
     {
         nome: "Desafio",
         subitens: [
-            { nome: "Desafio Final", titulo: "Resolva o Desafio", conteudo: "Descrição do desafio final." }
+            {
+                nome: "Desafio Final",
+                titulo: "Resolva o Desafio",
+                conteudo: "Complete o formulário abaixo para finalizar o desafio:",
+                iframe: "https://docs.google.com/forms/d/e/1FAIpQLSfEXAMPLE12345/viewform"
+            }
         ]
     },
 ];
@@ -76,6 +91,7 @@ const verNome = () => {
 
 const mostrarConteudo = (index, subIndex) => {
     const item = caixas[index].subitens[subIndex];
+
     container.innerHTML = `
         <div class="conteudo">
             <div class="container_conteudo">
@@ -83,7 +99,7 @@ const mostrarConteudo = (index, subIndex) => {
                 <p>${item.conteudo}</p>
                 ${item.iframe ? `
                     <div class="conteudo_video">
-                        <iframe src="${item.iframe}" frameborder="0"></iframe>
+                        <iframe src="${item.iframe}" frameborder="0" width="100%" height="600px" allowfullscreen></iframe>
                     </div>
                 ` : ''}
                 ${item.dowload ? `
@@ -93,6 +109,7 @@ const mostrarConteudo = (index, subIndex) => {
         </div>
     `;
 };
+
 
 // Inicializa a interface
 window.addEventListener("load", () => {
