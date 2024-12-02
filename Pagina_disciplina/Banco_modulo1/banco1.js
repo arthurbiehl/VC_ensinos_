@@ -24,7 +24,7 @@ const caixas = [
                 nome: "Apostila Completa",
                 titulo: "Apostila para Download",
                 conteudo: "Clique no botão para baixar a apostila.",
-                dowload: "apostila.pdf"
+                dowload: "../../apostilas/APOSTILA ADOBE ILUSTRATOR (1) (1).pdf"
             }
         ]
     },

@@ -2,7 +2,7 @@ const caixas = [
     {
         nome: "Introdução",
         subitens: [
-            { nome: "Como funciona?", titulo: "Como Funciona", conteudo: "Descrição sobre como funciona." },
+            { nome: "Primeiros passos", titulo: "Como Funciona?", conteudo: "Olá, caro aluno! Você já deve ter se deparado com aqueles famosos pop-ups de erro no seu computador, ou até mesmo com aqueles que pedem permissão para acessar algum conteúdo. Para te ajudar a recordar, lembra do Windows XP? Quando o sistema travava e surgiam inúmeros pop-ups de erro até o computador parar completamente? Pois é, são esses mesmos pop-ups que estamos falando! Eles são chamados de JOptionPane e são amplamente utilizados em Java para interagir com o usuário através de caixas de diálogo." },
             { nome: "O que é?", titulo: "O que é?", conteudo: "Explicação do que é." }
         ]
     },
