@@ -649,11 +649,6 @@ span {
         flex-direction: column;
     }
 
-
-    .conteudo_video iframe {
-
-    }
-
     .botao_download {
         width: 100%;
         max-width: 300px;

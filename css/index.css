@@ -245,7 +245,7 @@ footer {
 }
 
 .container_footer {
-    width: 1000px;
+    width: 80%;
     height: 100%;
     display: flex;
     justify-content: center;
@@ -263,6 +263,7 @@ footer {
 
 .footer_img img {
     width: 200px;
+    height: auto;
 }
 
 
@@ -456,6 +457,10 @@ footer {
 }
 
 @media (max-width: 450px){
+
+    body {
+        overflow-x: hidden;
+    }
     .container_dilema{
         display: flex;
         flex-direction: column;
@@ -531,6 +536,10 @@ footer {
     .links_footer .sbT, .links_footer a, .redes .sbT, .apoio .sbT{
         font-size: 8pt;
         
+    }
+
+    .container_footer {
+        width: 100%;
     }
     .apoio p{
         width: auto;
