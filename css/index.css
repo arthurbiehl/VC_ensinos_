@@ -98,6 +98,7 @@
 
 .caixa_dilema img {
     width: 170px;
+    height: 100px;
 }
 
 /* Cursos */
@@ -155,6 +156,7 @@
     align-items: center;
     flex-wrap: wrap;
 }
+
 
 /* Quem somos e chame nos */
 
@@ -230,6 +232,10 @@ p {
     height: 25px;
 }
 
+#xiru {
+    width: 500px;
+    height: auto;
+}
 
 /* footer */
 
