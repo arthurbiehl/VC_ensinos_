@@ -515,7 +515,7 @@ header {
 
 /* Responsivo */
 
-@media(max-width: 1000px) {
+@media(max-width: 900px) {
     .linha_grande {
         width: 100%;
     }
