@@ -497,7 +497,13 @@ footer {
     }
 
     .caixa_dilema {
+        width: 250px;
+        height: auto;
         padding: 0px;
+    }
+
+    .caixa_dilema img {
+        width: 100%;
     }
     #quem_somos{
         flex-direction: column;
