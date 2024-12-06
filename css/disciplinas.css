@@ -614,7 +614,7 @@ header {
 
 }
 
-@media (max-width: 420px) {
+@media (max-width: 500px) {
 
     .linha_grande {
         width: 100%;
@@ -635,10 +635,15 @@ header {
 
     .container_header_disciplinas {
         width: 100%;
+        height: 100%;
         display: flex;
         flex-direction: column;
         justify-content: space-between;
         align-items: center;
+    }
+
+    .pesquisar {
+        height: 150px;
     }
 
     #disciplinas {
