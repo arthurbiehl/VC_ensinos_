@@ -79,7 +79,8 @@ const disciplinas = [
         image: "../img/illustrator.png",
         dificuldade: "Fácil",
         categoria: "front-end",
-    }
+    },
+    
 ];
 
 const cardContainer = document.querySelector(".cards");
