@@ -49,7 +49,7 @@ loginForm.addEventListener("submit", (e) => {
 
       // Redireciona para a página principal após 2 segundos
       setTimeout(() => {
-        window.location.href = "../pages/index.html";
+        window.location.href = "../index.html";
       }, 2000);
     })
     .catch((error) => {
