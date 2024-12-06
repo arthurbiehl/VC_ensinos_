@@ -170,7 +170,7 @@
 }
 
 .tit {
-    width: 1000px;
+    width: 1100px;
     margin-top: 50px;
     height: 40px;
     display: flex;
@@ -186,7 +186,7 @@
 
 .container {
     display: flex;
-    width: 1000px;
+    width: 1100px;
     height: 400px;
     justify-content: center;
     align-items: center;
@@ -455,14 +455,7 @@ footer {
     }
 }
 
-@media (max-width: 630px){
-    .footer_img img{
-        width: 110px;
-        height: 110px;
-    }
-}
-
-@media (max-width: 450px){
+@media (max-width: 500px){
 
     .foto_index {
         width: 100%;
@@ -505,38 +498,53 @@ footer {
     .caixa_dilema img {
         width: 100%;
     }
-    #quem_somos{
-        flex-direction: column;
-        height: 700px;
-    }
-    .container{
-        flex-direction: column;
-        gap: 50px;
-    }
-    .tit{
-        margin-bottom: 65px;
+
+    #quem_somos {
         width: 100%;
-        height: 100px;
-    }
-    .texto{
-        width: 370px;
-        
-    }
-    iframe{
-        width: 100%;
-        height: 370px;
-    }
-    #xiru{
-        width: 370px;
+        height: auto;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        margin-bottom: 50px;
     }
 
-    .container{
-        width: 100%;
+    .container {
+        width: 90%;
+        height: 400px;
+        justify-content: center;
+        align-items: center;
+        display: flex;
+        flex-direction: column;
     }
 
-    .container_exibir a {
+    .container img {
         width: 100%;
-        height: 100%;
+        height: auto;
+    }
+
+    .texto {
+        width: 100%;
+        display: flex;
+        justify-content: flex-start;
+        align-items: left;
+        flex-direction: column;
+    }
+
+    .tit {
+        width: 100%;
+        display: flex;
+        height: 20px;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .container iframe {
+        width: 100%;
+        height: 200px;
+    }
+
+    .texto img {
+        width: 20px;
     }
     .cursos_exibir {
         width: 100%;
@@ -547,7 +555,7 @@ footer {
 
     footer{
         width: 100%;
-        height: 229px;
+        height: auto;
     }
     
     .links_footer .sbT, .links_footer a, .redes .sbT, .apoio .sbT{
@@ -557,14 +565,47 @@ footer {
 
     .container_footer {
         width: 100%;
+        height: 100%;
+        flex-direction: column;
     }
-    .apoio p{
-        width: auto;
-        margin-right: 10px;
-        font-size: 8pt;
+
+    .linha_reta {
+        width: 40%;
+        height: 1px;
+    }
+
+    .apoio{
+        width: 100%;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .links_footer {
+        width: 100%;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .redes {
+        width: 100%;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .footer_img {
+        width: 100%;
     }
     .footer_img img{
-        width: 63px;
-        height: 63px;
+        width: 50%;
+        height: auto;
     }
 }
