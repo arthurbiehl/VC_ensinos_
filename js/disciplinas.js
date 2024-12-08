@@ -48,37 +48,76 @@ if (logoutButton) {
 // Definir as disciplinas
 const disciplinas = [
     {
-        titulo: "Curso grátis de Banco de Dados",
+        titulo: "Banco de dados 1",
         descricao: "Aprenda a utilizar um banco de dados, com todas as suas funções e lógicas!",
         link: "../Pagina_disciplina/Banco_modulo1/banco1.html",
         image: "../img/emblemas_cards/banco.png",
         dificuldade: "Fácil",
         categoria: "back-end",
-        duracao: "20h"
+        duracao: "4h"
     },
     {
-        titulo: "Curso grátis de JAVA",
-        descricao: "Aprenda a programar em Java!",
-        link: "../Pagina_disciplina/Java_modulo1/java1.html",
-        image: "../img/java1.png",
-        dificuldade: "Fácil",
-        categoria: "back-end"
+        titulo: "Banco de dados 2",
+        descricao: "Voce aprendera",
+        link: "../Pagina_disciplina/Banco_modulo2/banco2.html",
+        image: "../img/emblemas_cards/banco.png",
+        dificuldade: "Médio",
+        categoria: "back-end",
+        duracao: "2h"
     },
     {
-        titulo: "Ilustrator",
-        descricao: "Faça seus supers desenhos!!",
+        titulo: "Banco de dados 3",
+        descricao: "Aprenda a utilizar um banco de dados, com todas as suas funções e lógicas!",
+        link: "../Pagina_disciplina/Banco_modulo3/banco3.html",
+        image: "../img/emblemas_cards/banco.png",
+        dificuldade: "Dificil",
+        categoria: "back-end",
+        duracao: "6h"
+    },
+    {
+        titulo: "Curso de Illustrator",
+        descricao: "Aprenda a utilizar o Illustrator de uma forma incrível!",
         link: "../Pagina_disciplina/illustrator/illustrator.html",
-        image: "../img/illustrator.png",
-        dificuldade: "Fácil",
+        image: "../img/emblemas_cards/illustrator.png",
+        dificuldade: "Médio",
         categoria: "front-end",
+        duracao: "3h"
     },
     {
-        titulo: "Ilustrator",
-        descricao: "Faça seus supers desenhos!!",
-        link: "../Pagina_disciplina/illustrator/illustrator.html",
-        image: "../img/illustrator.png",
-        dificuldade: "Fácil",
+        titulo: "Curso de Photoshop",
+        descricao: "Aqui aprendera a usar o Photoshop",
+        link: "../Pagina_disciplina/photoshop/photoshop.html",
+        image: "../img/emblemas_cards/Photo.png",
+        dificuldade: "Difícil",
         categoria: "front-end",
+        duracao: "5h"
+    },
+    {
+        titulo: "Curso de Java 1",
+        descricao: "nada",
+        link: "../Pagina_disciplina/java_modulo1/java1.html",
+        image: "../img/emblemas_cards/Java.png",
+        dificuldade: "Fácil",
+        categoria: "back-end",
+        duracao: "2h"
+    },
+    {
+        titulo: "Curso de Java 2",
+        descricao: "nada",
+        link: "../Pagina_disciplina/java_modulo2/java2.html",
+        image: "../img/emblemas_cards/Java.png",
+        dificuldade: "Médio",
+        categoria: "back-end",
+        duracao: "3h"
+    },
+    {
+        titulo: "Curso de Java 3",
+        descricao: "nada",
+        link: "../Pagina_disciplina/java_modulo3/java3.html",
+        image: "../img/emblemas_cards/Java.png",
+        dificuldade: "Díficil",
+        categoria: "back-end",
+        duracao: "4h"
     },
     
 ];
@@ -128,9 +167,6 @@ const verDisciplinas = (disciplinas) => {
             <div class="descricao">
                 <div class="foto_card">
                     <img src="${e.image}" alt="">
-                    <button class="btn-favoritar" data-titulo="${e.titulo}">
-                        <img src="../img/curtir.png" alt="">
-                    </button>
                 </div>
                 <h2>${e.titulo}</h2>
                 <p>${e.descricao}</p>

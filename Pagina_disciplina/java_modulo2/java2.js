@@ -42,7 +42,7 @@ const caixas = [
 ];
 
 const cursoNome = [
-    { nome_curso: "Java 1" }
+    { nome_curso: "Java 2" }
 ];
 
 const elementos = document.querySelector(".elementos");

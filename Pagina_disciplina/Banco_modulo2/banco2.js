@@ -2,7 +2,8 @@ const caixas = [
     {
         nome: "Introdução",
         subitens: [
-            { nome: "Como funciona?", titulo: "Como Funciona", conteudo: "Descrição sobre como funciona." },
+            { nome: "Como funciona?", titulo: "asd", conteudo: "Descrição sobre como funciona." },
+
             { nome: "O que é?", titulo: "O que é?", conteudo: "Explicação do que é." }
         ]
     },
@@ -24,7 +25,7 @@ const caixas = [
                 nome: "Apostila Completa",
                 titulo: "Apostila para Download",
                 conteudo: "Clique no botão para baixar a apostila.",
-                dowload: "apostila.pdf"
+                dowload: "../../apostilas/APOSTILA ADOBE ILUSTRATOR (1) (1).pdf"
             }
         ]
     },
@@ -42,7 +43,7 @@ const caixas = [
 ];
 
 const cursoNome = [
-    { nome_curso: "Java 1" }
+    { nome_curso: "Banco de Dados 2" }
 ];
 
 const elementos = document.querySelector(".elementos");
