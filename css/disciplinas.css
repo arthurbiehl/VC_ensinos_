@@ -679,9 +679,17 @@ header {
         width: 100%;
     }
 
+    .filtro_categorias {
+        width: 100%;
+    }
+
     .filtro_categorias button {
         width: 80px;
         font-size: 13px;
+    }
+
+    .barra_pesquisa {
+        width: 100%;
     }
 
     .pesquisar {
@@ -715,5 +723,9 @@ header {
         font-size: 11px;
         width: 100%;
         border-radius: 0px;
+    }
+
+    .cards {
+        width: 100%;
     }
 }
