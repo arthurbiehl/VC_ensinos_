@@ -124,7 +124,14 @@ const disciplinas = [
 
 const cardContainer = document.querySelector(".cards");
 
-// Função para exibir as disciplinas
+const embaralharDisciplinas = (disciplinas) => {
+    for (let i = disciplinas.length - 1; i > 0; i--) {
+        const j = Math.floor(Math.random() * (i + 1));
+        [disciplinas[i], disciplinas[j]] = [disciplinas[j], disciplinas[i]]; // Troca de elementos
+    }
+    return disciplinas;
+};
+
 const verDisciplinas = (disciplinas) => {
     cardContainer.innerHTML = "";
 
@@ -162,7 +169,6 @@ const verDisciplinas = (disciplinas) => {
                         <h2>${e.categoria}</h2>
                     </div>
                 </div>
-
             </div>
             <div class="descricao">
                 <div class="foto_card">
@@ -178,34 +184,29 @@ const verDisciplinas = (disciplinas) => {
         `;
     });
 
-    // Adicionar evento de clique no botão "Veja mais"
     const verMaisBtns = document.querySelectorAll(".btn-ver-mais");
 
     verMaisBtns.forEach(btn => {
         btn.addEventListener("click", (e) => {
-            e.preventDefault(); // Impede a navegação padrão
+            e.preventDefault();
 
             if (usuarioLogado) {
                 const cursoId = e.target.getAttribute("data-curso");
                 console.log(`Acessando o curso de ${cursoId}`);
 
-                // Redirecionar para a página do curso
                 const curso = disciplinas.find(d => d.titulo === cursoId);
                 if (curso) {
-                    window.location.href = curso.link; // Redireciona para o link do curso
+                    window.location.href = curso.link;
                 }
             } else {
-                // Se não estiver logado, redireciona para a página de login
                 window.location.href = "../pages/login.html";
             }
         });
     });
 };
 
-// Exibir as disciplinas
-verDisciplinas(disciplinas);
+verDisciplinas(embaralharDisciplinas(disciplinas));
 
-// Filtragem por categoria
 const filtroCategorias = document.querySelector(".filtro_categorias");
 filtroCategorias.addEventListener("click", (e) => {
     if (e.target.tagName === "BUTTON") {
@@ -213,20 +214,20 @@ filtroCategorias.addEventListener("click", (e) => {
         const disciplinasFiltradas = categoriaAtual === "todas" ?
             disciplinas :
             disciplinas.filter(disciplina => disciplina.categoria === categoriaAtual);
-        verDisciplinas(disciplinasFiltradas);
+        
+        verDisciplinas(embaralharDisciplinas(disciplinasFiltradas));
     }
 });
 
-// Barra de pesquisa
 const pesquisarInput = document.querySelector("#pesquisarInput");
 pesquisarInput.addEventListener("keyup", () => {
     const termoBusca = pesquisarInput.value.toLowerCase();
     const disciplinasFiltradas = disciplinas.filter(disciplina => {
         return disciplina.titulo.toLowerCase().includes(termoBusca);
     });
-    verDisciplinas(disciplinasFiltradas);
-});
 
+    verDisciplinas(embaralharDisciplinas(disciplinasFiltradas));
+});
 
 
 
