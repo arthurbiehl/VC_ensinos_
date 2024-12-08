@@ -12,7 +12,7 @@ span {
 
 .painel {
   width: 100%;
-  height: auto;
+  height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -22,10 +22,10 @@ span {
 
 .container_painel {
   width: 900px;
-  height: auto;
+  height: 100%;
   display: flex;
-  justify-content: center;
-  align-items: left;
+  justify-content: flex-start;
+  align-items: center;
   flex-direction: column;
 }
 
@@ -51,102 +51,6 @@ span {
   margin-left: 10px;
 }
 
-
-
-/* Favoritos */
-
-#favoritos {
-  width: 900px;
-  height: auto;
-  margin-top: 40px;
-  display: flex;
-  justify-content: center;
-  align-items: left;
-  flex-direction: column;
-}
-
-
-/* favoritos */
-#favoritos h2 {
-  margin-top: 20px;
-  margin-bottom: 20px;
-}
-
-.container_favoritos {
-  width: 900px;
-  display: flex;
-  padding-top: 20px;
-  padding-bottom: 20px;
-  justify-content: left;
-  align-items: center;
-  flex-wrap: wrap;
-  background-color: #252525;
-}
-
-.ver_favoritos {
-  width: 200px;
-  height: 40px; 
-  display: flex;
-  justify-content: left;
-  align-items: center;
-  background-color: #252525;
-  border-top-left-radius: 10px;
-  border-top-right-radius: 10px;
-}
-
-.ver_favoritos h2 { 
-  color: rgb(214, 214, 214);
-  font-size: 16px;
-}
-.ver_favoritos img {
-  width: 20px;
-  margin: 10px;
-}
-
-/* cards */
-
-.favorito_card {
-  width: 200px;
-  height: 170px;
-  display: flex;
-  justify-content: center;
-  align-items: left;
-  flex-direction: column;
-  padding: 20px;
-  margin: 10px;
-  border: 1px solid rgb(49, 49, 49);
-  border-radius: 10px;
-  background-color: #202020;
-}
-
-.favorito_card h2 {
-  font-size: 15px;
-  color: rgb(221, 221, 221);
-}
-
-.favorito_card p {
-  margin-left: 10px;
-
-}
-
-.favorito_card img {
-  width: 30px;
-}
-
-.favorito_card a {
-  width: 80px;
-  height: 30px;
-  font-size: 14px;
-  text-decoration: none;
-  background-color: #8136e3;
-  border-radius: 2px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  color: white;
-  font-weight: bold;
-}
-
 /* acoes */
 
 .acoes_painel {
@@ -154,7 +58,7 @@ span {
   height: 100px;
   display: flex;
   justify-content: center;
-  align-items: left ;
+  align-items: left;
   flex-direction: column;
 }
 
@@ -172,8 +76,34 @@ span {
   font-size: 14px;
   display: flex;
   justify-content: center;
-  align-items: center ;
+  align-items: center;
   border: none;
   background-color: #ca1313;
   border-radius: 3px;
+}
+
+
+/* Responsivo */
+
+@media (max-width: 500px) {
+  .painel {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+  }
+
+  .container_painel {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .user-panel {
+    width: 90%;
+  }
 }
