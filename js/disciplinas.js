@@ -47,6 +47,8 @@ if (logoutButton) {
 
 // Definir as disciplinas
 const disciplinas = [
+
+    //Banco
     {
         titulo: "Banco de dados 1",
         descricao: "Aprenda a utilizar um banco de dados, com todas as suas funções e lógicas!",
@@ -74,6 +76,8 @@ const disciplinas = [
         categoria: "back-end",
         duracao: "6h"
     },
+
+    // Computacao
     {
         titulo: "Curso de Illustrator",
         descricao: "Aprenda a utilizar o Illustrator de uma forma incrível!",
@@ -92,8 +96,10 @@ const disciplinas = [
         categoria: "front-end",
         duracao: "5h"
     },
+
+    // JAVA
     {
-        titulo: "Curso de Java 1",
+        titulo: "Curso de Java 1 facil",
         descricao: "nada",
         link: "../Pagina_disciplina/java_modulo1/java1.html",
         image: "../img/emblemas_cards/Java.png",
@@ -102,18 +108,63 @@ const disciplinas = [
         duracao: "2h"
     },
     {
-        titulo: "Curso de Java 2",
+        titulo: "Curso de Java 2 facil",
         descricao: "nada",
         link: "../Pagina_disciplina/java_modulo2/java2.html",
+        image: "../img/emblemas_cards/Java.png",
+        dificuldade: "Fácil",
+        categoria: "back-end",
+        duracao: "2h"
+    },
+    {
+        titulo: "Curso de Java 3 facil",
+        descricao: "nada",
+        link: "../Pagina_disciplina/java_modulo3/java3.html",
+        image: "../img/emblemas_cards/Java.png",
+        dificuldade: "Fácil",
+        categoria: "back-end",
+        duracao: "2h"
+    },
+    {
+        titulo: "Curso de Java 4 médio",
+        descricao: "nada",
+        link: "../Pagina_disciplina/java_modulo4/java4.html",
         image: "../img/emblemas_cards/Java.png",
         dificuldade: "Médio",
         categoria: "back-end",
         duracao: "3h"
     },
     {
-        titulo: "Curso de Java 3",
+        titulo: "Curso de Java 5 médio",
         descricao: "nada",
-        link: "../Pagina_disciplina/java_modulo3/java3.html",
+        link: "../Pagina_disciplina/java_modulo5/java5.html",
+        image: "../img/emblemas_cards/Java.png",
+        dificuldade: "Médio",
+        categoria: "back-end",
+        duracao: "3h"
+    },
+    {
+        titulo: "Curso de Java 6 médio",
+        descricao: "nada",
+        link: "../Pagina_disciplina/java_modulo6/java6.html",
+        image: "../img/emblemas_cards/Java.png",
+        dificuldade: "Médio",
+        categoria: "back-end",
+        duracao: "3h"
+    },
+    {
+        titulo: "Curso de Java 7 dificil",
+        descricao: "nada",
+        link: "../Pagina_disciplina/java_modulo7/java7.html",
+        image: "../img/emblemas_cards/Java.png",
+        dificuldade: "Díficil",
+        categoria: "back-end",
+        duracao: "4h"
+    },
+    {
+        titulo: "Curso de Java 8 dificil",
+        descricao: "nada",
+        link: "../Pagina_disciplina/java_modulo8/java8.html",
         image: "../img/emblemas_cards/Java.png",
         dificuldade: "Díficil",
         categoria: "back-end",
