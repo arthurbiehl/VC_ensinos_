@@ -38,11 +38,23 @@ const caixas = [
         nome: "Apostila",
         subitens: [
             {
-                nome: "Apostila Completa",
-                titulo: "Apostila para Download",
-                conteudo: "Clique no botão para baixar a apostila.",
-                dowload: "apostila.pdf"
-            }
+                nome: "Apostila Fácil",
+                titulo: "Primeira apostila",
+                conteudo: " ",
+                dowload: "../../apostilas/photoshop/apostilas/apostilaFacil.pdf"
+            },
+            {
+                nome: "Apostila Média",
+                titulo: "Segunda apostila",
+                conteudo: " ",
+                dowload: "../../apostilas/photoshop/apostilas/apostilaMedia.pdf"
+            },
+            {
+                nome: "Apostila Difícil",
+                titulo: "Terceira apostila",
+                conteudo: " ",
+                dowload: "../../apostilas/photoshop/apostilas/apostilaDificil.pdf"
+            },
         ]
     },
     {
