@@ -1,20 +1,37 @@
 const caixas = [
     {
-        nome: "Introdução",
-        subitens: [
-            { nome: "Como funciona?", titulo: "Como Funciona", conteudo: "Descrição sobre como funciona." },
-            { nome: "O que é?", titulo: "O que é?", conteudo: "Explicação do que é." }
-        ]
-    },
-    {
         nome: "Video",
         subitens: [
             {
-                nome: "Conceitos Básicos",
-                titulo: "Conteúdo em Vídeo",
-                conteudo: "Veja o vídeo explicativo:",
-                iframe: "https://www.youtube.com/embed/q3VlhfsrRjc?si=cNzIOZU4_Hvmt85y"
-            }
+                nome: "Aula 1",
+                titulo: "introdução do adobe Photoshop",
+                conteudo: " ",
+                iframe: "https://www.youtube.com/embed/NDXyDc1gtdI?si=1QqGZQ1AJysOi2mm" 
+            },
+            {
+                nome: "Aula 2",
+                titulo: "Ensinando introdução do adobe Photoshop",
+                conteudo: " ",
+                iframe: "https://www.youtube.com/embed/G6YtkSQVafY?si=zkuEEZa4jujHeB9e" 
+            },
+            {
+                nome: "Aula 3",
+                titulo: "Ensinamentos sobre Recortes no Photoshop",
+                conteudo: " ",
+                iframe: "https://www.youtube.com/embed/a2pDo6HDZcA?si=FZJIOVHt1c8GIOPf" 
+            },
+            {
+                nome: "Aula 4",
+                titulo: "Ensinamentos sobre Máscara no Photoshop",
+                conteudo: " ",
+                iframe: "https://www.youtube.com/embed/30JqngtEDZc?si=etz6M-_wXAWTzHWs" 
+            },
+            {
+                nome: "Aula 5",
+                titulo: "Ensinamentos Publicidade Photoshop",
+                conteudo: " ",
+                iframe: "https://www.youtube.com/embed/K_NorZK_N84?si=uO46XF_t3CZH6sil" 
+            },
         ]
     },
     {
@@ -32,11 +49,23 @@ const caixas = [
         nome: "Desafio",
         subitens: [
             {
-                nome: "Desafio Final",
-                titulo: "Resolva o Desafio",
-                conteudo: "Complete o formulário abaixo para finalizar o desafio:",
-                iframe: "https://docs.google.com/forms/d/e/1FAIpQLSfEXAMPLE12345/viewform"
-            }
+                nome: "Fácil",
+                titulo: "Desafio fácil",
+                conteudo: "Complete os desafios sugeridos",
+                dowload: "../../apostilas/photoshop/desafios/photoFacil.pdf"
+            },
+            {
+                nome: "Médio",
+                titulo: "Desafio médio",
+                conteudo: "Complete os desafios sugeridos",
+                dowload: "../../apostilas/photoshop/desafios/photoMedio.pdf"
+            },
+            {
+                nome: "Difícil",
+                titulo: "Desafio difícil",
+                conteudo: "Complete os desafios sugeridos",
+                dowload: "../../apostilas/photoshop/desafios/photoDificil.pdf"
+            },
         ]
     },
 ];

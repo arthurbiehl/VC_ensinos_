@@ -2,9 +2,11 @@ const caixas = [
     {
         nome: "Introdução",
         subitens: [
-            { nome: "Como funciona?", titulo: "Como Funciona", conteudo: "Descrição sobre como funciona." },
-
-            { nome: "O que é?", titulo: "O que é?", conteudo: "Explicação do que é." }
+            {
+                nome: "O que vamos aprender?",
+                titulo: "Introdução ao Módulo 1",
+                conteudo: "O módulo 1 fala sobre o banco de dados, é uma coleção estruturada de dados, organizada para armazenamento e recuperação eficiente.Ele utiliza modelos como orelacional, que organiza informações em tabelas, e o não relacional, que armazena dados em formatos como documentos e grafos.O gerenciamento desses dados é feito por um Sistema de Gerenciamento de Banco de Dados(SGBD), como MySQL, PostgreSQL e MongoDB, que oferece funcionalidades para acessar, modificar, e proteger os dados.Os bancos de dados possuem três níveis de abstração: físico, que trata do armazenamento dos dados no hardware; conceitual, que define a estrutura lógica como tabelas e relações; e de visão, que apresenta os dados acessíveis aos usuários. Um SGBD desempenha funções essenciais, como gerenciamento de dados, controle de acesso, realização de backups e manutenção da integridade. Entre os SGBDs, destacam-se o MySQL, conhecido por sua simplicidade e alto desempenho; o PostgreSQL, robusto e avançado, com suporte a transações complexas; e o MongoDB, que é não relacional, ideal para aplicações escaláveis e flexíveis. A administração de bancos de dados é responsabilidade do Administrador de Banco de Dados (DBA), que garante a segurança, desempenho e consistência do sistema. A arquitetura dos SGBDs é dividida em três camadas: física, que lida com o armazenamento; lógica, que organiza os dados; e visão, que oferece acesso aos usuários. Seus principais componentes incluem o gerenciamento de armazenamento, consultas, transações e logs, essenciais para manter o sistema eficiente e confiável."
+            },
         ]
     },
     {
@@ -22,11 +24,23 @@ const caixas = [
         nome: "Apostila",
         subitens: [
             {
-                nome: "Apostila Completa",
-                titulo: "Apostila para Download",
-                conteudo: "Clique no botão para baixar a apostila.",
-                dowload: "../../apostilas/APOSTILA ADOBE ILUSTRATOR (1) (1).pdf"
-            }
+                nome: "Apostila 1",
+                titulo: "Primeira apostila",
+                conteudo: "Feita por Rafaela Cardoso",
+                dowload: "../../apostilas/banco/banco1/APOSTILA1__EDITADA - Rafaela Cardoso.png"
+            },
+            {
+                nome: "Apostila 2",
+                titulo: "Segunda apostila",
+                conteudo: "Feita por Gabrielly Mello",
+                dowload: "../../apostilas/banco/banco1/APOSTILA 2__EDITADA - Gabriely Mello.png"
+            },
+            {
+                nome: "Apostila 3",
+                titulo: "Terceira apostila",
+                conteudo: "Feita por Gabrielly Mello",
+                dowload: "../../apostilas/banco/banco1/APOSTILA3__EDITADA - Gabriely Mello.png"
+            },
         ]
     },
     {
