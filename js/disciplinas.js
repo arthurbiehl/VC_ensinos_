@@ -102,7 +102,7 @@ const disciplinas = [
         titulo: "Curso de Java 1 facil",
         descricao: "nada",
         link: "../Pagina_disciplina/java_modulo1/java1.html",
-        image: "../img/emblemas_cards/Java.png",
+        image: "../img/emblemas_cards/java.png",
         dificuldade: "Fácil",
         categoria: "back-end",
         duracao: "2h"
@@ -111,7 +111,7 @@ const disciplinas = [
         titulo: "Curso de Java 2 facil",
         descricao: "nada",
         link: "../Pagina_disciplina/java_modulo2/java2.html",
-        image: "../img/emblemas_cards/Java.png",
+        image: "../img/emblemas_cards/java.png",
         dificuldade: "Fácil",
         categoria: "back-end",
         duracao: "2h"
@@ -120,7 +120,7 @@ const disciplinas = [
         titulo: "Curso de Java 3 facil",
         descricao: "nada",
         link: "../Pagina_disciplina/java_modulo3/java3.html",
-        image: "../img/emblemas_cards/Java.png",
+        image: "../img/emblemas_cards/java.png",
         dificuldade: "Fácil",
         categoria: "back-end",
         duracao: "2h"
@@ -129,7 +129,7 @@ const disciplinas = [
         titulo: "Curso de Java 4 médio",
         descricao: "nada",
         link: "../Pagina_disciplina/java_modulo4/java4.html",
-        image: "../img/emblemas_cards/Java.png",
+        image: "../img/emblemas_cards/java.png",
         dificuldade: "Médio",
         categoria: "back-end",
         duracao: "3h"
@@ -138,7 +138,7 @@ const disciplinas = [
         titulo: "Curso de Java 5 médio",
         descricao: "nada",
         link: "../Pagina_disciplina/java_modulo5/java5.html",
-        image: "../img/emblemas_cards/Java.png",
+        image: "../img/emblemas_cards/java.png",
         dificuldade: "Médio",
         categoria: "back-end",
         duracao: "3h"
@@ -147,7 +147,7 @@ const disciplinas = [
         titulo: "Curso de Java 6 médio",
         descricao: "nada",
         link: "../Pagina_disciplina/java_modulo6/java6.html",
-        image: "../img/emblemas_cards/Java.png",
+        image: "../img/emblemas_cards/java.png",
         dificuldade: "Médio",
         categoria: "back-end",
         duracao: "3h"
@@ -156,7 +156,7 @@ const disciplinas = [
         titulo: "Curso de Java 7 dificil",
         descricao: "nada",
         link: "../Pagina_disciplina/java_modulo7/java7.html",
-        image: "../img/emblemas_cards/Java.png",
+        image: "../img/emblemas_cards/java.png",
         dificuldade: "Díficil",
         categoria: "back-end",
         duracao: "4h"
@@ -165,7 +165,7 @@ const disciplinas = [
         titulo: "Curso de Java 8 dificil",
         descricao: "nada",
         link: "../Pagina_disciplina/java_modulo8/java8.html",
-        image: "../img/emblemas_cards/Java.png",
+        image: "../img/emblemas_cards/java.png",
         dificuldade: "Díficil",
         categoria: "back-end",
         duracao: "4h"
