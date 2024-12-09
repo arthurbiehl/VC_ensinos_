@@ -95,8 +95,6 @@ header {
     font-weight: 500;
 }
 
-
-
 .acoes_disciplinas {
     width: 160px;
     height: 50px;
@@ -513,6 +511,17 @@ header {
     background-color: #7230c7;
 }
 
+::-webkit-scrollbar {
+    width: 5px;
+}
+::-webkit-scrollbar-track {
+    background: #141414;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #363636;
+}   
+
 /* Responsivo */
 
 @media(max-width: 900px) {
@@ -614,17 +623,6 @@ header {
 
 }
 
-::-webkit-scrollbar {
-    width: 5px;
-}
-
-::-webkit-scrollbar-track {
-    background: #141414;
-}
-
-::-webkit-scrollbar-thumb {
-    background: #363636; /* Cor da barra */
-}   
 @media (max-width: 500px) {
 
     .linha_grande {
