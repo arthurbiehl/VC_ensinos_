@@ -3,7 +3,7 @@ const cards_exibir = [
     {
         titulo: "Curso grátis de Banco de Dados",
         descricao: "Aprenda a utilizar um banco de dados, com todas as suas funções e lógicas!",
-        image: "../img/banco1.png",
+        image: "../img/emblemas_cards/banco.png",
         dificuldade: "Fácil",
         categoria: "back-end",
         duracao: "20h"
@@ -11,14 +11,14 @@ const cards_exibir = [
     {
         titulo: "Curso grátis de JAVA",
         descricao: "Aprenda a programar em Java!",
-        image: "../img/java1.png",
+        image: "../img/emblemas_cards/java.png",
         dificuldade: "Fácil",
         categoria: "back-end"
     },
     {
         titulo: "Ilustrator",
         descricao: "Faça seus supers desenhos!!",
-        image: "../img/illustrator.png",
+        image: "../img/emblemas_cards/illustrator.png",
         dificuldade: "Fácil",
         categoria: "front-end",
     }
