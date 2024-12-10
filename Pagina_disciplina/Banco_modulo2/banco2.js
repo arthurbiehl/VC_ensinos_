@@ -2,9 +2,11 @@ const caixas = [
     {
         nome: "Introdução",
         subitens: [
-            { nome: "Como funciona?", titulo: "asd", conteudo: "Descrição sobre como funciona." },
-
-            { nome: "O que é?", titulo: "O que é?", conteudo: "Explicação do que é." }
+            {
+                nome: "O que vamos aprender?",
+                titulo: "INTRODUÇÃO AO MÓDULO 2",
+                conteudo: "O módulo 2 mostra que os modelos conceituais de banco de dados são formas de estruturar os dados de maneira a facilitar o armazenamento, o acesso e a manipulação da informação. Existem diferentes modelos que atendem a necessidades específicas: O modelo hierárquico organiza os dados em uma estrutura de árvore, na qual cada nó possui uma relação pai-filho. Essa estrutura é rígida e unidirecional, funcionando bem para consultas que seguem a hierarquia definida, mas apresentando dificuldades em representar relações mais complexas. O modelo em redes utiliza grafos para estabelecer conexões entre entidades, permitindo múltiplos relacionamentos e maior flexibilidade. Esse modelo é indicado para situações onde há necessidade de conexões complexas, mas sua implementação e manutenção podem ser mais complicadas. Já o modelo relacional organiza os dados em tabelas compostas por linhas e colunas, com o uso da linguagem SQL para manipulação. É um modelo simples, amplamente utilizado, escalável e fácil de gerenciar, mas pode não ser tão eficiente para grandes volumes de dados interconectados.O processo de criação de bancos de dados começa com a modelagem, que transforma os requisitos levantados em uma estrutura eficiente. Os conceitos fundamentais incluem as entidades, que representam objetos do mundo real; os relacionamentos, que definem interações entre entidades; e os atributos, que descrevem características das entidades. A notação de Peter Chen é uma forma gráfica de representar os diagramas de entidade-relacionamento, com elementos como retângulos para entidades, losangos para relacionamentos e elipses para atributos. Os tipos de dados também são importantes, pois definem o formato das informações armazenadas, como números, textos e datas. Além disso, a cardinalidade ajuda a especificar quantas instâncias de uma entidade podem se relacionar com outra, como relações um para um, um para muitos ou muitos para muitos. Com base nesses conceitos, o objetivo principal é criar um modelo de dados bem estruturado, que atenda às necessidades do sistema e assegure a integridade e eficiência na manipulação das informações."
+            },
         ]
     },
     {
@@ -22,21 +24,27 @@ const caixas = [
         nome: "Apostila",
         subitens: [
             {
-                nome: "Apostila Completa",
+                nome: "Apostila 4",
                 titulo: "Apostila para Download",
                 conteudo: "Clique no botão para baixar a apostila.",
-                dowload: "../../apostilas/APOSTILA ADOBE ILUSTRATOR (1) (1).pdf"
-            }
+                dowload: "../../apostilas/banco/banco2/apostila4.pdf"
+            },
+            {
+                nome: "Apostila 5",
+                titulo: "Apostila para Download",
+                conteudo: "Clique no botão para baixar a apostila.",
+                dowload: "../../apostilas/banco/banco2/apostila5.pdf"
+            },
         ]
     },
     {
         nome: "Desafio",
         subitens: [
             {
-                nome: "Desafio Final",
+                nome: "Desafio final do Módulo 2",
                 titulo: "Resolva o Desafio",
                 conteudo: "Complete o formulário abaixo para finalizar o desafio:",
-                iframe: "https://docs.google.com/forms/d/e/1FAIpQLSfEXAMPLE12345/viewform"
+                iframe: "https://docs.google.com/forms/d/11dY1gl28mGBlwDBJ3ztifZ3A364KYMiO-1txc80U63U/viewform?edit_requested=true"
             }
         ]
     },
