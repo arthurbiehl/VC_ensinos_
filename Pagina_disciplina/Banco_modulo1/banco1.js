@@ -13,11 +13,24 @@ const caixas = [
         nome: "Video",
         subitens: [
             {
-                nome: "Conceitos Básicos",
-                titulo: "Conteúdo em Vídeo",
+                nome: "Aula 1",
+                titulo: "Introdução ao Banco de Dados - Vitoria Gabriela",
+                conteudo: " ",
+                iframe: "https://www.youtube.com/embed/2R_hM6vULk0?si=oZNbIqtO0QAzTNEQ"
+            },
+            {
+                nome: "Aula 2",
+                titulo: "Yndaia Centeno - Vídeo Aula 2: SGBD's",
+                conteudo: " ",
+                iframe: "https://www.youtube.com/embed/xjg2J8mzkzU?si=tbQlWGui4eSRvM2m"
+            },
+            {
+                nome: "Aula 3",
+                titulo: "Yndaia Centeno - Vídeo Aula 3",
                 conteudo: "Veja o vídeo explicativo:",
-                iframe: "https://www.youtube.com/embed/q3VlhfsrRjc?si=cNzIOZU4_Hvmt85y"
-            }
+                iframe: "https://www.youtube.com/embed/Fdcda3KMvZA?si=XdtLI9OO10XCvrmE"
+            },
+
         ]
     },
     {
