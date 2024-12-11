@@ -489,6 +489,10 @@ footer {
         width: 370px;
     }
 
+    .container_foto img {
+        display: none;
+    }
+
     .caixa_dilema {
         width: 250px;
         height: auto;
@@ -497,6 +501,7 @@ footer {
 
     .caixa_dilema img {
         width: 100%;
+        display: none;
     }
 
     #quem_somos {
