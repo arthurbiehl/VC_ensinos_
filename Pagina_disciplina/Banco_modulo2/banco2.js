@@ -13,11 +13,17 @@ const caixas = [
         nome: "Video",
         subitens: [
             {
-                nome: "Conceitos Básicos",
+                nome: "Aula 1",
+                titulo: " Mayara Maciel - Modelos Conceituais de Banco de Dados",
+                conteudo: " ",
+                iframe: "https://www.youtube.com/embed/_W4Yn5AIem8?si=5wkA8Gj74Bh8AD4x"
+            },
+            {
+                nome: "Aula 2",
                 titulo: "Conteúdo em Vídeo",
                 conteudo: "Veja o vídeo explicativo:",
                 iframe: "https://www.youtube.com/embed/q3VlhfsrRjc?si=cNzIOZU4_Hvmt85y"
-            }
+            },
         ]
     },
     {

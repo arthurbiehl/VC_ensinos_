@@ -2,9 +2,11 @@ const caixas = [
     {
         nome: "Introdução",
         subitens: [
-            { nome: "Como funciona?", titulo: "asd", conteudo: "Descrição sobre como funciona." },
-
-            { nome: "O que é?", titulo: "O que é?", conteudo: "Explicação do que é." }
+            {
+                nome: "O que vamos aprender?",
+                titulo: "INTRODUÇÃO AO MÓDULO 3",
+                conteudo:"As apostilas 7, 8 e 9 apresentam conceitos fundamentais sobre bancos de dados. A apostila 7 aborda o mapeamento do Modelo Entidade-Relacionamento (ER) para o modelo relacional, explicando como transformar relações: na relação 1:1, utilizam-se duas tabelas, onde a chave primária de uma é chave estrangeira na outra; na relação 1:N, a chave primária da entidade do lado “1” é adicionada como chave estrangeira na tabela do lado “N”; já a relação N:N requer uma tabela associativa com as chaves primárias das duas entidades formando uma chave composta. A apostila 8 trata da normalização, um processo que organiza os dados para evitar redundâncias e inconsistências. A Primeira Forma Normal elimina valores multivalorados, deixando apenas valores atômicos. A Segunda Forma Normal remove dependências parciais, garantindo que os atributos dependem totalmente da chave primária. Por fim, a Terceira Forma Normal elimina dependências transitivas, assegurando que atributos não-chave dependem somente da chave primária. Já a apostila 9 introduz o SQL, linguagem usada para gerenciar bancos de dados relacionais. São apresentados tipos de dados (como inteiros e textos), restrições (como PRIMARY KEY e FOREIGN KEY) e comandos. A DDL (CREATE, ALTER, DROP) define a estrutura do banco, enquanto a DML (INSERT, UPDATE, DELETE, SELECT) manipula os dados. A criação de um banco envolve comandos como CREATE DATABASE e CREATE TABLE, possibilitando estruturar e gerenciar os dados com eficiência."
+            },
         ]
     },
     {
@@ -22,11 +24,23 @@ const caixas = [
         nome: "Apostila",
         subitens: [
             {
-                nome: "Apostila Completa",
-                titulo: "Apostila para Download",
+                nome: "Apostila 6",
+                titulo: "Apostila 6",
                 conteudo: "Clique no botão para baixar a apostila.",
-                dowload: "../../apostilas/APOSTILA ADOBE ILUSTRATOR (1) (1).pdf"
-            }
+                dowload: "../../apostilas/banco/banco3/apostila6.pdf"
+            },
+            {
+                nome: "Apostila 7",
+                titulo: "Apostia 7",
+                conteudo: "Clique no botão para baixar a apostila.",
+                dowload: "../../apostilas/banco/banco3/apostila7.pdf"
+            },
+            {
+                nome: "Apostila 8",
+                titulo: "Apostila 8",
+                conteudo: "Clique no botão para baixar a apostila.",
+                dowload: "../../apostilas/banco/banco3/apostila8.pdf"
+            },
         ]
     },
     {
@@ -36,7 +50,7 @@ const caixas = [
                 nome: "Desafio Final",
                 titulo: "Resolva o Desafio",
                 conteudo: "Complete o formulário abaixo para finalizar o desafio:",
-                iframe: "https://docs.google.com/forms/d/e/1FAIpQLSfEXAMPLE12345/viewform"
+                iframe: "https://docs.google.com/forms/d/1xgmJySUhtuxAkCFsxE1vUxQ-lOy6LGqBsOUCBkRX7Yo/viewform?edit_requested=true"
             }
         ]
     },
