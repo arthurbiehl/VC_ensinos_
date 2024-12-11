@@ -40,19 +40,19 @@ const caixas = [
                 nome: "Apostila 1",
                 titulo: "Primeira apostila",
                 conteudo: "Feita por Rafaela Cardoso",
-                dowload: "../../apostilas/banco/banco1/APOSTILA1__EDITADA - Rafaela Cardoso.png"
+                dowload: "../../apostilas/banco/banco1/apostila1.pdf"
             },
             {
                 nome: "Apostila 2",
                 titulo: "Segunda apostila",
                 conteudo: "Feita por Gabrielly Mello",
-                dowload: "../../apostilas/banco/banco1/APOSTILA 2__EDITADA - Gabriely Mello.png"
+                dowload: "../../apostilas/banco/banco1/apostila2.pdf"
             },
             {
                 nome: "Apostila 3",
                 titulo: "Terceira apostila",
                 conteudo: "Feita por Gabrielly Mello",
-                dowload: "../../apostilas/banco/banco1/APOSTILA3__EDITADA - Gabriely Mello.png"
+                dowload: "../../apostilas/banco/banco1/apostila3.pdf"
             },
         ]
     },
