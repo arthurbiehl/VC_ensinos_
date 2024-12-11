@@ -20,9 +20,9 @@ const caixas = [
             },
             {
                 nome: "Aula 2",
-                titulo: "Conteúdo em Vídeo",
+                titulo: "Mayara Maciel - Vídeo Aula 5",
                 conteudo: "Veja o vídeo explicativo:",
-                iframe: "https://www.youtube.com/embed/q3VlhfsrRjc?si=cNzIOZU4_Hvmt85y"
+                iframe: "https://www.youtube.com/embed/hysLBrxhnRE?si=zGwa2c6BOo-C77Mc"
             },
         ]
     },

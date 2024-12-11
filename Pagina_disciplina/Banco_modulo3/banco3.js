@@ -13,11 +13,23 @@ const caixas = [
         nome: "Video",
         subitens: [
             {
-                nome: "Conceitos Básicos",
-                titulo: "Conteúdo em Vídeo",
-                conteudo: "Veja o vídeo explicativo:",
-                iframe: "https://www.youtube.com/embed/q3VlhfsrRjc?si=cNzIOZU4_Hvmt85y"
-            }
+                nome: "Aula 1",
+                titulo: "Mapeamento do modelo conceitual para o Lógico",
+                conteudo: " ",
+                iframe: "https://www.youtube.com/embed/AsiWq6N2sKQ?si=cVN_H6zz7XaXS2jc"
+            },
+            {
+                nome: "Aula 2",
+                titulo: "Gabriel Sandes e Vitor Rosa - Vídeo Aula 7: Normalização de Dados",
+                conteudo: " ",
+                iframe: "https://www.youtube.com/embed/4IZg2gqRahg?si=hsDT9cAQN_g38b7p"
+            },
+            {
+                nome: "Aula 3",
+                titulo: "Gabriel Sandes - Vídeo Aula 8: Introdução ao SQL",
+                conteudo: " ",
+                iframe: "https://www.youtube.com/embed/fzSuz-uQMLg?si=zCgORrFMyBNi5y7f"
+            },
         ]
     },
     {
@@ -31,7 +43,7 @@ const caixas = [
             },
             {
                 nome: "Apostila 7",
-                titulo: "Apostia 7",
+                titulo: "Apostila 7",
                 conteudo: "Clique no botão para baixar a apostila.",
                 dowload: "../../apostilas/banco/banco3/apostila7.pdf"
             },
@@ -114,7 +126,7 @@ const mostrarConteudo = (index, subIndex) => {
                 <p>${item.conteudo}</p>
                 ${item.iframe ? `
                     <div class="conteudo_video">
-                        <iframe src="${item.iframe}" frameborder="0" width="100%" height="600px" allowfullscreen></iframe>
+                        <iframe src="${item.iframe}" frameborder="0" height="600px" allowfullscreen></iframe>
                     </div>
                 ` : ''}
                 ${item.dowload ? `
