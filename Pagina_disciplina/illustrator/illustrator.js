@@ -3,7 +3,6 @@ const caixas = [
         nome: "Introdução",
         subitens: [
             { nome: "Como funciona?", titulo: "Como Funciona", conteudo: "Descrição sobre como funciona." },
-            { nome: "O que é?", titulo: "O que é?", conteudo: "Explicação do que é." }
         ]
     },
     {
@@ -21,22 +20,46 @@ const caixas = [
         nome: "Apostila",
         subitens: [
             {
-                nome: "Apostila Completa",
+                nome: "Apostila 1",
                 titulo: "Apostila para Download",
                 conteudo: "Clique no botão para baixar a apostila.",
-                dowload: "apostila.pdf"
-            }
+                dowload: "../../apostilas/illustrator/apostilas/illustrator1.pdf"
+            },
+            {
+                nome: "Apostila 2",
+                titulo: "Apostila para Download",
+                conteudo: "Clique no botão para baixar a apostila.",
+                dowload: "../../apostilas/illustrator/apostilas/illustrator2.pdf"
+            },
+            {
+                nome: "Apostila 3",
+                titulo: "Apostila para Download",
+                conteudo: "Clique no botão para baixar a apostila.",
+                dowload: "../../apostilas/illustrator/apostilas/illustrator3.pdf"
+            },
         ]
     },
     {
         nome: "Desafio",
         subitens: [
             {
-                nome: "Desafio Final",
-                titulo: "Resolva o Desafio",
-                conteudo: "Complete o formulário abaixo para finalizar o desafio:",
-                iframe: "https://docs.google.com/forms/d/e/1FAIpQLSfEXAMPLE12345/viewform"
-            }
+                nome: "Desafio Fácil",
+                titulo: "Desafio fácil",
+                conteudo: "Baixe desafio",
+                dowload: "../../apostilas/illustrator/desafios/facil.pdf"
+            },
+            {
+                nome: "Desafio Médio",
+                titulo: "Desafio médio",
+                conteudo: "Baixe desafio",
+                dowload: "../../apostilas/illustrator/desafios/medio.pdf"
+            },
+            {
+                nome: "Desafio Díficil",
+                titulo: "Desafio díficil",
+                conteudo: "Baixe desafio",
+                dowload: "../../apostilas/illustrator/desafios/dificil.pdf"
+            },
         ]
     },
 ];
