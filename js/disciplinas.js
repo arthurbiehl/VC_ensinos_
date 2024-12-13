@@ -170,6 +170,18 @@ const disciplinas = [
         categoria: "back-end",
         duracao: "4h"
     },
+
+    /*HTML e CSS*/
+
+    {
+        titulo: "Curso de HTML e CSS",
+        descricao: "Aprenda a base para qualquer site!",
+        link: "../Pagina_disciplina/htmlecss/htmlecss.html",
+        image: "../img/emblemas_cards/htmlecss.png",
+        dificuldade: "Médio",
+        categoria: "Front-end",
+        duracao: "4h"
+    },
     
 ];
 
