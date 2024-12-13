@@ -6,14 +6,17 @@ const cards_exibir = [
         image: "../img/emblemas_cards/banco.png",
         dificuldade: "Fácil",
         categoria: "back-end",
-        duracao: "20h"
+        duracao: "1:35h",
+        ir: "pages/disciplinas.html"
     },
     {
         titulo: "Curso grátis de JAVA",
         descricao: "Aprenda a programar em Java!",
         image: "../img/emblemas_cards/java.png",
         dificuldade: "Fácil",
-        categoria: "back-end"
+        categoria: "back-end",
+        duracao: "1h",
+        ir: "pages/disciplinas.html"
     },
     {
         titulo: "Ilustrator",
@@ -21,6 +24,8 @@ const cards_exibir = [
         image: "../img/emblemas_cards/illustrator.png",
         dificuldade: "Fácil",
         categoria: "front-end",
+        duracao: "3h",
+        ir: "pages/disciplinas.html"
     }
 ]
 
@@ -58,14 +63,11 @@ const verCards = (ver) => {
             <div class="descricao">
                 <div class="foto_card">
                     <img src="${a.image}" alt="">
-                    <button class="btn-favoritar" data-titulo="${a.titulo}">
-                        <img src="../img/curtir.png" alt="">
-                    </button>
                 </div>
                 <h2>${a.titulo}</h2>
                 <p>${a.descricao}</p>
                 <div class="links-hover">
-                    <a href="#" class="btn-ver-mais" data-curso="${a.titulo}">Veja mais</a>
+                    <a href="${a.ir}" class="btn-ver-mais" data-curso="${a.ir}">Veja mais</a>
                 </div>
             </div>
         </div>
