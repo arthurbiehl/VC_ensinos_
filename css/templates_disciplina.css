@@ -6,6 +6,17 @@
     font-family: "PT Sans";
 }
 
+::-webkit-scrollbar {
+    width: 5px;
+}
+::-webkit-scrollbar-track {
+    background: #141414;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #363636;
+} 
+
 /* header */
 header {
     width: 100%;
