@@ -21,7 +21,7 @@ const caixas = [
                 nome: "Desafio 1",
                 titulo: "Resolva o Desafio",
                 conteudo: "Complete o formulário abaixo para finalizar o desafio:",
-                iframe: "https://docs.google.com/forms/d/e/1FAIpQLSfEXAMPLE12345/viewform"
+                iframe: "https://docs.google.com/forms/d/e/1FAIpQLSfvWry66l4_BPvOwTIfmv5fJ88tQdLZBFSpBsYLf8Z7qHsH7Q/viewform"
             }
         ]
     },
@@ -38,7 +38,7 @@ const caixas = [
                 nome: "Desafio 2",
                 titulo: "Resolva o Desafio",
                 conteudo: "Complete o formulário abaixo para finalizar o desafio:",
-                iframe: "https://docs.google.com/forms/d/e/1FAIpQLSfEXAMPLE12345/viewform"
+                iframe: "https://docs.google.com/forms/d/e/1FAIpQLSdtkPw8cAjV5Z-ZoOrdSSfbOSSWYi27QF49IG3w8yY8KHrK6A/viewform"
             }
         ]
     },
@@ -55,7 +55,7 @@ const caixas = [
                 nome: "Desafio 3",
                 titulo: "Resolva o Desafio",
                 conteudo: "Complete o formulário abaixo para finalizar o desafio:",
-                iframe: "https://docs.google.com/forms/d/e/1FAIpQLSfEXAMPLE12345/viewform"
+                iframe: "https://docs.google.com/forms/d/e/1FAIpQLSdzwr0HlAkBOXbza6aygX9ewXcsgJOn8PEqVa44SgQrZCSUJA/viewform"
             }
         ]
         
@@ -73,7 +73,7 @@ const caixas = [
                 nome: "Desafio 4",
                 titulo: "Resolva o Desafio",
                 conteudo: "Aqui esta o desafio 4 junto com o conteudo do desafio 3",
-                iframe: "https://docs.google.com/forms/d/e/1FAIpQLSfEXAMPLE12345/viewform"
+                iframe: "https://docs.google.com/forms/d/e/1FAIpQLSfhC1_phUj3MzAkArn48ab__z6UUr3p3pgsLP3SWoDxWXapHg/viewform"
             }
         ]
     },
@@ -90,7 +90,7 @@ const caixas = [
                 nome: "Desafio 5",
                 titulo: "Resolva o Desafio",
                 conteudo: "...",
-                iframe: "https://docs.google.com/forms/d/e/1FAIpQLSfEXAMPLE12345/viewform"
+                iframe: "https://docs.google.com/forms/d/e/1FAIpQLSfjZyTc5j_xTi2ennPYdI_dkTVp0gqGbe8RKeobWAoSg_awbw/viewform"
             }
         ]
     },
@@ -108,7 +108,7 @@ const caixas = [
                 nome: "Desafio 6",
                 titulo: "Resolva o Desafio",
                 conteudo: "...",
-                iframe: "https://docs.google.com/forms/d/e/1FAIpQLSfEXAMPLE12345/viewform"
+                iframe: "https://docs.google.com/forms/d/e/1FAIpQLSef0Kekgelo0tH2AvLiVdJCbWzyhq-ZUN2IKVtKvv5CBRtDEA/viewform"
             }
         ]
     },
@@ -118,11 +118,29 @@ const caixas = [
         nome: "Apostila",
         subitens: [
             {
-                nome: "Apostila Completa",
-                titulo: "Apostila para Download",
+                nome: "Apostila 1",
+                titulo: "Apostila 1 ",
                 conteudo: "Clique no botão para baixar a apostila.",
-                dowload: "apostila.pdf"
-            }
+                dowload: "../../apostilas/htmlecss/apostilas/apostila1.pdf"
+            },
+            {
+                nome: "Apostila 2",
+                titulo: "Apostila 2 ",
+                conteudo: "Clique no botão para baixar a apostila.",
+                dowload: "../../apostilas/htmlecss/apostilas/APOSTILA2.pdf"
+            },
+            {
+                nome: "Apostila 3",
+                titulo: "Apostila 3 ",
+                conteudo: "Clique no botão para baixar a apostila.",
+                dowload: "../../apostilas/htmlecss/apostilas/APOSTILA3.pdf"
+            },
+            {
+                nome: "Apostila 4",
+                titulo: "Apostila 4 ",
+                conteudo: "Clique no botão para baixar a apostila.",
+                dowload: "../../apostilas/htmlecss/apostilas/APOSTILA4.pdf"
+            },
         ]
     },
 
@@ -132,9 +150,9 @@ const caixas = [
         subitens: [
             {
                 nome: "Desafio Final",
-                titulo: "Resolva o Desafio",
-                conteudo: "Complete o formulário abaixo para finalizar o desafio:",
-                iframe: "https://docs.google.com/forms/d/e/1FAIpQLSfEXAMPLE12345/viewform"
+                titulo: "Desafio Final",
+                conteudo: "Agora vamos colocar a mão na massa! <br> Decorrente a todas as aulas vista's e atividades realizadas, que tal começarmos pra valer?! <br> Você irá exolher entre criar um portfolio pessoal ou um site que mostre sobre algum interesse seu, como alguma série, jogo, filme, cantor e etc. Contendo os conteúdos bases de HTML e CSS vistos. <br> Após terminar seu projeto, o transfira para seu repositório no Github e mande o link par aque possamos avaliar seu projeto!",
+                iframe: "https://docs.google.com/forms/d/e/1FAIpQLSeRTSQ8iXHy0Sd6ew4gwdE3-NBq6KwWIc0Mn9RLKKRKc6RbOw/viewform"
             }
         ]
     },
