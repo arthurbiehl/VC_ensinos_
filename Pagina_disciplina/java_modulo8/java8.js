@@ -76,7 +76,7 @@ const caixas = [
 ];
 
 const cursoNome = [
-    { nome_curso: "Java 8" }
+    { nome_curso: "JOptionPane - JAVA" }
 ];
 
 const elementos = document.querySelector(".elementos");
