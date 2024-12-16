@@ -2,18 +2,41 @@ const caixas = [
     {
         nome: "Introdução",
         subitens: [
-            { nome: "Como funciona?", titulo: "Como Funciona", conteudo: "Descrição sobre como funciona." },
+            {
+                nome: "O que é Illustrator?",
+                titulo: "O que é Illustrator?",
+                conteudo: "Veja o vídeo explicativo:",
+                iframe: "https://www.youtube.com/embed/zkdfeKNunHE?si=fpASYug_IYxM3zSP"
+            },
         ]
     },
     {
         nome: "Video",
         subitens: [
             {
-                nome: "Conceitos Básicos",
-                titulo: "Conteúdo em Vídeo",
+                nome: "Aula 1",
+                titulo: "Conceitos básicos do Adobe Illustrator.",
                 conteudo: "Veja o vídeo explicativo:",
-                iframe: "https://www.youtube.com/embed/q3VlhfsrRjc?si=cNzIOZU4_Hvmt85y"
-            }
+                iframe: "https://www.youtube.com/embed/1KhdqWgNVV4?si=32K4zN872d7t9WS4"
+            },
+            {
+                nome: "Aula 2",
+                titulo: "Mostrando Todas As Ferramentas Do Adobe Illustrator",
+                conteudo: "Veja o vídeo explicativo:",
+                iframe: "https://www.youtube.com/embed/6KD9TFHOauU?si=PTEWti17dM5JSdHl"
+            },
+            {
+                nome: "Aula 3",
+                titulo: "Ensinando camadas no Adobe Illustrator.",
+                conteudo: "Veja o vídeo explicativo:",
+                iframe: "https://www.youtube.com/embed/JqvXEgOcaR0?si=HR8N4gu1Xc6pxThz"
+            },
+            {
+                nome: "Aula 4",
+                titulo: "Como mesclar formas no Adobe Illustrator.",
+                conteudo: "Veja o vídeo explicativo:",
+                iframe: "https://www.youtube.com/embed/oI_T8Z8-7Ds?si=rbe_NENMBRIzYHUY"
+            },
         ]
     },
     {
