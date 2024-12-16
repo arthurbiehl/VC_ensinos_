@@ -131,7 +131,8 @@ const mostrarConteudo = (index, subIndex) => {
             <div class="container_conteudo">
                 <h1>${item.titulo}</h1>
                 <p>${item.conteudo}</p>
-                <img src="${item.img}" alt="">
+                ${item.img ? `<img src="${item.img}" alt="">` : ""}
+
                 ${item.iframe ? `
                     <div class="conteudo_video">
                         <iframe src="${item.iframe}"></iframe>
