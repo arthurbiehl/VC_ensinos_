@@ -2,19 +2,46 @@ const caixas = [
     {
         nome: "Introdução",
         subitens: [
-            { nome: "Como funciona?", titulo: "Como Funciona", conteudo: "Descrição sobre como funciona." },
-            { nome: "O que é?", titulo: "O que é?", conteudo: "Explicação do que é." }
+            {
+                nome: "O que é JOptionPane?",
+                titulo: "O que é JOptionPane?",
+                conteudo: "Olá, caro aluno! Você já deve ter se deparado com aqueles famosos pop-ups de erro no seu computador, ou até mesmo com aqueles que pedem permissão para acessar algum conteúdo. Para te ajudar a recordar, lembra do Windows XP? Quando o sistema travava e surgiam inúmeros pop-ups de erro até o computador parar completamente? Pois é, são esses mesmos pop-ups que estamos falando! Eles são chamados de JOptionPane e são amplamente utilizados em Java para interagir com o usuário através de caixas de diálogo."
+            },
         ]
     },
     {
         nome: "Video",
         subitens: [
             {
-                nome: "Conceitos Básicos",
+                nome: "Aula 1",
+                titulo:  "Aprenda a usar caixas de mensagem!! - JOptionPane - Parte 1",
+                conteudo: "Veja o vídeo explicativo:",
+                iframe: "https://www.youtube.com/embed/aXMSmjzV-e0?si=ZndOa5b7wdGtWH9P"
+            },
+            {
+                nome: "Aula 2",
+                titulo: "Aprenda a usar modelos padrões de alternativas!! - JOptionpane - Parte 2",
+                conteudo: "Veja o vídeo explicativo:",
+                iframe: "https://www.youtube.com/embed/7lEG-e1j4nU?si=vZwfaZmoPfpVyU2b"
+            },
+            {
+                nome: "Aula 3",
+                titulo: "Aprenda a usar caixas de dialogo para cadastro!! - JOptionpane - Parte 3",
+                conteudo: "Veja o vídeo explicativo:",
+                iframe: "https://www.youtube.com/embed/9t1hhV8GBdw?si=0KJ2qxK8R_JrQQRv"
+            },
+            {
+                nome: "Aula 4",
                 titulo: "Conteúdo em Vídeo",
                 conteudo: "Veja o vídeo explicativo:",
                 iframe: "https://www.youtube.com/embed/q3VlhfsrRjc?si=cNzIOZU4_Hvmt85y"
-            }
+            },
+            {
+                nome: "Aula 5",
+                titulo: "Conteúdo em Vídeo",
+                conteudo: "Veja o vídeo explicativo:",
+                iframe: "https://www.youtube.com/embed/q3VlhfsrRjc?si=cNzIOZU4_Hvmt85y"
+            },
         ]
     },
     {
@@ -24,7 +51,7 @@ const caixas = [
                 nome: "Apostila Completa",
                 titulo: "Apostila para Download",
                 conteudo: "Clique no botão para baixar a apostila.",
-                dowload: "apostila.pdf"
+                dowload: "../../apostilas/java_/java8/apostila8.pdf"
             }
         ]
     },
@@ -32,11 +59,17 @@ const caixas = [
         nome: "Desafio",
         subitens: [
             {
-                nome: "Desafio Final",
-                titulo: "Resolva o Desafio",
+                nome: "Prova de conhecimentos gerais JOptionPane.",
+                titulo: "Prova de conhecimentos gerais JOptionPane.",
                 conteudo: "Complete o formulário abaixo para finalizar o desafio:",
-                iframe: "https://docs.google.com/forms/d/e/1FAIpQLSfEXAMPLE12345/viewform"
-            }
+                iframe: "https://docs.google.com/forms/d/e/1FAIpQLSefS6p5qtH9GcuoCvHaHOxU09yEa4z7dRkrk3SES_RLNdkvcA/viewform"
+            },
+            {
+                nome: "Desafios práticos JOptionPane",
+                titulo: "Desafios práticos JOptionPane",
+                conteudo: "Complete o formulário abaixo para finalizar o desafio:",
+                iframe: "https://docs.google.com/forms/d/e/1FAIpQLSftmt1Znq7X5aVrkD9GYXoSOZDok1L2sG_kTXWSZpCtFToVYA/viewform"
+            },
         ]
     },
 ];
@@ -99,7 +132,7 @@ const mostrarConteudo = (index, subIndex) => {
                 <p>${item.conteudo}</p>
                 ${item.iframe ? `
                     <div class="conteudo_video">
-                        <iframe src="${item.iframe}" frameborder="0" width="100%" height="600px" allowfullscreen></iframe>
+                        <iframe src="${item.iframe}"></iframe>
                     </div>
                 ` : ''}
                 ${item.dowload ? `

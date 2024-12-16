@@ -316,6 +316,10 @@ span {
     width: 800px;
     height: 400px;
     margin: 10px;
+    max-height: 500px; /* Adicione um limite opcional */
+    border: none; /* Remove a borda do iframe */
+    display: block; /* Garante que o iframe seja exibido como bloco */
+
 }
 
 
@@ -676,9 +680,16 @@ span {
 
     .conteudo_video {
         width: 100%;
+        padding: 0px;
         display: flex;
         justify-content: center;
         align-items: center;
+    }
+    .conteudo_video iframe {
+        height: 40vh;
+        margin: 0px;
+        width: 600px;
+        margin: 0px;
     }
 
     .botao_download {

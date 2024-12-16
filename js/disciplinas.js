@@ -162,8 +162,8 @@ const disciplinas = [
         duracao: "4h"
     },
     {
-        titulo: "Curso de Java 8 dificil",
-        descricao: "nada",
+        titulo: "JOptionpane - JAVA",
+        descricao: "JOptionPane é o primeiro contato com códigos front-end, onde podemos utilizar modelos pré-prontos de caixas de diálogo para deixar o código mais interativo.",
         link: "../Pagina_disciplina/java_modulo8/java8.html",
         image: "../img/emblemas_cards/java.png",
         dificuldade: "Díficil",
