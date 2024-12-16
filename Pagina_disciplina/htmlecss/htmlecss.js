@@ -121,25 +121,25 @@ const caixas = [
                 nome: "Apostila 1",
                 titulo: "Apostila 1 ",
                 conteudo: "Clique no botão para baixar a apostila.",
-                dowload: "../../apostilas/htmlecss/apostilas/apostila1.pdf"
+                dowload: "../../apostilas/htmlecss/apostilas/Apostila1.pdf"
             },
             {
                 nome: "Apostila 2",
                 titulo: "Apostila 2 ",
                 conteudo: "Clique no botão para baixar a apostila.",
-                dowload: "../../apostilas/htmlecss/apostilas/APOSTILA2.pdf"
+                dowload: "../../apostilas/htmlecss/apostilas/Apostila2.pdf"
             },
             {
                 nome: "Apostila 3",
                 titulo: "Apostila 3 ",
                 conteudo: "Clique no botão para baixar a apostila.",
-                dowload: "../../apostilas/htmlecss/apostilas/APOSTILA3.pdf"
+                dowload: "../../apostilas/htmlecss/apostilas/Apostila3.pdf"
             },
             {
                 nome: "Apostila 4",
                 titulo: "Apostila 4 ",
                 conteudo: "Clique no botão para baixar a apostila.",
-                dowload: "../../apostilas/htmlecss/apostilas/APOSTILA4.pdf"
+                dowload: "../../apostilas/htmlecss/apostilas/Apostila4.pdf"
             },
         ]
     },
