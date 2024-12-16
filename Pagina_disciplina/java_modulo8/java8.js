@@ -5,7 +5,8 @@ const caixas = [
             {
                 nome: "O que é JOptionPane?",
                 titulo: "O que é JOptionPane?",
-                conteudo: "Olá, caro aluno! Você já deve ter se deparado com aqueles famosos pop-ups de erro no seu computador, ou até mesmo com aqueles que pedem permissão para acessar algum conteúdo. Para te ajudar a recordar, lembra do Windows XP? Quando o sistema travava e surgiam inúmeros pop-ups de erro até o computador parar completamente? Pois é, são esses mesmos pop-ups que estamos falando! Eles são chamados de JOptionPane e são amplamente utilizados em Java para interagir com o usuário através de caixas de diálogo."
+                conteudo: "Olá, caro aluno! Você já deve ter se deparado com aqueles famosos pop-ups de erro no seu computador, ou até mesmo com aqueles que pedem permissão para acessar algum conteúdo. Para te ajudar a recordar, lembra do Windows XP? Quando o sistema travava e surgiam inúmeros pop-ups de erro até o computador parar completamente? Pois é, são esses mesmos pop-ups que estamos falando! Eles são chamados de JOptionPane e são amplamente utilizados em Java para interagir com o usuário através de caixas de diálogo.",
+                img: "../../img/popp.jpeg"
             },
         ]
     },
@@ -14,7 +15,7 @@ const caixas = [
         subitens: [
             {
                 nome: "Aula 1",
-                titulo:  "Aprenda a usar caixas de mensagem!! - JOptionPane - Parte 1",
+                titulo: "Aprenda a usar caixas de mensagem!! - JOptionPane - Parte 1",
                 conteudo: "Veja o vídeo explicativo:",
                 iframe: "https://www.youtube.com/embed/aXMSmjzV-e0?si=ZndOa5b7wdGtWH9P"
             },
@@ -32,15 +33,15 @@ const caixas = [
             },
             {
                 nome: "Aula 4",
-                titulo: "Conteúdo em Vídeo",
+                titulo: "Aprenda a fazer um jogo com alternativas personalizadas!! - JOptionPane - Parte 4",
                 conteudo: "Veja o vídeo explicativo:",
-                iframe: "https://www.youtube.com/embed/q3VlhfsrRjc?si=cNzIOZU4_Hvmt85y"
+                iframe: "https://www.youtube.com/embed/p3RCVHHqEvE?si=xNc5kVXpaE5E_Kkv"
             },
             {
                 nome: "Aula 5",
-                titulo: "Conteúdo em Vídeo",
+                titulo: "Aprenda a criar um loja usando combo box!! - JOptionPane - Parte final",
                 conteudo: "Veja o vídeo explicativo:",
-                iframe: "https://www.youtube.com/embed/q3VlhfsrRjc?si=cNzIOZU4_Hvmt85y"
+                iframe: "https://www.youtube.com/embed/KjudlBKdpsg?si=DGEvT8gyxLlvOLGq"
             },
         ]
     },
@@ -130,6 +131,7 @@ const mostrarConteudo = (index, subIndex) => {
             <div class="container_conteudo">
                 <h1>${item.titulo}</h1>
                 <p>${item.conteudo}</p>
+                <img src="${item.img}" alt="">
                 ${item.iframe ? `
                     <div class="conteudo_video">
                         <iframe src="${item.iframe}"></iframe>
