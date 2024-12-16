@@ -1,5 +1,16 @@
 const caixas = [
     {
+        nome: "Introdução",
+        subitens: [
+            {
+                nome: "O que é PHOTOSHOP?",
+                titulo: "O que é PHOTOSHOP?",
+                conteudo: "Neste curso de Photoshop, você aprenderá o básico para a edição de imagens. Exploraremos ferramentas essenciais, como recortes, ajustes de cores, retoques e criação de composições criativas. Além disso, abordaremos como otimizar imagens para web e impressão, garantindo resultados profissionais. Com exercícios práticos, você ganhará confiança e domínio no uso do software. Também são fornecida apostilas e vídeos aulas para você poder aprender com confiança.",
+                img: "../../img/popp.jpeg"
+            },
+        ]
+    },
+    {
         nome: "Video",
         subitens: [
             {
