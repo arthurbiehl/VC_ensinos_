@@ -459,6 +459,7 @@ footer {
     .foto_index {
         width: 100%;
         height: auto;
+        display: none;
     }
 
     body {
@@ -486,10 +487,6 @@ footer {
     }
     .container_exibir{
         width: 370px;
-    }
-
-    .container_foto img {
-        display: none;
     }
 
     .caixa_dilema {
