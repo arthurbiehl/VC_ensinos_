@@ -108,7 +108,7 @@ const disciplinas = [
         duracao: "1h"
     },
     {
-        titulo: "Vetores - JAVA",
+        titulo: "java2",
         descricao: "Aprenda a utilizar os vetores no JAVA!",
         link: "../Pagina_disciplina/java_modulo2/java2.html",
         image: "../img/emblemas_cards/java.png",
@@ -117,8 +117,8 @@ const disciplinas = [
         duracao: "2h"
     },
     {
-        titulo: "Curso de Java 3 facil",
-        descricao: "nada",
+        titulo: "Comparação de dados - JAVA",
+        descricao: "...",
         link: "../Pagina_disciplina/java_modulo3/java3.html",
         image: "../img/emblemas_cards/java.png",
         dificuldade: "Fácil",
@@ -153,13 +153,13 @@ const disciplinas = [
         duracao: "3h"
     },
     {
-        titulo: "Curso de Java 7 dificil",
-        descricao: "nada",
+        titulo: "Vetores - JAVA",
+        descricao: "Aprenda a utilizar vetores",
         link: "../Pagina_disciplina/java_modulo7/java7.html",
         image: "../img/emblemas_cards/java.png",
         dificuldade: "Díficil",
         categoria: "back-end",
-        duracao: "4h"
+        duracao: "1h"
     },
     {
         titulo: "JOptionpane - JAVA",

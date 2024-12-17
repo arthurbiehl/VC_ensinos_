@@ -2,18 +2,26 @@ const caixas = [
     {
         nome: "Introdução",
         subitens: [
-            { nome: "Como funciona?", titulo: "Como Funciona", conteudo: "Descrição sobre como funciona." },
-            { nome: "O que é?", titulo: "O que é?", conteudo: "Explicação do que é." }
+            { 
+                nome: "O'que é a lógica?",
+                titulo: "O'que é a lógica?", 
+                conteudo: "lógica de programação, ou so lógica, é o termo designado a compreensão do pensamento de uma máquina, quando você pensa 'vou pegar a caneta dentro da gaveta', você sabe que deve abrir a gaveta primeiro, porém a máquina não, por causa disso que é tão importante que você aprenda a pensar como a máquina ",
+            },
+            {
+                nome: "Pensando como um robô",
+                titulo: "Pensando como um robô",
+                conteudo: " Agora se questione, quantos passos tem cada ação simples do seu dia a dia? aquelas que você nem percebe? pense no ato de vestir uma roupa, você primeiro se move até o armário e roupeiro, depois pega a roupa desejada, caso esteja vestindo uma roupa deve se despir, porém apenas da parte desejada, e somente após isso pode pôr a roupa desejada, são muitos passos para algo muito simples. Agora imagine outras situações: tomar banho, sair para uma caminhada, etc. "
+            }
         ]
     },
     {
         nome: "Video",
         subitens: [
             {
-                nome: "Conceitos Básicos",
+                nome: "Curso de java aula 3: comparação de dados",
                 titulo: "Conteúdo em Vídeo",
                 conteudo: "Veja o vídeo explicativo:",
-                iframe: "https://www.youtube.com/embed/q3VlhfsrRjc?si=cNzIOZU4_Hvmt85y"
+                iframe: "https://www.youtube.com/embed/viKFofVyW5E?si=2KUIxFcMaA_P_4rj"
             }
         ]
     },
@@ -24,7 +32,7 @@ const caixas = [
                 nome: "Apostila Completa",
                 titulo: "Apostila para Download",
                 conteudo: "Clique no botão para baixar a apostila.",
-                dowload: "apostila.pdf"
+                dowload: "../../apostilas/java_/java3/apostila1.pdf"
             }
         ]
     },
@@ -32,10 +40,10 @@ const caixas = [
         nome: "Desafio",
         subitens: [
             {
-                nome: "Desafio Final",
+                nome: "Desafio Final de Comparação de Dados",
                 titulo: "Resolva o Desafio",
                 conteudo: "Complete o formulário abaixo para finalizar o desafio:",
-                iframe: "https://docs.google.com/forms/d/e/1FAIpQLSfEXAMPLE12345/viewform"
+                iframe: "https://docs.google.com/forms/d/e/1FAIpQLSdaUorJKl8ufowCzIkeXQQj04VGruXXLJOVicuvPZe3wik2bg/viewform"
             }
         ]
     },

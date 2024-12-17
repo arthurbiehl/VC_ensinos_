@@ -2,18 +2,17 @@ const caixas = [
     {
         nome: "Introdução",
         subitens: [
-            { nome: "Como funciona?", titulo: "Como Funciona", conteudo: "Descrição sobre como funciona." },
-            { nome: "O que é?", titulo: "O que é?", conteudo: "Explicação do que é." }
+            { nome: "O que são vetores", titulo: "O que são vetores?", conteudo: "O vetor é uma estrutura de dados que armazena uma coleção ordenada de elementos do mesmo tipo. Também é conhecido como array. Os elementos de um vetor podem ser acessados por meio de um índice que representa sua posição dentro do vetor. Em Java, os vetores têm um tamanho fixo após a sua criação e cada elemento é acessado usando sua posição no vetor, que começa do índice 0 até o tamanho do vetor menos um." },
         ]
     },
     {
         nome: "Video",
         subitens: [
             {
-                nome: "Conceitos Básicos",
-                titulo: "Conteúdo em Vídeo",
+                nome: "Vetores",
+                titulo: "curso de java aula 7: vetores",
                 conteudo: "Veja o vídeo explicativo:",
-                iframe: "https://www.youtube.com/embed/q3VlhfsrRjc?si=cNzIOZU4_Hvmt85y"
+                iframe: "https://www.youtube.com/embed/T_lttkVr0hs?si=TzirJ4bNaf3caWch"
             }
         ]
     },
@@ -21,10 +20,10 @@ const caixas = [
         nome: "Apostila",
         subitens: [
             {
-                nome: "Apostila Completa",
+                nome: "Apostila Vetores",
                 titulo: "Apostila para Download",
                 conteudo: "Clique no botão para baixar a apostila.",
-                dowload: "apostila.pdf"
+                dowload: "../../apostilas/java_/java7/apostila1.pdf"
             }
         ]
     },
@@ -35,14 +34,14 @@ const caixas = [
                 nome: "Desafio Final",
                 titulo: "Resolva o Desafio",
                 conteudo: "Complete o formulário abaixo para finalizar o desafio:",
-                iframe: "https://docs.google.com/forms/d/e/1FAIpQLSfEXAMPLE12345/viewform"
+                iframe: "https://docs.google.com/forms/d/e/1FAIpQLSeiJba3BiX1SrhgmvEDM1Y5_r93wgXoo034oBCowsQRMok0Bw/viewform"
             }
         ]
     },
 ];
 
 const cursoNome = [
-    { nome_curso: "Java 7" }
+    { nome_curso: "Vetores - JAVA" }
 ];
 
 const elementos = document.querySelector(".elementos");
