@@ -13,10 +13,10 @@ const caixas = [
         nome: "Video",
         subitens: [
             {
-                nome: "Conceitos Básicos",
-                titulo: "Conteúdo em Vídeo",
+                nome: "lógica de programação",
+                titulo: "lógica de programação",
                 conteudo: "Veja o vídeo explicativo:",
-                iframe: "https://www.youtube.com/embed/q3VlhfsrRjc?si=cNzIOZU4_Hvmt85y"
+                iframe: "https://www.youtube.com/embed/KH3S3gGQjrE?si=x5DxzwuTCft71HCs"
             }
         ]
     },

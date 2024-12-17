@@ -58,7 +58,7 @@ const caixas = [
                 nome: "Apostila Média",
                 titulo: "Segunda apostila",
                 conteudo: " ",
-                dowload: "../../apostilas/photoshop/apostilas/apostilaMedia.pdf"
+                dowload: "../../apostilas/photoshop/apostilas/apostilaMedio.pdf"
             },
             {
                 nome: "Apostila Difícil",

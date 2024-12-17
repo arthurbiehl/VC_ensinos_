@@ -108,8 +108,8 @@ const disciplinas = [
         duracao: "1h"
     },
     {
-        titulo: "Curso de Java 2 facil",
-        descricao: "nada",
+        titulo: "Vetores - JAVA",
+        descricao: "Aprenda a utilizar os vetores no JAVA!",
         link: "../Pagina_disciplina/java_modulo2/java2.html",
         image: "../img/emblemas_cards/java.png",
         dificuldade: "Fácil",
