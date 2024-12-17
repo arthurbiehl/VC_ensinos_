@@ -56,7 +56,7 @@ const disciplinas = [
         image: "../img/emblemas_cards/banco.png",
         dificuldade: "Fácil",
         categoria: "back-end",
-        duracao: "4h"
+        duracao: "45min"
     },
     {
         titulo: "Banco de dados 2",
@@ -65,7 +65,7 @@ const disciplinas = [
         image: "../img/emblemas_cards/banco.png",
         dificuldade: "Médio",
         categoria: "back-end",
-        duracao: "2h"
+        duracao: "45min"
     },
     {
         titulo: "Banco de dados 3",
@@ -74,7 +74,7 @@ const disciplinas = [
         image: "../img/emblemas_cards/banco.png",
         dificuldade: "Dificil",
         categoria: "back-end",
-        duracao: "6h"
+        duracao: "1h"
     },
 
     // Computacao
@@ -99,13 +99,13 @@ const disciplinas = [
 
     // JAVA
     {
-        titulo: "Curso de Java 1 facil",
-        descricao: "nada",
+        titulo: "Lógica de programação - JAVA",
+        descricao: "O começo da jornada JAVA!!",
         link: "../Pagina_disciplina/java_modulo1/java1.html",
         image: "../img/emblemas_cards/java.png",
         dificuldade: "Fácil",
         categoria: "back-end",
-        duracao: "2h"
+        duracao: "1h"
     },
     {
         titulo: "Curso de Java 2 facil",
@@ -168,7 +168,7 @@ const disciplinas = [
         image: "../img/emblemas_cards/java.png",
         dificuldade: "Díficil",
         categoria: "back-end",
-        duracao: "4h"
+        duracao: "2h"
     },
 
     /*HTML e CSS*/

@@ -2,8 +2,11 @@ const caixas = [
     {
         nome: "Introdução",
         subitens: [
-            { nome: "Como funciona?", titulo: "Como Funciona", conteudo: "Descrição sobre como funciona." },
-            { nome: "O que é?", titulo: "O que é?", conteudo: "Explicação do que é." }
+            { 
+                nome: "O que é a Lógica?",
+                titulo: "O que é a Lógica?", 
+                conteudo: "lógica de programação, ou so lógica, é o termo designado a compreensão do pensamento de uma máquina, quando você pensa 'vou pegar a caneta dentro da gaveta', você sabe que deve abrir a gaveta primeiro, porém a máquina não, por causa disso que é tão importante que você aprenda a pensar como a máquina"
+            },
         ]
     },
     {
@@ -21,10 +24,10 @@ const caixas = [
         nome: "Apostila",
         subitens: [
             {
-                nome: "Apostila Completa",
+                nome: "Apostila de Lógica!",
                 titulo: "Apostila para Download",
                 conteudo: "Clique no botão para baixar a apostila.",
-                dowload: "apostila.pdf"
+                dowload: "../../apostilas/java_/java1/apostila1.pdf"
             }
         ]
     },
@@ -32,17 +35,17 @@ const caixas = [
         nome: "Desafio",
         subitens: [
             {
-                nome: "Desafio Final",
+                nome: "Desafio Lógica",
                 titulo: "Resolva o Desafio",
                 conteudo: "Complete o formulário abaixo para finalizar o desafio:",
-                iframe: "https://docs.google.com/forms/d/e/1FAIpQLSfEXAMPLE12345/viewform"
+                iframe: "https://docs.google.com/forms/d/e/1FAIpQLSf5dAZqQqNQnpv8RmfVo3uzKJVnoBbpr1qubE3Zu78LFklsOg/viewform"
             }
         ]
     },
 ];
 
 const cursoNome = [
-    { nome_curso: "Java 1" }
+    { nome_curso: "Lógica de programação - JAVA" }
 ];
 
 const elementos = document.querySelector(".elementos");
