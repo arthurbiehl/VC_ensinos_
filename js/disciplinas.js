@@ -135,15 +135,6 @@ const disciplinas = [
         duracao: "1h"
     },
     {
-        titulo: "Curso de Java 5 médio",
-        descricao: "nada",
-        link: "../Pagina_disciplina/java_modulo5/java5.html",
-        image: "../img/emblemas_cards/java.png",
-        dificuldade: "Médio",
-        categoria: "back-end",
-        duracao: "3h"
-    },
-    {
         titulo: "Teste de mesa - JAVA",
         descricao: "Aprenda a realizar o teste de mesa em seu codigo!!",
         link: "../Pagina_disciplina/java_modulo6/java6.html",

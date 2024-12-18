@@ -32,7 +32,7 @@ const caixas = [
                 nome: "Apostila Completa",
                 titulo: "Apostila para Download",
                 conteudo: "Clique no botão para baixar a apostila.",
-                dowload: "../../apostilas/java_/java3/apostila1.pdf"
+                dowload: "../../apostilas/java_/java3/apostila3.pdf"
             }
         ]
     },
