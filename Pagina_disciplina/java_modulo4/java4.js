@@ -1,19 +1,12 @@
 const caixas = [
     {
-        nome: "Introdução",
-        subitens: [
-            { nome: "Como funciona?", titulo: "Como Funciona", conteudo: "Descrição sobre como funciona." },
-            { nome: "O que é?", titulo: "O que é?", conteudo: "Explicação do que é." }
-        ]
-    },
-    {
         nome: "Video",
         subitens: [
             {
-                nome: "Conceitos Básicos",
-                titulo: "Conteúdo em Vídeo",
+                nome: "If else",
+                titulo: "Curso de java aula 4: if else",
                 conteudo: "Veja o vídeo explicativo:",
-                iframe: "https://www.youtube.com/embed/q3VlhfsrRjc?si=cNzIOZU4_Hvmt85y"
+                iframe: "https://www.youtube.com/embed/LxEGDA3nmTc?si=sBje9NMMR7PmS9He"
             }
         ]
     },
@@ -24,7 +17,7 @@ const caixas = [
                 nome: "Apostila Completa",
                 titulo: "Apostila para Download",
                 conteudo: "Clique no botão para baixar a apostila.",
-                dowload: "apostila.pdf"
+                dowload: "../../apostilas/java_/java4/apostila4.pdf"
             }
         ]
     },
@@ -35,7 +28,7 @@ const caixas = [
                 nome: "Desafio Final",
                 titulo: "Resolva o Desafio",
                 conteudo: "Complete o formulário abaixo para finalizar o desafio:",
-                iframe: "https://docs.google.com/forms/d/e/1FAIpQLSfEXAMPLE12345/viewform"
+                iframe: "https://docs.google.com/forms/d/e/1FAIpQLSe0ZLt9hNVpRSh9IJSHdHZYP8sLn75MldcerMeW5LlBsLns-w/viewform"
             }
         ]
     },
