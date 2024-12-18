@@ -2,8 +2,10 @@ const caixas = [
     {
         nome: "Introdução",
         subitens: [
-            { nome: "Como funciona?", titulo: "Como Funciona", conteudo: "Descrição sobre como funciona." },
-            { nome: "O que é?", titulo: "O que é?", conteudo: "Explicação do que é." }
+            { 
+                nome: "O que vamos aprender?",
+                titulo: "O que vamos aprender?", 
+                conteudo: "Neste curso, você dará os primeiros passos no mundo do HTML e CSS, aprendendo a base para criar e estilizar páginas web. Vamos explorar os fundamentos necessários para a construção de um site, desde a escrita de códigos em HTML até a aplicação de estilos com CSS. Além disso, abordaremos conceitos essenciais sobre responsividade, ferramentas e programas necessários para o desenvolvimento web, e um breve mergulho na história da web para entender sua evolução. Prepare-se para iniciar seus projetos e dar vida às suas ideias no ambiente digital!" },
         ]
     },
 
@@ -12,10 +14,10 @@ const caixas = [
         nome: "Aula 1",
         subitens: [
             {
-                nome: "Video 1",
-                titulo: "Conteúdo em Vídeo",
+                nome: "Curso de HTML/CSS: Aula 1 - História da Web e VsCode!",
+                titulo: "Curso de HTML/CSS: Aula 1 - História da Web e VsCode!",
                 conteudo: "Veja o vídeo explicativo:",
-                iframe: "https://www.youtube.com/embed/q3VlhfsrRjc?si=cNzIOZU4_Hvmt85y"
+                iframe: "https://www.youtube.com/embed/rES_g5Jcgjg?si=HXLgB8xxp-M"
             },
             {
                 nome: "Desafio 1",
@@ -29,10 +31,10 @@ const caixas = [
         nome: "Aula 2",
         subitens: [
             {
-                nome: "Video 2",
-                titulo: "Conteúdo em Vídeo",
+                nome: "Curso de HTML/CSS: Aula 2 - Github, Gitbash e Powershell",
+                titulo: "Curso de HTML/CSS: Aula 2 - Github, Gitbash e Powershell",
                 conteudo: "Veja o vídeo explicativo:",
-                iframe: "https://www.youtube.com/embed/q3VlhfsrRjc?si=cNzIOZU4_Hvmt85y"
+                iframe: "https://www.youtube.com/embed/snkbg4Zoi_A?si=t9opsNYPi-klSv_i"
             },
             {
                 nome: "Desafio 2",
@@ -46,10 +48,10 @@ const caixas = [
         nome: "Aula 3",
         subitens: [
             {
-                nome: "Video 3",
-                titulo: "Conteúdo em Vídeo",
+                nome: "Curso de HTML/CSS: Aula 3 - HTML e Principais Tags",
+                titulo: "Curso de HTML/CSS: Aula 3 - HTML e Principais Tags",
                 conteudo: "Veja o vídeo explicativo:",
-                iframe: "https://www.youtube.com/embed/q3VlhfsrRjc?si=cNzIOZU4_Hvmt85y"
+                iframe: "https://www.youtube.com/embed/pOPKy2PLpdA?si=ovYclDF4Y54oatI2"
             },
             {
                 nome: "Desafio 3",
@@ -64,10 +66,10 @@ const caixas = [
         nome: "Aula 4",
         subitens: [
             {
-                nome: "Video 4",
-                titulo: "Conteúdo em Vídeo",
+                nome: "Curso de HTML/CSS: Aula 4 - Revisão Aula 3 Tags Semânticas",
+                titulo: "Curso de HTML/CSS: Aula 4 - Revisão Aula 3 Tags Semânticas",
                 conteudo: "Veja o vídeo explicativo:",
-                iframe: "https://www.youtube.com/embed/q3VlhfsrRjc?si=cNzIOZU4_Hvmt85y"
+                iframe: "https://www.youtube.com/embed/mQOvgo4n3aw?si=h8c88dgXoLtr0gvD"
             },
             {
                 nome: "Desafio 4",
@@ -81,10 +83,10 @@ const caixas = [
         nome: "Aula 5",
         subitens: [
             {
-                nome: "Video 5",
-                titulo: "Conteúdo em Vídeo",
+                nome: "Curso de HTML/CSS: Aula 5 - Introdução CSS e Google Fonts",
+                titulo: "Curso de HTML/CSS: Aula 5 - Introdução CSS e Google Fonts",
                 conteudo: "Veja o vídeo explicativo:",
-                iframe: "https://www.youtube.com/embed/q3VlhfsrRjc?si=cNzIOZU4_Hvmt85y"
+                iframe: "https://www.youtube.com/embed/b3NjudWZNsY?si=P0qP-3iOHyud6ZEj"
             },
             {
                 nome: "Desafio 5",
@@ -99,10 +101,10 @@ const caixas = [
         nome: "Aula 6",
         subitens: [
             {
-                nome: "Video 6",
-                titulo: "Conteúdo em Vídeo",
+                nome: "Curso de HTML/CSS: Aula 6 - Headers e Class ID",
+                titulo: "Curso de HTML/CSS: Aula 6 - Headers e Class IDs",
                 conteudo: "Veja o vídeo explicativo:",
-                iframe: "https://www.youtube.com/embed/q3VlhfsrRjc?si=cNzIOZU4_Hvmt85y"
+                iframe: "https://www.youtube.com/embed/33nVATcy9ss?si=okMYSRAimz5yEHRP"
             },
             {
                 nome: "Desafio 6",
@@ -110,6 +112,20 @@ const caixas = [
                 conteudo: "...",
                 iframe: "https://docs.google.com/forms/d/e/1FAIpQLSef0Kekgelo0tH2AvLiVdJCbWzyhq-ZUN2IKVtKvv5CBRtDEA/viewform"
             }
+            
+        ]
+    },
+
+    {
+        nome: "Aula 7",
+        subitens: [
+            {
+                nome: "Curso de HTML/CSS: Aula 7 - Media Queries",
+                titulo: "Curso de HTML/CSS: Aula 7 - Media Queries",
+                conteudo: "Veja o vídeo explicativo:",
+                iframe: "https://www.youtube.com/embed/nQo9rJg3O1M?si=oFbsiltpjnqRt1w9"
+            },
+            
         ]
     },
 
