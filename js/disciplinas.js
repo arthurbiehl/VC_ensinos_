@@ -85,7 +85,7 @@ const disciplinas = [
         image: "../img/emblemas_cards/illustrator.png",
         dificuldade: "Médio",
         categoria: "front-end",
-        duracao: "3h"
+        duracao: "2h"
     },
     {
         titulo: "Curso de Photoshop",
@@ -132,7 +132,7 @@ const disciplinas = [
         image: "../img/emblemas_cards/java.png",
         dificuldade: "Médio",
         categoria: "back-end",
-        duracao: "3h"
+        duracao: "1h"
     },
     {
         titulo: "Curso de Java 5 médio",
@@ -150,7 +150,7 @@ const disciplinas = [
         image: "../img/emblemas_cards/java.png",
         dificuldade: "Médio",
         categoria: "back-end",
-        duracao: "3h"
+        duracao: "1h"
     },
     {
         titulo: "Vetores - JAVA",
@@ -180,7 +180,7 @@ const disciplinas = [
         image: "../img/emblemas_cards/htmlecss.png",
         dificuldade: "Médio",
         categoria: "Front-end",
-        duracao: "4h"
+        duracao: "3h"
     },
     
 ];

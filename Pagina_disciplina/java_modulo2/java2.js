@@ -34,7 +34,7 @@ const caixas = [
 ];
 
 const cursoNome = [
-    { nome_curso: "Tipos de dados" }
+    { nome_curso: "Tipos de dados - JAVA" }
 ];
 
 const elementos = document.querySelector(".elementos");

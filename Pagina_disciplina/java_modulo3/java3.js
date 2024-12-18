@@ -50,7 +50,7 @@ const caixas = [
 ];
 
 const cursoNome = [
-    { nome_curso: "Java 3" }
+    { nome_curso: "Comparação de dados - JAVA" }
 ];
 
 const elementos = document.querySelector(".elementos");
