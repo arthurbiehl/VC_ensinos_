@@ -1,19 +1,12 @@
 const caixas = [
     {
-        nome: "Introdução",
-        subitens: [
-            { nome: "Como funciona?", titulo: "Como Funciona", conteudo: "Descrição sobre como funciona." },
-            { nome: "O que é?", titulo: "O que é?", conteudo: "Explicação do que é." }
-        ]
-    },
-    {
         nome: "Video",
         subitens: [
             {
-                nome: "Conceitos Básicos",
+                nome: "Tipos de dados",
                 titulo: "Conteúdo em Vídeo",
                 conteudo: "Veja o vídeo explicativo:",
-                iframe: "https://www.youtube.com/embed/q3VlhfsrRjc?si=cNzIOZU4_Hvmt85y"
+                iframe: "https://www.youtube.com/embed/ZP46wXbc5tw?si=uJmTDLnHO3jxtzN0"
             }
         ]
     },
@@ -24,7 +17,7 @@ const caixas = [
                 nome: "Apostila Completa",
                 titulo: "Apostila para Download",
                 conteudo: "Clique no botão para baixar a apostila.",
-                dowload: "apostila.pdf"
+                dowload: "../../apostilas/java_/java2/apostila2.pdf"
             }
         ]
     },
@@ -32,17 +25,16 @@ const caixas = [
         nome: "Desafio",
         subitens: [
             {
-                nome: "Desafio Final",
-                titulo: "Resolva o Desafio",
-                conteudo: "Complete o formulário abaixo para finalizar o desafio:",
-                iframe: "https://docs.google.com/forms/d/e/1FAIpQLSfEXAMPLE12345/viewform"
+                nome: "Este módulo nao possuí desafio!!",
+                titulo: "...",
+                conteudo: " ",
             }
         ]
     },
 ];
 
 const cursoNome = [
-    { nome_curso: "Java 2" }
+    { nome_curso: "Tipos de dados" }
 ];
 
 const elementos = document.querySelector(".elementos");

@@ -14,7 +14,7 @@ const caixas = [
         nome: "Aula 1",
         subitens: [
             {
-                nome: "Curso de HTML/CSS: Aula 1 - História da Web e VsCode!",
+                nome: "Aula 1 - História da Web e VsCode!",
                 titulo: "Curso de HTML/CSS: Aula 1 - História da Web e VsCode!",
                 conteudo: "Veja o vídeo explicativo:",
                 iframe: "https://www.youtube.com/embed/rES_g5Jcgjg?si=HXLgB8xxp-M"
@@ -31,7 +31,7 @@ const caixas = [
         nome: "Aula 2",
         subitens: [
             {
-                nome: "Curso de HTML/CSS: Aula 2 - Github, Gitbash e Powershell",
+                nome: "Aula 2 - Github, Gitbash e Powershell",
                 titulo: "Curso de HTML/CSS: Aula 2 - Github, Gitbash e Powershell",
                 conteudo: "Veja o vídeo explicativo:",
                 iframe: "https://www.youtube.com/embed/snkbg4Zoi_A?si=t9opsNYPi-klSv_i"
@@ -48,7 +48,7 @@ const caixas = [
         nome: "Aula 3",
         subitens: [
             {
-                nome: "Curso de HTML/CSS: Aula 3 - HTML e Principais Tags",
+                nome: "Aula 3 - HTML e Principais Tags",
                 titulo: "Curso de HTML/CSS: Aula 3 - HTML e Principais Tags",
                 conteudo: "Veja o vídeo explicativo:",
                 iframe: "https://www.youtube.com/embed/pOPKy2PLpdA?si=ovYclDF4Y54oatI2"
@@ -66,7 +66,7 @@ const caixas = [
         nome: "Aula 4",
         subitens: [
             {
-                nome: "Curso de HTML/CSS: Aula 4 - Revisão Aula 3 Tags Semânticas",
+                nome: "Aula 4 - Revisão Aula 3 Tags Semânticas",
                 titulo: "Curso de HTML/CSS: Aula 4 - Revisão Aula 3 Tags Semânticas",
                 conteudo: "Veja o vídeo explicativo:",
                 iframe: "https://www.youtube.com/embed/mQOvgo4n3aw?si=h8c88dgXoLtr0gvD"
@@ -83,7 +83,7 @@ const caixas = [
         nome: "Aula 5",
         subitens: [
             {
-                nome: "Curso de HTML/CSS: Aula 5 - Introdução CSS e Google Fonts",
+                nome: "Aula 5 - Introdução CSS e Google Fonts",
                 titulo: "Curso de HTML/CSS: Aula 5 - Introdução CSS e Google Fonts",
                 conteudo: "Veja o vídeo explicativo:",
                 iframe: "https://www.youtube.com/embed/b3NjudWZNsY?si=P0qP-3iOHyud6ZEj"
@@ -101,7 +101,7 @@ const caixas = [
         nome: "Aula 6",
         subitens: [
             {
-                nome: "Curso de HTML/CSS: Aula 6 - Headers e Class ID",
+                nome: "Aula 6 - Headers e Class ID",
                 titulo: "Curso de HTML/CSS: Aula 6 - Headers e Class IDs",
                 conteudo: "Veja o vídeo explicativo:",
                 iframe: "https://www.youtube.com/embed/33nVATcy9ss?si=okMYSRAimz5yEHRP"
@@ -120,7 +120,7 @@ const caixas = [
         nome: "Aula 7",
         subitens: [
             {
-                nome: "Curso de HTML/CSS: Aula 7 - Media Queries",
+                nome: "Aula 7 - Media Queries",
                 titulo: "Curso de HTML/CSS: Aula 7 - Media Queries",
                 conteudo: "Veja o vídeo explicativo:",
                 iframe: "https://www.youtube.com/embed/nQo9rJg3O1M?si=oFbsiltpjnqRt1w9"
