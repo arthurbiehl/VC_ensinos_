@@ -144,8 +144,8 @@ const disciplinas = [
         duracao: "3h"
     },
     {
-        titulo: "Curso de Java 6 médio",
-        descricao: "nada",
+        titulo: "Teste de mesa - JAVA",
+        descricao: "Aprenda a realizar o teste de mesa em seu codigo!!",
         link: "../Pagina_disciplina/java_modulo6/java6.html",
         image: "../img/emblemas_cards/java.png",
         dificuldade: "Médio",

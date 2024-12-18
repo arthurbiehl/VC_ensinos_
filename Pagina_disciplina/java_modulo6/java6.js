@@ -2,18 +2,17 @@ const caixas = [
     {
         nome: "Introdução",
         subitens: [
-            { nome: "Como funciona?", titulo: "Como Funciona", conteudo: "Descrição sobre como funciona." },
-            { nome: "O que é?", titulo: "O que é?", conteudo: "Explicação do que é." }
+            { nome: "O que é o Teste de Mesa?", titulo: "O que é o Teste de Mesa?", conteudo: "O teste de mesa é uma técnica fundamental para entender o comportamento de programas em Java e, de maneira geral, de qualquer linguagem de programação. Ao usar essa técnica, podemos simular a execução de um código linha por linha, observando como os valores das variáveis mudam durante o processo. Isso é útil para verificar se o código está funcionando como esperado, especialmente quando estamos iniciando no aprendizado de programação." },
         ]
     },
     {
         nome: "Video",
         subitens: [
             {
-                nome: "Conceitos Básicos",
-                titulo: "Conteúdo em Vídeo",
+                nome: "Teste de mesa",
+                titulo: "Curso de java aula 6: teste de mesa",
                 conteudo: "Veja o vídeo explicativo:",
-                iframe: "https://www.youtube.com/embed/q3VlhfsrRjc?si=cNzIOZU4_Hvmt85y"
+                iframe: "https://www.youtube.com/embed/S5wBuU90zS4?si=nXe99zIdXqGSe5ME"
             }
         ]
     },
@@ -24,7 +23,7 @@ const caixas = [
                 nome: "Apostila Completa",
                 titulo: "Apostila para Download",
                 conteudo: "Clique no botão para baixar a apostila.",
-                dowload: "apostila.pdf"
+                dowload: "../../apostilas/java_/java6/apostila6.pdf"
             }
         ]
     },
@@ -33,9 +32,8 @@ const caixas = [
         subitens: [
             {
                 nome: "Desafio Final",
-                titulo: "Resolva o Desafio",
-                conteudo: "Complete o formulário abaixo para finalizar o desafio:",
-                iframe: "https://docs.google.com/forms/d/e/1FAIpQLSfEXAMPLE12345/viewform"
+                titulo: "Este módulo nao possuí desafio!!",
+                conteudo: " ",
             }
         ]
     },
