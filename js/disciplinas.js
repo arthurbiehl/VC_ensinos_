@@ -126,8 +126,8 @@ const disciplinas = [
         duracao: "2h"
     },
     {
-        titulo: "Curso de Java 4 médio",
-        descricao: "nada",
+        titulo: "IF ELSE - JAVA",
+        descricao: "Aprenda a operacao IF ELSE para seus codigos!!",
         link: "../Pagina_disciplina/java_modulo4/java4.html",
         image: "../img/emblemas_cards/java.png",
         dificuldade: "Médio",
