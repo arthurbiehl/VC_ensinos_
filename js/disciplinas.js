@@ -101,7 +101,7 @@ const disciplinas = [
     {
         titulo: "Lógica de programação - JAVA",
         descricao: "O começo da jornada JAVA!!",
-        link: "../Pagina_disciplina/java_modulo1/java1.html",
+        link: "../Pagina_disciplina/Java_modulo1/java1.html",
         image: "../img/emblemas_cards/java.png",
         dificuldade: "Fácil",
         categoria: "back-end",
